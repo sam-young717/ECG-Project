@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_init', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>18
+<l>9
 <k>6
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_start', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>24
+<l>15
 <k>6
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_step', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>81
+<l>68
 <k>6
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_result_ready', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>115
+<l>102
 <k>5
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_get_systolic', EXTERN_LINKAGE_FUNC_RET_TYPE=['unshort']
-<l>120
+<l>107
 <k>10
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_get_diastolic', EXTERN_LINKAGE_FUNC_RET_TYPE=['unshort']
-<l>121
+<l>108
 <k>10
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='nibp_monitor_get_map', EXTERN_LINKAGE_FUNC_RET_TYPE=['unshort']
-<l>122
+<l>109
 <k>10
 <s>false
 <N>
@@ -162,7 +162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=i QUALIFICATION=
-<l>36
+<l>25
 <k>14
 <s>false
 <N>
@@ -172,7 +172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=peak_idx QUALIFICATION=
-<l>37
+<l>26
 <k>14
 <s>false
 <N>
@@ -182,7 +182,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=peak_amp QUALIFICATION=
-<l>38
+<l>27
 <k>14
 <s>false
 <N>
@@ -192,7 +192,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=peak_idx QUALIFICATION=
-<l>50
+<l>39
 <k>14
 <s>false
 <N>
@@ -202,7 +202,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=peak_amp QUALIFICATION=
-<l>51
+<l>40
 <k>14
 <s>false
 <N>
@@ -212,7 +212,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=i QUALIFICATION=
-<l>52
+<l>41
 <k>14
 <s>false
 <N>
@@ -222,7 +222,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=sys_target QUALIFICATION=
-<l>53
+<l>42
 <k>14
 <s>false
 <N>
@@ -232,7 +232,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=dia_target QUALIFICATION=
-<l>54
+<l>43
 <k>14
 <s>false
 <N>
@@ -352,7 +352,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>18
+<l>9
 <k>39
 <s>false
 <N>
@@ -362,7 +362,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_init QUALIFICATION=
-<l>18
+<l>9
 <k>6
 <s>false
 <N>
@@ -372,7 +372,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>24
+<l>15
 <k>40
 <s>false
 <N>
@@ -382,7 +382,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=target_mmhg QUALIFICATION=
-<l>24
+<l>15
 <k>55
 <s>false
 <N>
@@ -392,7 +392,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_start QUALIFICATION=
-<l>24
+<l>15
 <k>6
 <s>false
 <N>
@@ -402,7 +402,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>34
+<l>23
 <k>59
 <s>false
 <N>
@@ -412,7 +412,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_find_peak_index QUALIFICATION=
-<l>34
+<l>23
 <k>17
 <s>false
 <N>
@@ -422,7 +422,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>48
+<l>37
 <k>48
 <s>false
 <N>
@@ -432,7 +432,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=search_diastolic QUALIFICATION=
-<l>71
+<l>59
 <k>1
 <s>false
 <N>
@@ -442,7 +442,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_compute_result QUALIFICATION=
-<l>48
+<l>37
 <k>13
 <s>false
 <N>
@@ -452,7 +452,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>81
+<l>68
 <k>39
 <s>false
 <N>
@@ -462,7 +462,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=cuff_mmhg QUALIFICATION=
-<l>81
+<l>68
 <k>54
 <s>false
 <N>
@@ -472,7 +472,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=pulse_amp QUALIFICATION=
-<l>81
+<l>68
 <k>74
 <s>false
 <N>
@@ -482,7 +482,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=tick_ms QUALIFICATION=
-<l>81
+<l>68
 <k>94
 <s>false
 <N>
@@ -492,7 +492,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_step QUALIFICATION=
-<l>81
+<l>68
 <k>6
 <s>false
 <N>
@@ -502,7 +502,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>115
+<l>102
 <k>52
 <s>false
 <N>
@@ -512,7 +512,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_result_ready QUALIFICATION=
-<l>115
+<l>102
 <k>5
 <s>false
 <N>
@@ -522,7 +522,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>120
+<l>107
 <k>57
 <s>false
 <N>
@@ -532,7 +532,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_get_systolic QUALIFICATION=
-<l>120
+<l>107
 <k>10
 <s>false
 <N>
@@ -542,7 +542,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>121
+<l>108
 <k>58
 <s>false
 <N>
@@ -552,7 +552,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_get_diastolic QUALIFICATION=
-<l>121
+<l>108
 <k>10
 <s>false
 <N>
@@ -562,7 +562,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=nibp QUALIFICATION=
-<l>122
+<l>109
 <k>52
 <s>false
 <N>
@@ -572,7 +572,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=nibp_monitor_get_map QUALIFICATION=
-<l>122
+<l>109
 <k>10
 <s>false
 <N>
@@ -952,7 +952,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_init'
-<l>18
+<l>9
 <k>6
 <s>false
 <N>
@@ -962,7 +962,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_start'
-<l>24
+<l>15
 <k>6
 <s>false
 <N>
@@ -972,7 +972,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_step'
-<l>81
+<l>68
 <k>6
 <s>false
 <N>
@@ -982,7 +982,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_result_ready'
-<l>115
+<l>102
 <k>5
 <s>false
 <N>
@@ -992,7 +992,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_systolic'
-<l>120
+<l>107
 <k>10
 <s>false
 <N>
@@ -1002,7 +1002,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_diastolic'
-<l>121
+<l>108
 <k>10
 <s>false
 <N>
@@ -1012,7 +1012,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_map'
-<l>122
+<l>109
 <k>10
 <s>false
 <N>
@@ -1032,7 +1032,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_init'
-<l>18
+<l>9
 <k>6
 <s>false
 <N>
@@ -1042,7 +1042,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_start'
-<l>24
+<l>15
 <k>6
 <s>false
 <N>
@@ -1052,7 +1052,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_step'
-<l>81
+<l>68
 <k>6
 <s>false
 <N>
@@ -1062,7 +1062,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_result_ready'
-<l>115
+<l>102
 <k>5
 <s>false
 <N>
@@ -1072,7 +1072,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_systolic'
-<l>120
+<l>107
 <k>10
 <s>false
 <N>
@@ -1082,7 +1082,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_diastolic'
-<l>121
+<l>108
 <k>10
 <s>false
 <N>
@@ -1092,7 +1092,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='nibp_monitor_get_map'
-<l>122
+<l>109
 <k>10
 <s>false
 <N>
@@ -1102,7 +1102,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_init QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_init@def
-<l>18
+<l>9
 <k>6
 <s>false
 <N>
@@ -1112,7 +1112,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_start QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_start@def
-<l>24
+<l>15
 <k>6
 <s>false
 <N>
@@ -1122,7 +1122,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_FUNC=nibp_find_peak_index QUALIFICATION= MANGLED_FUN_NAME=nibp_find_peak_index@def
-<l>34
+<l>23
 <k>17
 <s>false
 <N>
@@ -1132,7 +1132,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_FUNC=nibp_compute_result QUALIFICATION= MANGLED_FUN_NAME=nibp_compute_result@def
-<l>48
+<l>37
 <k>13
 <s>false
 <N>
@@ -1142,7 +1142,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_step QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_step@def
-<l>81
+<l>68
 <k>6
 <s>false
 <N>
@@ -1152,7 +1152,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_result_ready QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_result_ready@def
-<l>115
+<l>102
 <k>5
 <s>false
 <N>
@@ -1162,7 +1162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_get_systolic QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_get_systolic@def
-<l>120
+<l>107
 <k>10
 <s>false
 <N>
@@ -1172,7 +1172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_get_diastolic QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_get_diastolic@def
-<l>121
+<l>108
 <k>10
 <s>false
 <N>
@@ -1182,7 +1182,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=nibp_monitor_get_map QUALIFICATION= MANGLED_FUN_NAME=nibp_monitor_get_map@def
-<l>122
+<l>109
 <k>10
 <s>false
 <N>

@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-110
 <b>The 'sscanf' library function should not be used
-<l>68
+<l>59
 <k>5
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_audio_beep' does not precede function definition
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_led_flash' does not precede function definition
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_console_write' does not precede function definition
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_uart_write' does not precede function definition
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_uart_read' does not precede function definition
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-118
 <b>Prototype of function 'bsp_endpoint_reachable' does not precede function definition
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -72,7 +72,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>FORMAT-50
 <b>The left hand operand of the '-' operator should be in parentheses
-<l>85
+<l>75
 <k>26
 <s>false
 <N>
@@ -82,7 +82,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>FORMAT-50
 <b>The left hand operand of the '&&' operator should be in parentheses
-<l>50
+<l>42
 <k>9
 <s>false
 <N>
@@ -92,7 +92,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>FORMAT-50
 <b>The right hand operand of the '&&' operator should be in parentheses
-<l>50
+<l>42
 <k>20
 <s>false
 <N>
@@ -102,7 +102,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-8_7
 <b>Global variable 'g_link' is being used only in a single function 'main'
-<l>40
+<l>32
 <k>19
 <s>false
 <N>
@@ -112,7 +112,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>SECURITY-02
 <b>The 'rand()' function should not be used
-<l>85
+<l>75
 <k>26
 <s>false
 <N>
@@ -122,7 +122,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>SECURITY-02
 <b>The 'rand()' function should not be used
-<l>86
+<l>76
 <k>23
 <s>false
 <N>
@@ -132,7 +132,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>SECURITY-02
 <b>The 'rand()' function should not be used
-<l>87
+<l>77
 <k>22
 <s>false
 <N>
@@ -142,7 +142,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-164_a
 <b>Operands of the '>' operator have different essential types: 'unsigned short' and 'short'
-<l>46
+<l>38
 <k>9
 <s>false
 <N>
@@ -152,7 +152,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-164_a
 <b>Operands of the '<' operator have different essential types: 'unsigned short' and 'signed char'
-<l>50
+<l>42
 <k>9
 <s>false
 <N>
@@ -162,7 +162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-164_a
 <b>Operands of the '!=' operator have different essential types: 'unsigned short' and 'signed char'
-<l>50
+<l>42
 <k>20
 <s>false
 <N>
@@ -172,7 +172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-164_a
 <b>Operands of the '<' operator have different essential types: 'unsigned char' and 'signed char'
-<l>54
+<l>46
 <k>9
 <s>false
 <N>
@@ -182,7 +182,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-164_a
 <b>Operands of the '*' operator have different essential types: 'unsigned char' and 'signed char'
-<l>131
+<l>121
 <k>23
 <s>false
 <N>
@@ -192,8 +192,28 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-16_7
 <b>Pass parameter "b" with const specifier
-<l>32
+<l>24
 <k>28
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
+<c>CODSTA-122_a
+<b>Unused function's "alarm_manager_raise" return value
+<l>39
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
+<c>CODSTA-122_a
+<b>Unused function's "alarm_manager_raise" return value
+<l>43
+<k>9
 <s>false
 <N>
 <f>
@@ -211,28 +231,8 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
-<b>Unused function's "alarm_manager_raise" return value
-<l>51
-<k>9
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
-<c>CODSTA-122_a
-<b>Unused function's "alarm_manager_raise" return value
-<l>55
-<k>9
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
-<c>CODSTA-122_a
 <b>Unused function's "sscanf" return value
-<l>68
+<l>59
 <k>5
 <s>false
 <N>
@@ -242,7 +242,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "patient_record_assign_room" return value
-<l>71
+<l>62
 <k>5
 <s>false
 <N>
@@ -252,7 +252,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "patient_record_register" return value
-<l>72
+<l>63
 <k>5
 <s>false
 <N>
@@ -262,7 +262,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "ecg_processor_detect_qrs" return value
-<l>91
+<l>81
 <k>5
 <s>false
 <N>
@@ -272,7 +272,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "data_logger_append" return value
-<l>103
+<l>93
 <k>5
 <s>false
 <N>
@@ -282,7 +282,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-152
 <b>Composite expression with 'signed' essential type category shall not be cast to different essential type category 'unsigned'
-<l>86
+<l>76
 <k>11
 <s>false
 <N>
@@ -292,7 +292,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-152
 <b>Composite expression with 'signed' essential type category shall not be cast to different essential type category 'unsigned'
-<l>87
+<l>77
 <k>10
 <s>false
 <N>
@@ -302,7 +302,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "comm_link_connect" return value
-<l>118
+<l>108
 <k>5
 <s>false
 <N>
@@ -312,7 +312,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>121
+<l>111
 <k>9
 <s>false
 <N>
@@ -322,7 +322,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>123
+<l>113
 <k>9
 <s>false
 <N>
@@ -332,7 +332,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "admit_new_patient" return value
-<l>125
+<l>115
 <k>5
 <s>false
 <N>
@@ -342,7 +342,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-122_a
 <b>Unused function's "data_logger_open" return value
-<l>127
+<l>117
 <k>5
 <s>false
 <N>
@@ -352,7 +352,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-169_a
 <b>Improper expression is used in the first clause of a 'for' statement
-<l>129
+<l>119
 <k>5
 <s>false
 <N>
@@ -362,7 +362,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-169_b
 <b>The second clause of a 'for' statement does not contain a loop counter
-<l>129
+<l>119
 <k>5
 <s>false
 <N>
@@ -372,7 +372,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>CODSTA-169_c
 <b>The third clause of a 'for' statement contains an expression with a persistent side effect other than modification of a loop counter
-<l>129
+<l>119
 <k>5
 <s>false
 <N>
@@ -382,7 +382,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>31
+<l>23
 <k>1
 <s>false
 <N>
@@ -392,7 +392,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>31
+<l>23
 <k>71
 <s>false
 <N>
@@ -402,7 +402,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>32
+<l>24
 <k>1
 <s>false
 <N>
@@ -412,7 +412,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>60
+<l>52
 <k>8
 <s>false
 <N>
@@ -422,7 +422,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>64
+<l>56
 <k>5
 <s>false
 <N>
@@ -432,7 +432,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>111
+<l>101
 <k>5
 <s>false
 <N>

@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-163_b
 <b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
-<l>28
+<l>20
 <k>5
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>FORMAT-50
 <b>The right hand operand of the '+' operator should be in parentheses
-<l>89
+<l>79
 <k>46
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>MISRA2004-14_9
 <b>An 'if' statement should be followed by a block
-<l>50
+<l>42
 <k>9
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>MISRA2004-14_9
 <b>An 'if' statement should be followed by a block
-<l>51
+<l>43
 <k>9
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-164_a
 <b>Operands of the '+' operator have different essential types: 'unsigned short' and 'signed char'
-<l>28
+<l>20
 <k>18
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-164_a
 <b>Operands of the '>=' operator have different essential types: 'unsigned short' and 'signed char'
-<l>29
+<l>21
 <k>9
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-164_a
 <b>Operands of the '<' operator have different essential types: 'int' and 'unsigned short'
-<l>38
+<l>30
 <k>17
 <s>false
 <N>
@@ -72,7 +72,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-164_a
 <b>Operands of the '<' operator have different essential types: 'int' and 'unsigned short'
-<l>49
+<l>41
 <k>17
 <s>false
 <N>
@@ -82,7 +82,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-164_a
 <b>Operands of the '>' operator have different essential types: 'unsigned short' and 'short'
-<l>68
+<l>59
 <k>9
 <s>false
 <N>
@@ -92,7 +92,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-122_a
 <b>Unused function's "memset" return value
-<l>20
+<l>12
 <k>5
 <s>false
 <N>
@@ -102,7 +102,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-152
 <b>Composite expression with 'floating' essential type category shall not be cast to different essential type category 'unsigned'
-<l>89
+<l>79
 <k>27
 <s>false
 <N>
@@ -112,7 +112,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>CODSTA-122_a
 <b>Unused function's "memset" return value
-<l>20
+<l>12
 <k>5
 <s>false
 <N>
@@ -122,7 +122,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>37
+<l>29
 <k>5
 <s>false
 <N>
@@ -132,7 +132,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>48
+<l>40
 <k>5
 <s>false
 <N>

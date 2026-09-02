@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_create', EXTERN_LINKAGE_FUNC_RET_TYPE=['*', 'PatientRecord_t']
-<l>18
+<l>11
 <k>18
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_destroy', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>34
+<l>26
 <k>6
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_assign_room', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>39
+<l>31
 <k>5
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_get_age', EXTERN_LINKAGE_FUNC_RET_TYPE=['int']
-<l>46
+<l>37
 <k>5
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_update_status', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>51
+<l>42
 <k>6
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_lookup', EXTERN_LINKAGE_FUNC_RET_TYPE=['*', 'PatientRecord_t']
-<l>58
+<l>49
 <k>18
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_register', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>73
+<l>63
 <k>5
 <s>false
 <N>
@@ -72,7 +72,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='patient_record_active_count', EXTERN_LINKAGE_FUNC_RET_TYPE=['unint']
-<l>84
+<l>74
 <k>10
 <s>false
 <N>
@@ -162,7 +162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_active_patients QUALIFICATION=
-<l>14
+<l>7
 <k>25
 <s>false
 <N>
@@ -172,7 +172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_patient_count QUALIFICATION=
-<l>15
+<l>8
 <k>12
 <s>false
 <N>
@@ -182,7 +182,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_admit_tick_counter QUALIFICATION=
-<l>16
+<l>9
 <k>17
 <s>false
 <N>
@@ -192,7 +192,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>20
+<l>13
 <k>22
 <s>false
 <N>
@@ -212,7 +212,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=i QUALIFICATION=
-<l>60
+<l>51
 <k>9
 <s>false
 <N>
@@ -222,7 +222,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=id QUALIFICATION=
-<l>18
+<l>11
 <k>52
 <s>false
 <N>
@@ -232,7 +232,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=name QUALIFICATION=
-<l>18
+<l>11
 <k>68
 <s>false
 <N>
@@ -242,7 +242,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=age QUALIFICATION=
-<l>18
+<l>11
 <k>82
 <s>false
 <N>
@@ -252,7 +252,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_create QUALIFICATION=
-<l>18
+<l>11
 <k>18
 <s>false
 <N>
@@ -262,7 +262,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>34
+<l>26
 <k>46
 <s>false
 <N>
@@ -272,7 +272,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_destroy QUALIFICATION=
-<l>34
+<l>26
 <k>6
 <s>false
 <N>
@@ -282,7 +282,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>39
+<l>31
 <k>49
 <s>false
 <N>
@@ -292,7 +292,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=room_id QUALIFICATION=
-<l>39
+<l>31
 <k>69
 <s>false
 <N>
@@ -302,7 +302,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_assign_room QUALIFICATION=
-<l>39
+<l>31
 <k>5
 <s>false
 <N>
@@ -312,7 +312,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>46
+<l>37
 <k>51
 <s>false
 <N>
@@ -322,7 +322,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_get_age QUALIFICATION=
-<l>46
+<l>37
 <k>5
 <s>false
 <N>
@@ -332,7 +332,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>51
+<l>42
 <k>52
 <s>false
 <N>
@@ -342,7 +342,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=status QUALIFICATION=
-<l>51
+<l>42
 <k>76
 <s>false
 <N>
@@ -352,7 +352,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_update_status QUALIFICATION=
-<l>51
+<l>42
 <k>6
 <s>false
 <N>
@@ -362,7 +362,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=id QUALIFICATION=
-<l>58
+<l>49
 <k>52
 <s>false
 <N>
@@ -372,7 +372,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_lookup QUALIFICATION=
-<l>58
+<l>49
 <k>18
 <s>false
 <N>
@@ -382,7 +382,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=record QUALIFICATION=
-<l>73
+<l>63
 <k>46
 <s>false
 <N>
@@ -392,7 +392,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_register QUALIFICATION=
-<l>73
+<l>63
 <k>5
 <s>false
 <N>
@@ -402,7 +402,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=patient_record_active_count QUALIFICATION=
-<l>84
+<l>74
 <k>10
 <s>false
 <N>
@@ -732,7 +732,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_create'
-<l>18
+<l>11
 <k>18
 <s>false
 <N>
@@ -742,7 +742,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_destroy'
-<l>34
+<l>26
 <k>6
 <s>false
 <N>
@@ -752,7 +752,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_assign_room'
-<l>39
+<l>31
 <k>5
 <s>false
 <N>
@@ -762,7 +762,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_get_age'
-<l>46
+<l>37
 <k>5
 <s>false
 <N>
@@ -772,7 +772,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_update_status'
-<l>51
+<l>42
 <k>6
 <s>false
 <N>
@@ -782,7 +782,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_lookup'
-<l>58
+<l>49
 <k>18
 <s>false
 <N>
@@ -792,7 +792,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_register'
-<l>73
+<l>63
 <k>5
 <s>false
 <N>
@@ -802,7 +802,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_active_count'
-<l>84
+<l>74
 <k>10
 <s>false
 <N>
@@ -811,7 +811,7 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNAL-USAGE
-<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'strcpy', 'strcmp', 'malloc', 'free'}
+<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'free', 'strcpy', 'strcmp', 'malloc'}
 <l>1
 <k>1
 <s>false
@@ -822,7 +822,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_create'
-<l>18
+<l>11
 <k>18
 <s>false
 <N>
@@ -832,7 +832,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_destroy'
-<l>34
+<l>26
 <k>6
 <s>false
 <N>
@@ -842,7 +842,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_assign_room'
-<l>39
+<l>31
 <k>5
 <s>false
 <N>
@@ -852,7 +852,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_get_age'
-<l>46
+<l>37
 <k>5
 <s>false
 <N>
@@ -862,7 +862,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_update_status'
-<l>51
+<l>42
 <k>6
 <s>false
 <N>
@@ -872,7 +872,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_lookup'
-<l>58
+<l>49
 <k>18
 <s>false
 <N>
@@ -882,7 +882,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_register'
-<l>73
+<l>63
 <k>5
 <s>false
 <N>
@@ -892,7 +892,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='patient_record_active_count'
-<l>84
+<l>74
 <k>10
 <s>false
 <N>
@@ -902,7 +902,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_active_patients QUALIFICATION=
-<l>14
+<l>7
 <k>25
 <s>false
 <N>
@@ -912,7 +912,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_patient_count QUALIFICATION=
-<l>15
+<l>8
 <k>12
 <s>false
 <N>
@@ -922,7 +922,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_admit_tick_counter QUALIFICATION=
-<l>16
+<l>9
 <k>17
 <s>false
 <N>
@@ -932,7 +932,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_create QUALIFICATION= MANGLED_FUN_NAME=patient_record_create@def
-<l>18
+<l>11
 <k>18
 <s>false
 <N>
@@ -942,7 +942,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_destroy QUALIFICATION= MANGLED_FUN_NAME=patient_record_destroy@def
-<l>34
+<l>26
 <k>6
 <s>false
 <N>
@@ -952,7 +952,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_assign_room QUALIFICATION= MANGLED_FUN_NAME=patient_record_assign_room@def
-<l>39
+<l>31
 <k>5
 <s>false
 <N>
@@ -962,7 +962,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_get_age QUALIFICATION= MANGLED_FUN_NAME=patient_record_get_age@def
-<l>46
+<l>37
 <k>5
 <s>false
 <N>
@@ -972,7 +972,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_update_status QUALIFICATION= MANGLED_FUN_NAME=patient_record_update_status@def
-<l>51
+<l>42
 <k>6
 <s>false
 <N>
@@ -982,7 +982,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_lookup QUALIFICATION= MANGLED_FUN_NAME=patient_record_lookup@def
-<l>58
+<l>49
 <k>18
 <s>false
 <N>
@@ -992,7 +992,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_register QUALIFICATION= MANGLED_FUN_NAME=patient_record_register@def
-<l>73
+<l>63
 <k>5
 <s>false
 <N>
@@ -1002,7 +1002,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=patient_record_active_count QUALIFICATION= MANGLED_FUN_NAME=patient_record_active_count@def
-<l>84
+<l>74
 <k>10
 <s>false
 <N>

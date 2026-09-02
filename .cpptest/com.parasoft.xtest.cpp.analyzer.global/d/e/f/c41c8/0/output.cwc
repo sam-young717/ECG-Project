@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_audio_beep', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>12
+<l>6
 <k>13
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_led_flash', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>13
+<l>7
 <k>13
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_console_write', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>14
+<l>8
 <k>13
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_init', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>16
+<l>10
 <k>6
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_raise', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>21
+<l>15
 <k>5
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_pop', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>46
+<l>39
 <k>5
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_acknowledge_all', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>75
+<l>67
 <k>6
 <s>false
 <N>
@@ -72,7 +72,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_dispatch', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>86
+<l>78
 <k>6
 <s>false
 <N>
@@ -82,7 +82,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='alarm_manager_pending', EXTERN_LINKAGE_FUNC_RET_TYPE=['unshort']
-<l>107
+<l>96
 <k>10
 <s>false
 <N>
@@ -152,7 +152,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=slot QUALIFICATION=
-<l>24
+<l>18
 <k>19
 <s>false
 <N>
@@ -162,7 +162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=i QUALIFICATION=
-<l>48
+<l>41
 <k>14
 <s>false
 <N>
@@ -172,7 +172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=best_i QUALIFICATION=
-<l>49
+<l>42
 <k>14
 <s>false
 <N>
@@ -182,7 +182,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=best_prio QUALIFICATION=
-<l>50
+<l>43
 <k>21
 <s>false
 <N>
@@ -202,7 +202,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=idx QUALIFICATION=
-<l>58
+<l>50
 <k>18
 <s>false
 <N>
@@ -212,7 +212,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=i QUALIFICATION=
-<l>77
+<l>69
 <k>14
 <s>false
 <N>
@@ -222,7 +222,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=evt QUALIFICATION=
-<l>88
+<l>80
 <k>18
 <s>false
 <N>
@@ -232,7 +232,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=line QUALIFICATION=
-<l>89
+<l>81
 <k>10
 <s>false
 <N>
@@ -242,7 +242,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=prio QUALIFICATION=
-<l>12
+<l>6
 <k>44
 <s>false
 <N>
@@ -252,7 +252,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_audio_beep QUALIFICATION=
-<l>12
+<l>6
 <k>13
 <s>false
 <N>
@@ -262,7 +262,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=prio QUALIFICATION=
-<l>13
+<l>7
 <k>43
 <s>false
 <N>
@@ -272,7 +272,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_led_flash QUALIFICATION=
-<l>13
+<l>7
 <k>13
 <s>false
 <N>
@@ -282,7 +282,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=msg QUALIFICATION=
-<l>14
+<l>8
 <k>43
 <s>false
 <N>
@@ -292,7 +292,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_console_write QUALIFICATION=
-<l>14
+<l>8
 <k>13
 <s>false
 <N>
@@ -302,7 +302,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>16
+<l>10
 <k>41
 <s>false
 <N>
@@ -312,7 +312,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_init QUALIFICATION=
-<l>16
+<l>10
 <k>6
 <s>false
 <N>
@@ -322,7 +322,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>21
+<l>15
 <k>41
 <s>false
 <N>
@@ -332,7 +332,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=src QUALIFICATION=
-<l>21
+<l>15
 <k>60
 <s>false
 <N>
@@ -342,7 +342,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=prio QUALIFICATION=
-<l>21
+<l>15
 <k>81
 <s>false
 <N>
@@ -352,7 +352,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=code QUALIFICATION=
-<l>22
+<l>16
 <k>35
 <s>false
 <N>
@@ -362,7 +362,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=msg QUALIFICATION=
-<l>22
+<l>16
 <k>53
 <s>false
 <N>
@@ -372,7 +372,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=tick_ms QUALIFICATION=
-<l>22
+<l>16
 <k>67
 <s>false
 <N>
@@ -382,7 +382,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_raise QUALIFICATION=
-<l>21
+<l>15
 <k>5
 <s>false
 <N>
@@ -392,7 +392,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>46
+<l>39
 <k>39
 <s>false
 <N>
@@ -402,7 +402,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=out QUALIFICATION=
-<l>46
+<l>39
 <k>58
 <s>false
 <N>
@@ -412,7 +412,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_pop QUALIFICATION=
-<l>46
+<l>39
 <k>5
 <s>false
 <N>
@@ -422,7 +422,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>75
+<l>67
 <k>52
 <s>false
 <N>
@@ -432,7 +432,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_acknowledge_all QUALIFICATION=
-<l>75
+<l>67
 <k>6
 <s>false
 <N>
@@ -442,7 +442,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>86
+<l>78
 <k>45
 <s>false
 <N>
@@ -452,7 +452,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_dispatch QUALIFICATION=
-<l>86
+<l>78
 <k>6
 <s>false
 <N>
@@ -462,7 +462,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=mgr QUALIFICATION=
-<l>107
+<l>96
 <k>54
 <s>false
 <N>
@@ -472,7 +472,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=alarm_manager_pending QUALIFICATION=
-<l>107
+<l>96
 <k>10
 <s>false
 <N>
@@ -882,7 +882,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_init'
-<l>16
+<l>10
 <k>6
 <s>false
 <N>
@@ -892,7 +892,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_raise'
-<l>21
+<l>15
 <k>5
 <s>false
 <N>
@@ -902,7 +902,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_pop'
-<l>46
+<l>39
 <k>5
 <s>false
 <N>
@@ -912,7 +912,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_acknowledge_all'
-<l>75
+<l>67
 <k>6
 <s>false
 <N>
@@ -922,7 +922,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_dispatch'
-<l>86
+<l>78
 <k>6
 <s>false
 <N>
@@ -932,7 +932,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_pending'
-<l>107
+<l>96
 <k>10
 <s>false
 <N>
@@ -942,7 +942,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_audio_beep'
-<l>12
+<l>6
 <k>13
 <s>false
 <N>
@@ -952,7 +952,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_led_flash'
-<l>13
+<l>7
 <k>13
 <s>false
 <N>
@@ -962,7 +962,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_console_write'
-<l>14
+<l>8
 <k>13
 <s>false
 <N>
@@ -971,7 +971,7 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNAL-USAGE
-<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'bsp_led_flash', 'bsp_console_write', 'memset', 'alarm_manager_pop', 'bsp_audio_beep', 'alarm_manager_dispatch', 'sprintf', 'memcpy'}
+<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'memcpy', 'bsp_audio_beep', 'bsp_led_flash', 'sprintf', 'alarm_manager_dispatch', 'bsp_console_write', 'alarm_manager_pop', 'memset'}
 <l>1
 <k>1
 <s>false
@@ -982,7 +982,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_init'
-<l>16
+<l>10
 <k>6
 <s>false
 <N>
@@ -992,7 +992,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_raise'
-<l>21
+<l>15
 <k>5
 <s>false
 <N>
@@ -1002,7 +1002,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_pop'
-<l>46
+<l>39
 <k>5
 <s>false
 <N>
@@ -1012,7 +1012,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_acknowledge_all'
-<l>75
+<l>67
 <k>6
 <s>false
 <N>
@@ -1022,7 +1022,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_dispatch'
-<l>86
+<l>78
 <k>6
 <s>false
 <N>
@@ -1032,7 +1032,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='alarm_manager_pending'
-<l>107
+<l>96
 <k>10
 <s>false
 <N>
@@ -1042,7 +1042,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_audio_beep'
-<l>12
+<l>6
 <k>13
 <s>false
 <N>
@@ -1052,7 +1052,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_led_flash'
-<l>13
+<l>7
 <k>13
 <s>false
 <N>
@@ -1062,7 +1062,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION_DECL='bsp_console_write'
-<l>14
+<l>8
 <k>13
 <s>false
 <N>
@@ -1072,7 +1072,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_audio_beep QUALIFICATION= MANGLED_FUN_NAME=bsp_audio_beep@decl
-<l>12
+<l>6
 <k>13
 <s>false
 <N>
@@ -1082,7 +1082,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_led_flash QUALIFICATION= MANGLED_FUN_NAME=bsp_led_flash@decl
-<l>13
+<l>7
 <k>13
 <s>false
 <N>
@@ -1092,7 +1092,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_console_write QUALIFICATION= MANGLED_FUN_NAME=bsp_console_write@decl
-<l>14
+<l>8
 <k>13
 <s>false
 <N>
@@ -1102,7 +1102,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_init QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_init@def
-<l>16
+<l>10
 <k>6
 <s>false
 <N>
@@ -1112,7 +1112,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_raise QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_raise@def
-<l>21
+<l>15
 <k>5
 <s>false
 <N>
@@ -1122,7 +1122,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_pop QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_pop@def
-<l>46
+<l>39
 <k>5
 <s>false
 <N>
@@ -1132,7 +1132,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_acknowledge_all QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_acknowledge_all@def
-<l>75
+<l>67
 <k>6
 <s>false
 <N>
@@ -1142,7 +1142,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_dispatch QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_dispatch@def
-<l>86
+<l>78
 <k>6
 <s>false
 <N>
@@ -1152,7 +1152,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=alarm_manager_pending QUALIFICATION= MANGLED_FUN_NAME=alarm_manager_pending@def
-<l>107
+<l>96
 <k>10
 <s>false
 <N>

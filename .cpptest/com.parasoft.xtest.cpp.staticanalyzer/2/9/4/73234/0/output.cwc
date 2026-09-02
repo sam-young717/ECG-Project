@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-20_4
 <b>'malloc' function should not be used
-<l>22
+<l>15
 <k>33
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-20_4
 <b>'free' function should not be used
-<l>36
+<l>28
 <k>5
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-8_7
 <b>Global variable 'g_admit_tick_counter' is being used only in a single function 'patient_record_create'
-<l>16
+<l>9
 <k>17
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>25
+<l>17
 <k>5
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>26
+<l>18
 <k>5
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-123
 <b>The '++' operator should cause the only side effect in an expression
-<l>29
+<l>21
 <k>26
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>42
+<l>33
 <k>5
 <s>false
 <N>
@@ -72,7 +72,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-14_7
 <b>Provide only one exit point in 'patient_record_lookup' function
-<l>66
+<l>56
 <k>17
 <s>false
 <N>
@@ -82,7 +82,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-14_7
 <b>Provide only one exit point in 'patient_record_lookup' function
-<l>70
+<l>60
 <k>5
 <s>false
 <N>
@@ -92,7 +92,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-14_7
 <b>Provide only one exit point in 'patient_record_register' function
-<l>76
+<l>66
 <k>9
 <s>false
 <N>
@@ -102,7 +102,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-14_7
 <b>Provide only one exit point in 'patient_record_register' function
-<l>81
+<l>71
 <k>5
 <s>false
 <N>
@@ -112,7 +112,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>25
+<l>17
 <k>5
 <s>false
 <N>
@@ -122,7 +122,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>26
+<l>18
 <k>5
 <s>false
 <N>
@@ -132,7 +132,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>CODSTA-122_a
 <b>Unused function's "strcpy" return value
-<l>42
+<l>33
 <k>5
 <s>false
 <N>
@@ -142,7 +142,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>15
+<l>8
 <k>8
 <s>false
 <N>
@@ -152,7 +152,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>46
+<l>37
 <k>1
 <s>false
 <N>
@@ -162,7 +162,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>48
+<l>39
 <k>13
 <s>false
 <N>
@@ -172,7 +172,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 <c>MISRA2004-6_3_b
 <b>The standard integer type 'int' should not be used
-<l>60
+<l>51
 <k>5
 <s>false
 <N>

@@ -2,7 +2,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_audio_beep', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -12,7 +12,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_led_flash', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -22,7 +22,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_console_write', EXTERN_LINKAGE_FUNC_RET_TYPE=['void']
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -32,7 +32,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_uart_write', EXTERN_LINKAGE_FUNC_RET_TYPE=['int']
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -42,7 +42,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_uart_read', EXTERN_LINKAGE_FUNC_RET_TYPE=['int']
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -52,7 +52,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='bsp_endpoint_reachable', EXTERN_LINKAGE_FUNC_RET_TYPE=['_Bool']
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -62,7 +62,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-COMPATDECLS
 <b>EXTERN_LINKAGE_FUNC_SIGN='main', EXTERN_LINKAGE_FUNC_RET_TYPE=['int']
-<l>108
+<l>98
 <k>5
 <s>false
 <N>
@@ -512,7 +512,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_ecg QUALIFICATION=
-<l>35
+<l>27
 <k>23
 <s>false
 <N>
@@ -522,7 +522,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_spo2 QUALIFICATION=
-<l>36
+<l>28
 <k>22
 <s>false
 <N>
@@ -532,7 +532,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_nibp QUALIFICATION=
-<l>37
+<l>29
 <k>22
 <s>false
 <N>
@@ -542,7 +542,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_alarms QUALIFICATION=
-<l>38
+<l>30
 <k>23
 <s>false
 <N>
@@ -552,7 +552,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_logger QUALIFICATION=
-<l>39
+<l>31
 <k>21
 <s>false
 <N>
@@ -562,7 +562,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_link QUALIFICATION=
-<l>40
+<l>32
 <k>19
 <s>false
 <N>
@@ -572,7 +572,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>GLOBAL_VAR=g_tick_ms QUALIFICATION=
-<l>42
+<l>34
 <k>17
 <s>false
 <N>
@@ -642,7 +642,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=id QUALIFICATION=
-<l>62
+<l>54
 <k>10
 <s>false
 <N>
@@ -652,7 +652,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=name QUALIFICATION=
-<l>63
+<l>55
 <k>10
 <s>false
 <N>
@@ -662,7 +662,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=age QUALIFICATION=
-<l>64
+<l>56
 <k>9
 <s>false
 <N>
@@ -672,7 +672,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=rec QUALIFICATION=
-<l>65
+<l>57
 <k>22
 <s>false
 <N>
@@ -682,7 +682,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=raw_ecg QUALIFICATION=
-<l>78
+<l>69
 <k>13
 <s>false
 <N>
@@ -692,7 +692,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=filtered QUALIFICATION=
-<l>79
+<l>70
 <k>13
 <s>false
 <N>
@@ -702,7 +702,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=red QUALIFICATION=
-<l>80
+<l>71
 <k>14
 <s>false
 <N>
@@ -712,7 +712,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=ir QUALIFICATION=
-<l>81
+<l>72
 <k>14
 <s>false
 <N>
@@ -722,7 +722,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=sample QUALIFICATION=
-<l>82
+<l>73
 <k>19
 <s>false
 <N>
@@ -732,7 +732,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=admit_line QUALIFICATION=
-<l>110
+<l>100
 <k>10
 <s>false
 <N>
@@ -742,7 +742,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=loop_count QUALIFICATION=
-<l>111
+<l>101
 <k>9
 <s>false
 <N>
@@ -762,7 +762,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=prio QUALIFICATION=
-<l>28
+<l>20
 <k>37
 <s>false
 <N>
@@ -772,7 +772,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_audio_beep QUALIFICATION=
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -782,7 +782,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=prio QUALIFICATION=
-<l>29
+<l>21
 <k>36
 <s>false
 <N>
@@ -792,7 +792,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_led_flash QUALIFICATION=
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -802,7 +802,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=m QUALIFICATION=
-<l>30
+<l>22
 <k>36
 <s>false
 <N>
@@ -812,7 +812,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_console_write QUALIFICATION=
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -822,7 +822,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=d QUALIFICATION=
-<l>31
+<l>23
 <k>35
 <s>false
 <N>
@@ -832,7 +832,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=n QUALIFICATION=
-<l>31
+<l>23
 <k>47
 <s>false
 <N>
@@ -842,7 +842,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_uart_write QUALIFICATION=
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -852,7 +852,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=b QUALIFICATION=
-<l>32
+<l>24
 <k>28
 <s>false
 <N>
@@ -862,7 +862,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=n QUALIFICATION=
-<l>32
+<l>24
 <k>40
 <s>false
 <N>
@@ -872,7 +872,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_uart_read QUALIFICATION=
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -882,7 +882,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=e QUALIFICATION=
-<l>33
+<l>25
 <k>40
 <s>false
 <N>
@@ -892,7 +892,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=bsp_endpoint_reachable QUALIFICATION=
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -902,7 +902,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=hr QUALIFICATION=
-<l>44
+<l>36
 <k>41
 <s>false
 <N>
@@ -912,7 +912,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=spo2 QUALIFICATION=
-<l>44
+<l>36
 <k>53
 <s>false
 <N>
@@ -922,7 +922,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=check_vital_alarms QUALIFICATION=
-<l>44
+<l>36
 <k>13
 <s>false
 <N>
@@ -932,7 +932,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=raw_line QUALIFICATION=
-<l>60
+<l>52
 <k>42
 <s>false
 <N>
@@ -942,7 +942,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=admit_new_patient QUALIFICATION=
-<l>60
+<l>52
 <k>12
 <s>false
 <N>
@@ -952,7 +952,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=acquisition_cycle QUALIFICATION=
-<l>76
+<l>67
 <k>13
 <s>false
 <N>
@@ -962,7 +962,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=argc QUALIFICATION=
-<l>108
+<l>98
 <k>14
 <s>false
 <N>
@@ -972,7 +972,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>IDENTIFIER=argv QUALIFICATION=
-<l>108
+<l>98
 <k>27
 <s>false
 <N>
@@ -982,7 +982,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALIFIEDID
 <b>FUNCTION=main QUALIFICATION=
-<l>108
+<l>98
 <k>5
 <s>false
 <N>
@@ -3312,7 +3312,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_audio_beep'
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -3322,7 +3322,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_led_flash'
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -3332,7 +3332,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_console_write'
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -3342,7 +3342,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_uart_write'
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -3352,7 +3352,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_uart_read'
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -3362,7 +3362,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='bsp_endpoint_reachable'
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -3372,7 +3372,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-DEFINITION
 <b>EXTERN_LINKAGE_FUNCTION='main'
-<l>108
+<l>98
 <k>5
 <s>false
 <N>
@@ -3381,7 +3381,7 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNAL-USAGE
-<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'data_logger_open', 'spo2_monitor_get_saturation', 'data_logger_close', 'spo2_monitor_update', 'comm_link_connect', 'spo2_monitor_push_sample', 'rand', 'patient_record_assign_room', 'ecg_processor_push_sample', 'patient_record_create', 'strcpy', 'spo2_monitor_init', 'alarm_manager_init', 'ecg_processor_get_heart_rate', 'comm_link_disconnect', 'ecg_processor_apply_filter', 'nibp_monitor_init', 'ecg_processor_init', 'ecg_processor_detect_qrs', 'nibp_monitor_get_diastolic', 'alarm_manager_dispatch', 'sscanf', 'comm_link_init', 'alarm_manager_raise', 'data_logger_append', 'patient_record_register', 'nibp_monitor_get_systolic'}
+<b>EXT_OBJ_USE_SET=set(); EXT_FUN_USE_SET={'nibp_monitor_get_diastolic', 'data_logger_append', 'data_logger_open', 'sscanf', 'comm_link_disconnect', 'ecg_processor_detect_qrs', 'nibp_monitor_init', 'alarm_manager_init', 'alarm_manager_raise', 'patient_record_register', 'alarm_manager_dispatch', 'patient_record_create', 'ecg_processor_get_heart_rate', 'data_logger_close', 'ecg_processor_init', 'patient_record_assign_room', 'comm_link_init', 'strcpy', 'ecg_processor_push_sample', 'nibp_monitor_get_systolic', 'comm_link_connect', 'spo2_monitor_get_saturation', 'spo2_monitor_push_sample', 'ecg_processor_apply_filter', 'spo2_monitor_init', 'spo2_monitor_update', 'rand'}
 <l>1
 <k>1
 <s>false
@@ -3392,7 +3392,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_audio_beep'
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -3402,7 +3402,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_led_flash'
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -3412,7 +3412,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_console_write'
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -3422,7 +3422,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_uart_write'
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -3432,7 +3432,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_uart_read'
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -3442,7 +3442,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='bsp_endpoint_reachable'
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -3452,7 +3452,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-EXTERNDEF
 <b>EXTERN_LINKAGE_FUNCTION='main'
-<l>108
+<l>98
 <k>5
 <s>false
 <N>
@@ -3462,7 +3462,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_ecg QUALIFICATION=
-<l>35
+<l>27
 <k>23
 <s>false
 <N>
@@ -3472,7 +3472,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_spo2 QUALIFICATION=
-<l>36
+<l>28
 <k>22
 <s>false
 <N>
@@ -3482,7 +3482,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_nibp QUALIFICATION=
-<l>37
+<l>29
 <k>22
 <s>false
 <N>
@@ -3492,7 +3492,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_alarms QUALIFICATION=
-<l>38
+<l>30
 <k>23
 <s>false
 <N>
@@ -3502,7 +3502,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_logger QUALIFICATION=
-<l>39
+<l>31
 <k>21
 <s>false
 <N>
@@ -3512,7 +3512,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_link QUALIFICATION=
-<l>40
+<l>32
 <k>19
 <s>false
 <N>
@@ -3522,7 +3522,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_VAR=g_tick_ms QUALIFICATION=
-<l>42
+<l>34
 <k>17
 <s>false
 <N>
@@ -3532,7 +3532,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_audio_beep QUALIFICATION= MANGLED_FUN_NAME=bsp_audio_beep@def
-<l>28
+<l>20
 <k>6
 <s>false
 <N>
@@ -3542,7 +3542,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_led_flash QUALIFICATION= MANGLED_FUN_NAME=bsp_led_flash@def
-<l>29
+<l>21
 <k>6
 <s>false
 <N>
@@ -3552,7 +3552,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_console_write QUALIFICATION= MANGLED_FUN_NAME=bsp_console_write@def
-<l>30
+<l>22
 <k>6
 <s>false
 <N>
@@ -3562,7 +3562,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_uart_write QUALIFICATION= MANGLED_FUN_NAME=bsp_uart_write@def
-<l>31
+<l>23
 <k>5
 <s>false
 <N>
@@ -3572,7 +3572,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_uart_read QUALIFICATION= MANGLED_FUN_NAME=bsp_uart_read@def
-<l>32
+<l>24
 <k>5
 <s>false
 <N>
@@ -3582,7 +3582,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=bsp_endpoint_reachable QUALIFICATION= MANGLED_FUN_NAME=bsp_endpoint_reachable@def
-<l>33
+<l>25
 <k>5
 <s>false
 <N>
@@ -3592,7 +3592,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_FUNC=check_vital_alarms QUALIFICATION= MANGLED_FUN_NAME=check_vital_alarms@def
-<l>44
+<l>36
 <k>13
 <s>false
 <N>
@@ -3602,7 +3602,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_FUNC=admit_new_patient QUALIFICATION= MANGLED_FUN_NAME=admit_new_patient@def
-<l>60
+<l>52
 <k>12
 <s>false
 <N>
@@ -3612,7 +3612,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>STATIC_FUNC=acquisition_cycle QUALIFICATION= MANGLED_FUN_NAME=acquisition_cycle@def
-<l>76
+<l>67
 <k>13
 <s>false
 <N>
@@ -3622,7 +3622,7 @@
 <F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c
 <c>INTERNAL-GLOBAL-QUALFUNCVAR
 <b>EXTERNAL_LINKAGE_FUNC=main QUALIFICATION= MANGLED_FUN_NAME=main@def
-<l>108
+<l>98
 <k>5
 <s>false
 <N>
