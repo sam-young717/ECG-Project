@@ -1,0 +1,61 @@
+# This is a basic workflow to help you get started with the Run C/C++test action for a CMake-based project.
+name: C/C++test with CMake
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master (main) branch.
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+jobs:
+  run-cpptest-make:
+    name: Analyze project with C/C++test
+
+    # Specifies required permissions for upload-sarif action
+    permissions:
+      # required for all workflows
+      security-events: write
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+
+    # Specifies the type of runner that the job will run on.
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:
+
+    # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Runs code analysis with C/C++test.
+    - name: Run C/C++test
+      id: run_cpptest
+      # Use the 'run-cpptest-action' GitHub action.
+      uses: parasoft/run-cpptest-action@2
+      # Optional parameters for 'run-cpptest-action'.
+      with:
+        # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
+        input: project.bdf
+        testConfig: 'builtin://MISRA C 2025'
+        additionalParams: '-module . -fail'
+
+    # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
+    - name: Upload results (SARIF)
+      if: always()
+      uses: github/codeql-action/upload-sarif@v3
+      with: 
+        sarif_file: reports/report.sarif
+
+    # Uploads an archive that includes all report files (.xml, .html, .sarif).
+    - name: Archive reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: CpptestReports
+        path: reports/*.*
