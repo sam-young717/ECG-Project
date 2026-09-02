@@ -43,7 +43,7 @@ jobs:
       with:
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: build/compile_commands.json
-        testConfig: '/mnt/C/users/syoung/Documents/Solutions/Linux/MISRA C 2025.properties'
+        testConfig: '/mnt/c/users/syoung/Documents/Solutions/Linux/MISRA C 2025.properties'
         additionalParams: '-localsettings settings.properties'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
