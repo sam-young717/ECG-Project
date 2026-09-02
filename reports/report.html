@@ -234,7 +234,7 @@
     #metrics_foldheader{cursor:pointer;cursor:hand ;}
     #exec_foldheader{cursor:pointer;cursor:hand ;}
     #paramsHeader {word-break:break-all;overflow: auto; padding: 3px;}
-    </style><title>C/C++test&nbsp;Report&nbsp;[2026-09-02T18:35:40-04:00]
+    </style><title>C/C++test&nbsp;Report&nbsp;[2026-09-02T18:46:21-04:00]
 
 </title><script language="JavaScript">
     var nwin;
@@ -511,11 +511,11 @@
 </tr>
 <tr>
 <td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Test Configuration:</b></td>
-<td class="summary_cell" style="word-break: break-word;">builtin://Flow Analysis Standard</td>
+<td class="summary_cell" style="word-break: break-word;">/mnt/c/Users/syoung/Downloads/Flow Analysis Custom.properties</td>
 </tr>
 <tr>
 <td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Started:</b></td>
-<td class="summary_cell">2026-09-02T18:35:40-04:00</td>
+<td class="summary_cell">2026-09-02T18:46:21-04:00</td>
 </tr>
 <tr>
 <td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Performed on:</b></td>
@@ -537,7 +537,7 @@
 <table width="100%" cellpadding="0" bgcolor="#FFFFFF" cellspacing="0">
 <tr>
 <td class="summary_stats_cell"><a xmlns:textutil="textutil" xmlns:authors="authors" class="blue_link" style="font-size: 14px" href="#cs"><b>Static Analysis</b></a></td>
-<td class="summary_stats_cell">Severity 1 Findings: 12</td>
+<td class="summary_stats_cell">Severity 1 Findings: 14</td>
 </tr>
 </table>
 </td>
@@ -559,7 +559,7 @@
 </table>
 <table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="2" cellspacing="0">
 <tr>
-<td align="center"><img src="standard_summary_09-02-26_18-35-40.jpeg" alt="standard_summary_09-02-26_18-35-40.jpeg"></td>
+<td align="center"><img src="standard_summary_09-02-26_18-46-21.jpeg" alt="standard_summary_09-02-26_18-46-21.jpeg"></td>
 </tr>
 </table>&nbsp;
 <table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="0" cellspacing="0" class="section_header" onclick="javascript:toggleDiv('cs_details_section')">
@@ -610,22 +610,22 @@
 <tr class="alternating">
 <td class="singleborder right_separator" align="left">&nbsp;RockStarDisplay</td>
 <td class="singleborder" align="center">&nbsp;0&nbsp;</td>
-<td class="singleborder" align="center">22&nbsp;</td>
-<td class="singleborder right_separator" align="center">187&nbsp;</td>
+<td class="singleborder" align="center">31&nbsp;</td>
+<td class="singleborder right_separator" align="center">263&nbsp;</td>
 <td class="singleborder" align="center">&nbsp;15&nbsp;</td>
 <td class="singleborder  right_separator" align="center">15&nbsp;</td>
 <td class="singleborder" align="center">&nbsp;1175&nbsp;</td>
 <td class="singleborder" align="center">1175&nbsp;</td>
 </tr>
 <tr>
-<td class="singleborder  right_separator" align="left" bgcolor="#CCCCCC">&nbsp;<b>Total</b> [0:00:06]
+<td class="singleborder  right_separator" align="left" bgcolor="#CCCCCC">&nbsp;<b>Total</b> [0:00:44]
 
 </td>
 <td class="singleborder" align="center" bgcolor="#CCCCCC">&nbsp;<b>0</b>&nbsp;
 </td>
-<td class="singleborder" align="center" bgcolor="#CCCCCC">&nbsp;<b>22</b>&nbsp;
+<td class="singleborder" align="center" bgcolor="#CCCCCC">&nbsp;<b>31</b>&nbsp;
 </td>
-<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC">&nbsp;<b>187</b>&nbsp;
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC">&nbsp;<b>263</b>&nbsp;
 </td>
 <td class="singleborder" align="center" bgcolor="#CCCCCC"><b>15</b>&nbsp;
 </td>
@@ -674,7 +674,20 @@
 <table width="100%" class="doubleborder" cellpadding="0" cellspacing="0">
 <tr>
 <td class="tree">&nbsp;
-[<b>17</b>]
+[<b>1</b>]
+&nbsp;&nbsp;<b>Incorrect API usage</b>&nbsp;<font class="gray">(BD-API)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Validate values passed to library functions&nbsp;<font class="gray">(BD-API-VALPARAM-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree">&nbsp;
+[<b>23</b>]
 &nbsp;&nbsp;<b>Possible Bugs</b>&nbsp;<font class="gray">(BD-PB)</font>&nbsp;
 </td>
 </tr>
@@ -695,7 +708,7 @@
 <tr>
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-[<b>1</b>]
+[<b>2</b>]
 &nbsp;&nbsp;Avoid division by zero&nbsp;<font class="gray">(BD-PB-ZERO-1)</font>&nbsp;
 </td>
 </tr>
@@ -723,6 +736,13 @@
 <tr>
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+[<b>2</b>]
+&nbsp;&nbsp;Properly use errno value&nbsp;<font class="gray">(BD-PB-ERRNO-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 [<b>1</b>]
 &nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
 </td>
@@ -732,6 +752,20 @@
 
 [<b>1</b>]
 &nbsp;&nbsp;Avoid calls to memory-setting functions that can be optimized out by the compiler&nbsp;<font class="gray">(BD-PB-MEMOPT-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>2</b>]
+&nbsp;&nbsp;Do not use floating-point expressions which may result in NaN and infinity values&nbsp;<font class="gray">(BD-PB-NANINF-5)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Do not use recursion&nbsp;<font class="gray">(BD-PB-RECFUN-5)</font>&nbsp;
 </td>
 </tr>
 <tr>
@@ -749,7 +783,7 @@
 </tr>
 <tr>
 <td class="tree">&nbsp;
-[<b>2</b>]
+[<b>4</b>]
 &nbsp;&nbsp;<b>Security</b>&nbsp;<font class="gray">(BD-SECURITY)</font>&nbsp;
 </td>
 </tr>
@@ -764,7 +798,21 @@
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 [<b>1</b>]
+&nbsp;&nbsp;Avoid potential integer overflow/underflow on tainted data&nbsp;<font class="gray">(BD-SECURITY-TDINTOVERF-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
 &nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Properly seed pseudorandom number generators&nbsp;<font class="gray">(BD-SECURITY-RAND-2)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -777,7 +825,7 @@
 <table width="100%" class="doubleborder" cellpadding="0" cellspacing="0">
 <tr>
 <td class="tree">&nbsp;
-[<b>12</b>]
+[<b>14</b>]
 &nbsp;&nbsp;<b>Severity&nbsp;1 - Highest</b></td>
 </tr>
 <tr>
@@ -797,7 +845,7 @@
 <tr>
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-[<b>1</b>]
+[<b>2</b>]
 &nbsp;&nbsp;Avoid division by zero&nbsp;<font class="gray">(BD-PB-ZERO-1)</font>&nbsp;
 </td>
 </tr>
@@ -819,13 +867,27 @@
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 [<b>1</b>]
+&nbsp;&nbsp;Avoid potential integer overflow/underflow on tainted data&nbsp;<font class="gray">(BD-SECURITY-TDINTOVERF-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
 &nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
 </td>
 </tr>
 <tr>
 <td class="tree">&nbsp;
-[<b>10</b>]
+[<b>14</b>]
 &nbsp;&nbsp;<b>Severity&nbsp;2 - High</b></td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Validate values passed to library functions&nbsp;<font class="gray">(BD-API-VALPARAM-2)</font>&nbsp;
+</td>
 </tr>
 <tr>
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -851,6 +913,13 @@
 <tr>
 <td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+[<b>2</b>]
+&nbsp;&nbsp;Properly use errno value&nbsp;<font class="gray">(BD-PB-ERRNO-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 [<b>1</b>]
 &nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
 </td>
@@ -860,6 +929,32 @@
 
 [<b>1</b>]
 &nbsp;&nbsp;Avoid calls to memory-setting functions that can be optimized out by the compiler&nbsp;<font class="gray">(BD-PB-MEMOPT-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Properly seed pseudorandom number generators&nbsp;<font class="gray">(BD-SECURITY-RAND-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree">&nbsp;
+[<b>3</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;5 - Lowest</b></td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>2</b>]
+&nbsp;&nbsp;Do not use floating-point expressions which may result in NaN and infinity values&nbsp;<font class="gray">(BD-PB-NANINF-5)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Do not use recursion&nbsp;<font class="gray">(BD-PB-RECFUN-5)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -901,11 +996,11 @@
 <tr>
 <td align="left">
 <ul class="root" id="cs_foldinglist">
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;31
 (0)                              
 &nbsp;</b><b>Total (Suppressed)</b></li>
 <ul id="cs_foldinglist">
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;31
 (0)                              
 &nbsp;</b><b>RockStarDisplay</b></li>
 <ul id="cs_foldinglist">
@@ -942,21 +1037,52 @@
 &nbsp;</b><b>spo2_monitor.h</b></li>
 <ul id="cs_foldinglist" style="display:none"></ul>
 </ul>
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;31
 (0)                              
 &nbsp;</b><b>src</b></li>
 <ul id="cs_foldinglist" style="display:none">
-<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;1
 (0)                              
 &nbsp;</b><b>alarm_manager.c</b></li>
-<ul id="cs_foldinglist" style="display:none"></ul>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId0H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId0H','ViolId0', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">78:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Method "alarm_manager_dispatch" is calling itself</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-RECFUN-5</font></td>
+</tr>
+<tr id="ViolId0" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#B71C1C"><b>Recursive method header</b>&nbsp;
+</font><font color="#B71C1C">alarm_manager.c&nbsp;(78):&nbsp;</font><font color="black">void alarm_manager_dispatch(AlarmManager_t* mgr)</font><font color="green"></font>
+<font color="#1569C7"><b>Recursive method call</b>
+</font><font color="#1569C7">alarm_manager.c&nbsp;(93):&nbsp;</font><font color="black">alarm_manager_dispatch(mgr);</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
 (0)                              
 &nbsp;</b><b>comm_link.c</b></li>
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId0H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId0H','ViolId0', '1')">
+<tr valign="bottom" id="ViolId1H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId1H','ViolId1', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -966,7 +1092,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
 </tr>
-<tr id="ViolId0" style="display:none">
+<tr id="ViolId1" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -984,7 +1110,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId1H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId1H','ViolId1', '1')">
+<tr valign="bottom" id="ViolId2H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId2H','ViolId2', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -994,7 +1120,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
 </tr>
-<tr id="ViolId1" style="display:none">
+<tr id="ViolId2" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1045,7 +1171,7 @@
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId2H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId2H','ViolId2', '1')">
+<tr valign="bottom" id="ViolId3H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId3H','ViolId3', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1055,7 +1181,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
 </tr>
-<tr id="ViolId2" style="display:none">
+<tr id="ViolId3" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1079,7 +1205,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId3H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId3H','ViolId3', '1')">
+<tr valign="bottom" id="ViolId4H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId4H','ViolId4', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1089,7 +1215,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
 </tr>
-<tr id="ViolId3" style="display:none">
+<tr id="ViolId4" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1113,7 +1239,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId4H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId4H','ViolId4', '1')">
+<tr valign="bottom" id="ViolId5H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId5H','ViolId5', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1123,7 +1249,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
 </tr>
-<tr id="ViolId4" style="display:none">
+<tr id="ViolId5" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1166,7 +1292,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId5H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId5H','ViolId5', '1')">
+<tr valign="bottom" id="ViolId6H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId6H','ViolId6', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1176,7 +1302,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
 </tr>
-<tr id="ViolId5" style="display:none">
+<tr id="ViolId6" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1200,7 +1326,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId6H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId6H','ViolId6', '1')">
+<tr valign="bottom" id="ViolId7H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId7H','ViolId7', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1210,7 +1336,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
 </tr>
-<tr id="ViolId6" style="display:none">
+<tr id="ViolId7" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1234,7 +1360,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId7H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId7H','ViolId7', '1')">
+<tr valign="bottom" id="ViolId8H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId8H','ViolId8', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1244,7 +1370,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-TDLOOP-1</font></td>
 </tr>
-<tr id="ViolId7" style="display:none">
+<tr id="ViolId8" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1269,7 +1395,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId8H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId8H','ViolId8', '1')">
+<tr valign="bottom" id="ViolId9H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId9H','ViolId9', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1279,7 +1405,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
 </tr>
-<tr id="ViolId8" style="display:none">
+<tr id="ViolId9" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1302,7 +1428,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId9H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId9H','ViolId9', '1')">
+<tr valign="bottom" id="ViolId10H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId10H','ViolId10', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1312,7 +1438,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
 </tr>
-<tr id="ViolId9" style="display:none">
+<tr id="ViolId10" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1335,7 +1461,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId10H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId10H','ViolId10', '1')">
+<tr valign="bottom" id="ViolId11H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId11H','ViolId11', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1345,7 +1471,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
 </tr>
-<tr id="ViolId10" style="display:none">
+<tr id="ViolId11" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1369,7 +1495,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId11H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId11H','ViolId11', '1')">
+<tr valign="bottom" id="ViolId12H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId12H','ViolId12', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1379,7 +1505,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
 </tr>
-<tr id="ViolId11" style="display:none">
+<tr id="ViolId12" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1405,13 +1531,51 @@
 </table>
 </li>
 </ul>
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;4
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;5
 (0)                              
 &nbsp;</b><b>ecg_processor.c</b></li>
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId12H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId12H','ViolId12', '1')">
+<tr valign="bottom" id="ViolId13H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId13H','ViolId13', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">47:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Evaluation of "(raw_sample * gain)" may result in possible overflow/underflow</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-TDINTOVERF-1</font></td>
+</tr>
+<tr id="ViolId13" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">main.c&nbsp;(69):&nbsp;</font><font color="gray">int16_t raw_ecg;</font>
+<font color="gray">main.c&nbsp;(70):&nbsp;</font><font color="gray">int16_t filtered;</font>
+<font color="gray">main.c&nbsp;(71):&nbsp;</font><font color="gray">uint16_t red;</font>
+<font color="gray">main.c&nbsp;(72):&nbsp;</font><font color="gray">uint16_t ir;</font>
+<font color="gray">main.c&nbsp;(73):&nbsp;</font><font color="gray">VitalSample_t sample;</font>
+<font color="#1569C7"><b>Point where value is defined by tainting function</b>
+</font><font color="#1569C7">main.c&nbsp;(75):&nbsp;</font><font color="black">rand()</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: rand()</font>
+<font color="gray">main.c&nbsp;(75):&nbsp;</font><font color="black">raw_ecg = (int16_t) (rand() % 4096 - 2048);</font>
+<font color="gray">main.c&nbsp;(76):&nbsp;</font><font color="gray">red = (uint16_t) (rand() % 65535);</font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: raw_ecg</font>
+<font color="gray">main.c&nbsp;(77):&nbsp;</font><font color="gray">ir = (uint16_t) (rand() % 65535);</font>
+<font color="gray">main.c&nbsp;(79):&nbsp;</font><font color="black">ecg_processor_push_sample(&amp;g_ecg, raw_ecg, g_tick_ms);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(32):&nbsp;</font><font color="gray">int16_t gained;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(33):&nbsp;</font><font color="gray">int gain;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(35):&nbsp;</font><font color="gray">switch (ecg-&gt;lead) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Switch evaluation: ecg-&gt;lead (assuming "case default")</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#B71C1C"><b>Point of possible overflow/underflow</b>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#B71C1C">ecg_processor.c&nbsp;(47):&nbsp;</font><font color="black">gained = (int16_t) ((raw_sample * gain) / 100);</font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: (int)raw_sample * gain</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId14H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId14H','ViolId14', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1421,7 +1585,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NOTINIT-1</font></td>
 </tr>
-<tr id="ViolId12" style="display:none">
+<tr id="ViolId14" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1439,7 +1603,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId13H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId13H','ViolId13', '1')">
+<tr valign="bottom" id="ViolId15H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId15H','ViolId15', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1449,7 +1613,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ARRAY-2</font></td>
 </tr>
-<tr id="ViolId13" style="display:none">
+<tr id="ViolId15" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1473,7 +1637,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId14H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId14H','ViolId14', '1')">
+<tr valign="bottom" id="ViolId16H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId16H','ViolId16', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1483,7 +1647,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-MEMOPT-2</font></td>
 </tr>
-<tr id="ViolId14" style="display:none">
+<tr id="ViolId16" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1501,7 +1665,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId15H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId15H','ViolId15', '1')">
+<tr valign="bottom" id="ViolId17H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId17H','ViolId17', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1511,7 +1675,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
 </tr>
-<tr id="ViolId15" style="display:none">
+<tr id="ViolId17" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1538,13 +1702,13 @@
 </table>
 </li>
 </ul>
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;3
 (0)                              
 &nbsp;</b><b>main.c</b></li>
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId16H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId16H','ViolId16', '1')">
+<tr valign="bottom" id="ViolId18H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId18H','ViolId18', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1554,7 +1718,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
 </tr>
-<tr id="ViolId16" style="display:none">
+<tr id="ViolId18" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1591,7 +1755,38 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId17H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId17H','ViolId17', '1')">
+<tr valign="bottom" id="ViolId19H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId19H','ViolId19', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">75:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">The "srand" function should be called before the call to the "rand" function to seed pseudo-random number generator</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-RAND-2</font></td>
+</tr>
+<tr id="ViolId19" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">main.c&nbsp;(67):&nbsp;</font><font color="black">static void acquisition_cycle(void)</font><font color="green"></font>
+<font color="gray">main.c&nbsp;(69):&nbsp;</font><font color="gray">int16_t raw_ecg;</font>
+<font color="gray">main.c&nbsp;(70):&nbsp;</font><font color="gray">int16_t filtered;</font>
+<font color="gray">main.c&nbsp;(71):&nbsp;</font><font color="gray">uint16_t red;</font>
+<font color="gray">main.c&nbsp;(72):&nbsp;</font><font color="gray">uint16_t ir;</font>
+<font color="gray">main.c&nbsp;(73):&nbsp;</font><font color="gray">VitalSample_t sample;</font>
+<font color="#B71C1C"><b>Point where the method is called</b>&nbsp;
+</font><font color="#B71C1C">main.c&nbsp;(75):&nbsp;</font><font color="black">rand()</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId20H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId20H','ViolId20', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1601,7 +1796,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-BUFWRITE-1</font></td>
 </tr>
-<tr id="ViolId17" style="display:none">
+<tr id="ViolId20" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1665,7 +1860,7 @@
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId18H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId18H','ViolId18', '1')">
+<tr valign="bottom" id="ViolId21H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId21H','ViolId21', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1675,7 +1870,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
 </tr>
-<tr id="ViolId18" style="display:none">
+<tr id="ViolId21" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1693,7 +1888,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId19H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId19H','ViolId19', '1')">
+<tr valign="bottom" id="ViolId22H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId22H','ViolId22', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1703,7 +1898,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
 </tr>
-<tr id="ViolId19" style="display:none">
+<tr id="ViolId22" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1724,13 +1919,13 @@
 </table>
 </li>
 </ul>
-<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;8
 (0)                              
 &nbsp;</b><b>spo2_monitor.c</b></li>
 <ul id="cs_foldinglist" style="display:none">
 <li id="item">
 <table width="89%" class="details" cellspacing="0">
-<tr valign="bottom" id="ViolId20H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId20H','ViolId20', '1')">
+<tr valign="bottom" id="ViolId23H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId23H','ViolId23', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1740,7 +1935,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ZERO-1</font></td>
 </tr>
-<tr id="ViolId20" style="display:none">
+<tr id="ViolId23" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1756,7 +1951,7 @@
 </table>
 </td>
 </tr>
-<tr valign="bottom" id="ViolId21H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId21H','ViolId21', '1')">
+<tr valign="bottom" id="ViolId24H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId24H','ViolId24', '1')">
 <td width="2%"></td>
 <td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
 </td>
@@ -1767,7 +1962,7 @@
 </td>
 <td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-INTDL-2</font></td>
 </tr>
-<tr id="ViolId21" style="display:none">
+<tr id="ViolId24" style="display:none">
 <td style="padding-left:10px" class="tree">&nbsp;</td>
 <!--bd_legend_required_marker-->
 <td bgcolor="#F5F5F5"></td>
@@ -1782,6 +1977,357 @@
 <font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (assuming false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
 <font color="#B71C1C"><b>Integer type conversion point</b>&nbsp;
 </font><font color="#B71C1C">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="black">return (uint16_t) (max_v - min_v);</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$0 = (int)max_v -&gt; tmp$0 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$1 = (int)min_v -&gt; tmp$1 = 65535</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$2 = (tmp$0 - tmp$1) -&gt; tmp$2 = -65535</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$3 = (uint16_t)tmp$2 -&gt; tmp$3 = 1</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId25H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId25H','ViolId25', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">65:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Infinity or NaN may be returned as a result of division by "(double)mon-&gt;ir_ac / (double)mon-&gt;ir_dc" value which may possibly
+be zero</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NANINF-5</font></td>
+</tr>
+<tr id="ViolId25" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(57):&nbsp;</font><font color="black">mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples,64) -&gt; mon-&gt;ir_ac = 0</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="black">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="black">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="black">return (uint16_t) (max_v - min_v);</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$0 = (tmp$1 - tmp$2) -&gt; tmp$0 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$3 = (uint16_t)tmp$0 -&gt; tmp$3 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Returning value: tmp$3 == 0</font>
+<font color="gray">spo2_monitor.c&nbsp;(59):&nbsp;</font><font color="gray">if (mon-&gt;ir_samples[signed_index - 1] &gt; MOTION_THRESHOLD_COUNTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (mon-&gt;ir_samples[(int)signed_index - 1] &gt; 4000) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(62):&nbsp;</font><font color="gray">mon-&gt;motion_artifact = false;</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(66):&nbsp;</font><font color="black">((double) mon-&gt;ir_ac / (double) mon-&gt;ir_dc);</font>
+<font color="#B71C1C"><b>The point where potentially unsafe value has been received</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="black">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId26H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId26H','ViolId26', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">65:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Division by "(double)mon-&gt;ir_ac / (double)mon-&gt;ir_dc" which may possibly be zero</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ZERO-1</font></td>
+</tr>
+<tr id="ViolId26" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(57):&nbsp;</font><font color="black">mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples,64) -&gt; mon-&gt;ir_ac = 0</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="black">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="black">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="black">return (uint16_t) (max_v - min_v);</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$0 = (tmp$1 - tmp$2) -&gt; tmp$0 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$3 = (uint16_t)tmp$0 -&gt; tmp$3 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Returning value: tmp$3 == 0</font>
+<font color="gray">spo2_monitor.c&nbsp;(59):&nbsp;</font><font color="gray">if (mon-&gt;ir_samples[signed_index - 1] &gt; MOTION_THRESHOLD_COUNTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (mon-&gt;ir_samples[(int)signed_index - 1] &gt; 4000) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(62):&nbsp;</font><font color="gray">mon-&gt;motion_artifact = false;</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(66):&nbsp;</font><font color="black">((double) mon-&gt;ir_ac / (double) mon-&gt;ir_dc);</font>
+<font color="#B71C1C"><b>Point of division by zero</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="black">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId27H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId27H','ViolId27', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">79:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Errno may not be set to 0 before the call to the errno-setting-function "log10"</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ERRNO-2</font></td>
+</tr>
+<tr id="ViolId27" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(48):&nbsp;</font><font color="black">void spo2_monitor_update(Spo2Monitor_t* mon)</font><font color="green"></font>
+<font color="gray">spo2_monitor.c&nbsp;(50):&nbsp;</font><font color="gray">double ratio;</font>
+<font color="gray">spo2_monitor.c&nbsp;(51):&nbsp;</font><font color="gray">double sat;</font>
+<font color="gray">spo2_monitor.c&nbsp;(52):&nbsp;</font><font color="gray">int16_t signed_index = (int16_t) mon-&gt;index;</font>
+<font color="gray">spo2_monitor.c&nbsp;(54):&nbsp;</font><font color="gray">mon-&gt;red_dc = compute_dc(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(55):&nbsp;</font><font color="gray">mon-&gt;ir_dc = compute_dc(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(56):&nbsp;</font><font color="gray">mon-&gt;red_ac = compute_ac(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(57):&nbsp;</font><font color="gray">mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(59):&nbsp;</font><font color="gray">if (mon-&gt;ir_samples[signed_index - 1] &gt; MOTION_THRESHOLD_COUNTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (mon-&gt;ir_samples[(int)signed_index - 1] &gt; 4000) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(62):&nbsp;</font><font color="gray">mon-&gt;motion_artifact = false;</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(66):&nbsp;</font><font color="gray">((double) mon-&gt;ir_ac / (double) mon-&gt;ir_dc);</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(68):&nbsp;</font><font color="gray">sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);</font>
+<font color="gray">spo2_monitor.c&nbsp;(70):&nbsp;</font><font color="gray">if (sat &gt; (double) SPO2_MAX_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &gt; 100.0) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(73):&nbsp;</font><font color="gray">if (sat &lt; (double) SPO2_MIN_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &lt; 50.0) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(77):&nbsp;</font><font color="gray">mon-&gt;spo2_percent = (uint8_t) sat;</font>
+<font color="#B71C1C"><b>The call to an errno-setting-function</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(79):&nbsp;</font><font color="black">log10(...)</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId28H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId28H','ViolId28', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">79:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Errno is not tested against 0 after the call to the errno-setting-function "log10"</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ERRNO-2</font></td>
+</tr>
+<tr id="ViolId28" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#B71C1C"><b>The call to an errno-setting-function</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(79):&nbsp;</font><font color="black">log10(...)</font><font color="green"></font>
+<font color="#1569C7"><b>The value of errno should be checked by this point</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(79):&nbsp;</font><font color="black">mon-&gt;pulse_rate_bpm = (uint16_t) (60.0 + 10.0 * log10(ratio));</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId29H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId29H','ViolId29', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">79:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Infinity value may be returned as a result of the "log10" function call with improper value of its 1. argument (the passed
+value: 0; the expected value: !=0)</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NANINF-5</font></td>
+</tr>
+<tr id="ViolId29" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(48):&nbsp;</font><font color="black">void spo2_monitor_update(Spo2Monitor_t* mon)</font><font color="green"></font>
+<font color="gray">spo2_monitor.c&nbsp;(50):&nbsp;</font><font color="gray">double ratio;</font>
+<font color="gray">spo2_monitor.c&nbsp;(51):&nbsp;</font><font color="gray">double sat;</font>
+<font color="gray">spo2_monitor.c&nbsp;(52):&nbsp;</font><font color="gray">int16_t signed_index = (int16_t) mon-&gt;index;</font>
+<font color="gray">spo2_monitor.c&nbsp;(54):&nbsp;</font><font color="gray">mon-&gt;red_dc = compute_dc(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(55):&nbsp;</font><font color="gray">mon-&gt;ir_dc = compute_dc(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(56):&nbsp;</font><font color="gray">mon-&gt;red_ac = compute_ac(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(57):&nbsp;</font><font color="gray">mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(59):&nbsp;</font><font color="gray">if (mon-&gt;ir_samples[signed_index - 1] &gt; MOTION_THRESHOLD_COUNTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (mon-&gt;ir_samples[(int)signed_index - 1] &gt; 4000) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(62):&nbsp;</font><font color="gray">mon-&gt;motion_artifact = false;</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(66):&nbsp;</font><font color="gray">((double) mon-&gt;ir_ac / (double) mon-&gt;ir_dc);</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(68):&nbsp;</font><font color="gray">sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);</font>
+<font color="gray">spo2_monitor.c&nbsp;(70):&nbsp;</font><font color="gray">if (sat &gt; (double) SPO2_MAX_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &gt; 100.0) (true)</font>
+<font color="gray">spo2_monitor.c&nbsp;(71):&nbsp;</font><font color="gray">sat = (double) SPO2_MAX_VALID_PCT;</font>
+<font color="gray">spo2_monitor.c&nbsp;(73):&nbsp;</font><font color="gray">if (sat &lt; (double) SPO2_MIN_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &lt; 50.0) (false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(77):&nbsp;</font><font color="gray">mon-&gt;spo2_percent = (uint8_t) sat;</font>
+<font color="#B71C1C"><b>The point where potentially unsafe value has been received</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(79):&nbsp;</font><font color="black">log10(...)</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId30H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId30H','ViolId30', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">79:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">A possibly wrong value has been passed as the 1. argument to the "log10" function (the expected value: &gt;=0)</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-API-VALPARAM-2</font></td>
+</tr>
+<tr id="ViolId30" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(48):&nbsp;</font><font color="black">void spo2_monitor_update(Spo2Monitor_t* mon)</font><font color="green"></font>
+<font color="gray">spo2_monitor.c&nbsp;(50):&nbsp;</font><font color="gray">double ratio;</font>
+<font color="gray">spo2_monitor.c&nbsp;(51):&nbsp;</font><font color="gray">double sat;</font>
+<font color="gray">spo2_monitor.c&nbsp;(52):&nbsp;</font><font color="gray">int16_t signed_index = (int16_t) mon-&gt;index;</font>
+<font color="gray">spo2_monitor.c&nbsp;(54):&nbsp;</font><font color="gray">mon-&gt;red_dc = compute_dc(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(55):&nbsp;</font><font color="gray">mon-&gt;ir_dc = compute_dc(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(28):&nbsp;</font><font color="gray">uint32_t sum = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(29):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(31):&nbsp;</font><font color="gray">sum += buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="gray">return sum / n;</font>
+<font color="gray">spo2_monitor.c&nbsp;(56):&nbsp;</font><font color="gray">mon-&gt;red_ac = compute_ac(mon-&gt;red_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(57):&nbsp;</font><font color="gray">mon-&gt;ir_ac = compute_ac(mon-&gt;ir_samples, SPO2_WINDOW_SIZE);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="gray">uint16_t max_v = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="gray">uint16_t min_v = 0xFFFFu;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(42):&nbsp;</font><font color="gray">if (buf[i] &gt; max_v) max_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &gt; max_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(43):&nbsp;</font><font color="gray">if (buf[i] &lt; min_v) min_v = buf[i];</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (buf[i] &lt; min_v) (assuming false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="gray">return (uint16_t) (max_v - min_v);</font>
+<font color="gray">spo2_monitor.c&nbsp;(59):&nbsp;</font><font color="gray">if (mon-&gt;ir_samples[signed_index - 1] &gt; MOTION_THRESHOLD_COUNTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (mon-&gt;ir_samples[(int)signed_index - 1] &gt; 4000) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(62):&nbsp;</font><font color="gray">mon-&gt;motion_artifact = false;</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(66):&nbsp;</font><font color="gray">((double) mon-&gt;ir_ac / (double) mon-&gt;ir_dc);</font>
+<font color="gray">spo2_monitor.c&nbsp;(65):&nbsp;</font><font color="gray">ratio = ((double) mon-&gt;red_ac / (double) mon-&gt;red_dc) /</font>
+<font color="gray">spo2_monitor.c&nbsp;(68):&nbsp;</font><font color="gray">sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);</font>
+<font color="gray">spo2_monitor.c&nbsp;(70):&nbsp;</font><font color="gray">if (sat &gt; (double) SPO2_MAX_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &gt; 100.0) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(73):&nbsp;</font><font color="gray">if (sat &lt; (double) SPO2_MIN_VALID_PCT) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (sat &lt; 50.0) (assuming false)</font>
+<font color="gray">spo2_monitor.c&nbsp;(77):&nbsp;</font><font color="gray">mon-&gt;spo2_percent = (uint8_t) sat;</font>
+<font color="#B71C1C"><b>The point where the wrong value is passed to the function</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(79):&nbsp;</font><font color="black">log10(...)</font><font color="green"></font></pre></td>
 </tr>
 </table>
 </td>
@@ -1848,14 +2394,14 @@
 <td>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;<b>[105/144]
+<td class="tree">&nbsp;<b>[144/144]
 &nbsp;Flow Analysis</b>&nbsp;<font class="gray">(BD)</font>&nbsp;
 </td>
 </tr>
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[3/8]
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[8/8]
 &nbsp;Incorrect API usage</b>&nbsp;<font class="gray">(BD-API)</font>&nbsp;
 </td>
 </tr>
@@ -1874,13 +2420,62 @@
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass 0 value as a size argument to the allocation functions&nbsp;<font class="gray">(BD-API-ALLOC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass incorrect values to ctype.h library functions&nbsp;<font class="gray">(BD-API-CTYPE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass 0 value as a size argument to the realloc function&nbsp;<font class="gray">(BD-API-REALLOC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not check for a non-negative value after passing as a non-negative argument&nbsp;<font class="gray">(BD-API-REVNEGPARAM-2)</font>&nbsp;
 </td>
 </tr>
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[62/74]
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The size_t argument passed to any function in string.h shall have an appropriate value&nbsp;<font class="gray">(BD-API-STRSIZE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate values passed to library functions&nbsp;<font class="gray">(BD-API-VALPARAM-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[2/2]
+&nbsp;Miscellaneous</b>&nbsp;<font class="gray">(BD-MISC)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always close transactions&nbsp;<font class="gray">(BD-MISC-TRANS-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prevent calling unsafe functions (custom rule)&nbsp;<font class="gray">(BD-MISC-DC-5)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[74/74]
 &nbsp;Possible Bugs</b>&nbsp;<font class="gray">(BD-PB)</font>&nbsp;
 </td>
 </tr>
@@ -1894,6 +2489,18 @@
 <table cellspacing="0" cellpadding="0">
 <tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid signed integer overflows&nbsp;<font class="gray">(BD-PB-INTUB-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not modify string literals&nbsp;<font class="gray">(BD-PB-MODSTR-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not read the value of a non-active union field&nbsp;<font class="gray">(BD-PB-NAUNF-1)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2037,6 +2644,12 @@
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid infinite recursion&nbsp;<font class="gray">(BD-PB-INFREC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
 </td>
 </tr>
@@ -2051,6 +2664,12 @@
 <tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pointers returned by certain Standard Library functions should not be used following a subsequent call to the same or related
 function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use an object after its lifetime has ended&nbsp;<font class="gray">(BD-PB-LIFETIME-2)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2080,6 +2699,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declare non-returning functions with the attribute that specifies that they do not return&nbsp;<font class="gray">(BD-PB-NORETDECL-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Never return from functions that should not return&nbsp;<font class="gray">(BD-PB-NORETURN-2)</font>&nbsp;
 </td>
 </tr>
@@ -2104,6 +2729,13 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A pointer operand and any pointer resulting from pointer arithmetic using that operand shall both address elements of the
+same array&nbsp;<font class="gray">(BD-PB-PTRARR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not compare two unrelated pointers&nbsp;<font class="gray">(BD-PB-PTRCMP-2)</font>&nbsp;
 </td>
 </tr>
@@ -2123,6 +2755,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 <table cellspacing="0" cellpadding="0">
 <tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not call putenv() with a pointer to an automatic variable as the argument&nbsp;<font class="gray">(BD-PB-PUTENV-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly define signal handlers&nbsp;<font class="gray">(BD-PB-SIGHAN-2)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2230,6 +2868,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A parameter shall be passed by reference if it can't be NULL&nbsp;<font class="gray">(BD-PB-REFPARAM-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always throw the created std::exception object&nbsp;<font class="gray">(BD-PB-STDEXC-3)</font>&nbsp;
 </td>
 </tr>
@@ -2248,13 +2892,37 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use macros for variable arguments correctly&nbsp;<font class="gray">(BD-PB-VARARGS-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid unused values&nbsp;<font class="gray">(BD-PB-VOVR-3)</font>&nbsp;
 </td>
 </tr>
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid unreachable methods&nbsp;<font class="gray">(BD-PB-UCMETH-4)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guarantee that container indices are within the valid range&nbsp;<font class="gray">(BD-PB-VALRANGE-4)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use floating-point expressions which may result in NaN and infinity values&nbsp;<font class="gray">(BD-PB-NANINF-5)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use recursion&nbsp;<font class="gray">(BD-PB-RECFUN-5)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2315,7 +2983,7 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[17/24]
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[24/24]
 &nbsp;Security</b>&nbsp;<font class="gray">(BD-SECURITY)</font>&nbsp;
 </td>
 </tr>
@@ -2388,13 +3056,55 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid potential integer overflow/underflow on tainted data&nbsp;<font class="gray">(BD-SECURITY-TDINTOVERF-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
 </td>
 </tr>
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against using unprotected credentials&nbsp;<font class="gray">(BD-SECURITY-TDPASSWD-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate potentially tainted data before it is used as a sleep function argument&nbsp;<font class="gray">(BD-SECURITY-TDSLEEP-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against SQL injection&nbsp;<font class="gray">(BD-SECURITY-TDSQL-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always specify absolute paths when executing commands&nbsp;<font class="gray">(BD-SECURITY-EXECPATH-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid passing unvalidated binary data to log methods&nbsp;<font class="gray">(BD-SECURITY-LOG-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly seed pseudorandom number generators&nbsp;<font class="gray">(BD-SECURITY-RAND-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove temporary resources before termination&nbsp;<font class="gray">(BD-SECURITY-REMTMP-2)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2424,7 +3134,7 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[4/5]
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[5/5]
 &nbsp;Containers</b>&nbsp;<font class="gray">(BD-CO)</font>&nbsp;
 </td>
 </tr>
@@ -2449,13 +3159,19 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not compare iterators from different containers&nbsp;<font class="gray">(BD-CO-ITINVCOMP-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not modify container while iterating over it&nbsp;<font class="gray">(BD-CO-ITMOD-2)</font>&nbsp;
 </td>
 </tr>
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[11/23]
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[23/23]
 &nbsp;Threads &amp; Synchronization</b>&nbsp;<font class="gray">(BD-TRS)</font>&nbsp;
 </td>
 </tr>
@@ -2480,6 +3196,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use global variable with different locks set&nbsp;<font class="gray">(BD-TRS-MLOCK-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not acquire locks in different order&nbsp;<font class="gray">(BD-TRS-ORDER-1)</font>&nbsp;
 </td>
 </tr>
@@ -2492,6 +3214,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid time-of-check, time-of-use race conditions when accessing files&nbsp;<font class="gray">(BD-TRS-TOCTOUF-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use blocking functions while holding a lock&nbsp;<font class="gray">(BD-TRS-TSHL-1)</font>&nbsp;
 </td>
 </tr>
@@ -2499,6 +3227,12 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 <table cellspacing="0" cellpadding="0">
 <tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declare objects shared between POSIX threads with appropriate storage durations&nbsp;<font class="gray">(BD-TRS-ARG-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make const member functions thread-safe&nbsp;<font class="gray">(BD-TRS-CMF-2)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2522,10 +3256,61 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </table>
 <table cellspacing="0" cellpadding="0">
 <tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not destroy a mutex while it is locked&nbsp;<font class="gray">(BD-TRS-LOCKDSTR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
 <td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Standard Library function mtx_timedlock() shall not be invoked on a mutex that does not support timeout&nbsp;<font class="gray">(BD-TRS-TIMEDLOCK-2)</font>&nbsp;
 </td>
 </tr>
 </table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use locks to prevent race conditions when modifying bit fields&nbsp;<font class="gray">(BD-TRS-BITLOCK-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not destroy another thread's mutex&nbsp;<font class="gray">(BD-TRS-DSTRLOCK-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not release a lock that has not been acquired&nbsp;<font class="gray">(BD-TRS-REVLOCK-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There shall be no data races between threads&nbsp;<font class="gray">(BD-TRS-THRDR-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thread synchronization object should not be destroyed by a thread&nbsp;<font class="gray">(BD-TRS-THRDSTR-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thread synchronization object should not be initialized by a thread&nbsp;<font class="gray">(BD-TRS-THRINIT-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thread should not be created by another thread&nbsp;<font class="gray">(BD-TRS-THRTHR-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A thread-specific storage should not be created by a thread&nbsp;<font class="gray">(BD-TRS-THRTSS-3)</font>&nbsp;
 </td>
 </tr>
 </table>
@@ -2535,7 +3320,41 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 </td>
 </tr>
 </table>
-</div><br></td>
+</td>
+</tr>
+</table>
+</div><br><a name="berr"></a><table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="25%"></td>
+<td align="center">
+<div class="small_header">Setup Problems</div>
+</td>
+<td align="right" width="25%" valign="bottom"><a xmlns:textutil="textutil" xmlns:authors="authors" class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table><br><table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" class="header_separator" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" class="header_separator"></td>
+</tr>
+</table><br xmlns:textutil="textutil" xmlns:authors="authors"><table width="100%" cellpadding="0" cellspacing="0" class="doubleborder" border="0" bordercolor="#CBCBCB">
+<tr>
+<td align="left" style="padding-left:10px" class="tree"><b>
+[INFO]
+&nbsp;4 timeouts occurred during Flow Analysis</b></td>
+</tr>
+<tr>
+<td align="left" style="padding-top:5px;padding-bottom:5px" class="tree">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><pre class="tree" style="margin:5px 5px 3px 5px;white-space:pre-wrap;">Current timeout strategy is "time" (60 seconds).</pre></td>
+</tr>
+<tr>
+<td><pre class="tree" style="margin:5px 5px 3px 5px;white-space:pre-wrap;">For "instructions" strategy corresponding value would be 240,232 instructions.</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><br></td>
 </tr>
 </table><script language="JavaScript">
     if(document.getElementById("cs_link_cat") != null) {
@@ -2569,7 +3388,7 @@ function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
 <table class="doubleborder" width="100%" cellpadding="2" cellspacing="0" align="center">
 <tr>
 <td class="tree" align="left">
-<div id="paramsHeader">cpptestcli -compiler gcc_9-64 -config builtin://Flow Analysis Standard -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports
+<div id="paramsHeader">cpptestcli -compiler gcc_9-64 -config /mnt/c/Users/syoung/Downloads/Flow Analysis Custom.properties -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports
 -resource /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay -module . -input build/compile_commands.json
 </div>
 </td>

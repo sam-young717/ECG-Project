@@ -1,4 +1,4 @@
 {
-    "cpptest.testConfiguration": "builtin://Flow Analysis Standard",
+    "cpptest.testConfiguration": "/mnt/c/Users/syoung/Downloads/Flow Analysis Custom.properties",
     "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -input build/compile_commands.json"
 }

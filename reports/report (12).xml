@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="2026-09-02" climode="true" endTime="2026-09-02T18:47:10-04:00" execEnv="linux_x86_64" hasViols="true" id="1787020633875" lang="en" machine="syoung-pc" prjModule="RockStarDisplay" project="" tag="${scontrol_branch}-linux_x86_64" time="2026-09-02T18:46:21-04:00" toolDispName="C/C++test" toolId="c++test" toolName="DTP Engine for C/C++" toolVer="2026.1.0" user="syoung">
-   <TestParameters cmdLn="cpptestcli -compiler gcc_9-64 -config /mnt/c/Users/syoung/Downloads/Flow Analysis Custom.properties -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports -resource /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay -module . -input build/compile_commands.json"/>
-   <TestConfig machine="syoung-pc" name="Flow Analysis Custom" pseudoUrl="/mnt/c/Users/syoung/Downloads/Flow Analysis Custom.properties" user="syoung"/>
+<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="2026-09-02" climode="true" endTime="2026-09-02T18:35:48-04:00" execEnv="linux_x86_64" hasViols="true" id="1787019952022" lang="en" machine="syoung-pc" prjModule="RockStarDisplay" project="" tag="${scontrol_branch}-linux_x86_64" time="2026-09-02T18:35:40-04:00" toolDispName="C/C++test" toolId="c++test" toolName="DTP Engine for C/C++" toolVer="2026.1.0" user="syoung">
+   <TestParameters cmdLn="cpptestcli -compiler gcc_9-64 -config builtin://Flow Analysis Standard -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports -resource /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay -module . -input build/compile_commands.json"/>
+   <TestConfig machine="syoung-pc" name="Flow Analysis Standard" pseudoUrl="builtin://Flow Analysis Standard" user="syoung"/>
    <Authors>
       <Author id="dev1" name="syoung"/>
    </Authors>
@@ -23,7 +23,7 @@
       <StorageInfo ownerId="" resultId="IUnitTestViolation" ver="1" ver10x="1"/>
       <StorageInfo ownerId="" resultId="IVisualDiffViolation" ver="1" ver10x="1"/>
    </VersionInfos>
-   <Goals tsks="31">
+   <Goals tsks="22">
       
    </Goals>
    <Scope>
@@ -47,29 +47,21 @@
       </Locations>
    </Scope>
    
-  <SetupProblems>
-    <Problem msg="4 timeouts occurred during Flow Analysis" sev="0" totErrs="2" type="TimeoutSetupProblem">
-      <ErrorList>
-        <Error val="Current timeout strategy is &quot;time&quot; (60 seconds)."/>
-        <Error val="For &quot;instructions&quot; strategy corresponding value would be 240,232 instructions."/>
-      </ErrorList>
-    </Problem>
-  </SetupProblems>
+  <SetupProblems/>
 
-   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:44">
+   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:06">
       <Projects>
-         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="15" checkedLns="1175" id="RockStarDisplay" name="RockStarDisplay" qfixErrs="0" suppErrs="0" totErrs="31" totFiles="15" totLns="1175"/>
+         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="15" checkedLns="1175" id="RockStarDisplay" name="RockStarDisplay" qfixErrs="0" suppErrs="0" totErrs="22" totFiles="15" totLns="1175"/>
       </Projects>
       
       
       <Rules>
          <CategoriesList>
             <Category authTot="0;" authUrg="0;" desc="Flow Analysis" name="BD" rules="144" total="0">
-               <Category authTot="1;" authUrg="1;" desc="Incorrect API usage" name="BD-API" rules="8" total="1"/>
-               <Category authTot="0;" authUrg="0;" desc="Miscellaneous" name="BD-MISC" rules="2" total="0"/>
-               <Category authTot="23;" authUrg="23;" desc="Possible Bugs" name="BD-PB" rules="74" total="23"/>
+               <Category authTot="0;" authUrg="0;" desc="Incorrect API usage" name="BD-API" rules="8" total="0"/>
+               <Category authTot="17;" authUrg="17;" desc="Possible Bugs" name="BD-PB" rules="74" total="17"/>
                <Category authTot="3;" authUrg="3;" desc="Resources" name="BD-RES" rules="8" total="3"/>
-               <Category authTot="4;" authUrg="4;" desc="Security" name="BD-SECURITY" rules="24" total="4"/>
+               <Category authTot="2;" authUrg="2;" desc="Security" name="BD-SECURITY" rules="24" total="2"/>
                <Category authTot="0;" authUrg="0;" desc="Containers" name="BD-CO" rules="5" total="0"/>
                <Category authTot="0;" authUrg="0;" desc="Threads &amp; Synchronization" name="BD-TRS" rules="23" total="0"/>
             </Category>
@@ -77,23 +69,13 @@
          <RulesList>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not pass incorrect values to library functions" id="BD-API-BADPARAM" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not pass negative values to functions expecting non-negative arguments" id="BD-API-NEGPARAM" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not pass 0 value as a size argument to the allocation functions" id="BD-API-ALLOC" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not pass incorrect values to ctype.h library functions" id="BD-API-CTYPE" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not pass 0 value as a size argument to the realloc function" id="BD-API-REALLOC" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="Do not check for a non-negative value after passing as a non-negative argument" id="BD-API-REVNEGPARAM" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-API" desc="The size_t argument passed to any function in string.h shall have an appropriate value" id="BD-API-STRSIZE" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-API" desc="Validate values passed to library functions" id="BD-API-VALPARAM" sev="2" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-CO" desc="Do not access iterator out of range" id="BD-CO-ITOUT" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-CO" desc="Use valid references, pointers, and iterators to reference elements of a basic_string" id="BD-CO-STRMOD" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-CO" desc="Do not pass empty container iterators to std algorithms as destinations" id="BD-CO-EMPCON" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-CO" desc="Do not compare iterators from different containers" id="BD-CO-ITINVCOMP" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-CO" desc="Do not modify container while iterating over it" id="BD-CO-ITMOD" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-MISC" desc="Always close transactions" id="BD-MISC-TRANS" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-MISC" desc="Prevent calling unsafe functions (custom rule)" id="BD-MISC-DC" sev="5" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Always catch exceptions" id="BD-PB-EXCEPT" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid signed integer overflows" id="BD-PB-INTUB" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not modify string literals" id="BD-PB-MODSTR" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not read the value of a non-active union field" id="BD-PB-NAUNF" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Avoid use before initialization" id="BD-PB-NOTINIT" sev="1" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Atomic objects shall be properly initialized before being accessed" id="BD-PB-NOTINITAT" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="5;" authUrg="5;" cat="BD-PB" desc="Avoid null pointer dereferencing" id="BD-PB-NP" sev="1" total="5"/>
@@ -102,7 +84,7 @@
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid overflow when reading from a buffer" id="BD-PB-OVERFRD" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid overflow when writing to a buffer" id="BD-PB-OVERFWR" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not point to a wrapped object that has been freed" id="BD-PB-WRAPESC" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="2;" authUrg="2;" cat="BD-PB" desc="Avoid division by zero" id="BD-PB-ZERO" sev="1" total="2"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Avoid division by zero" id="BD-PB-ZERO" sev="1" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Avoid accessing arrays out of bounds" id="BD-PB-ARRAY" sev="2" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="A pointer pointing to an element of an array of objects shall not be passed to a smart pointer of single object type" id="BD-PB-ARRPTR" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid incorrect shift operations" id="BD-PB-BADSHIFT" sev="2" total="0"/>
@@ -113,30 +95,25 @@
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid accessing collections out of bounds" id="BD-PB-COOB" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not modify the alignment of objects by calling realloc()" id="BD-PB-DNMPTR" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="The macro EOF should be compared with the unmodified return value from the Standard Library function" id="BD-PB-EOFCOMP" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="2;" authUrg="2;" cat="BD-PB" desc="Properly use errno value" id="BD-PB-ERRNO" sev="2" total="2"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Properly use errno value" id="BD-PB-ERRNO" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Properly define exit handlers" id="BD-PB-EXITHAN" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Reset strings on fgets() or fgetws() failure" id="BD-PB-FGETS" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Only use values for fsetpos() that are returned from fgetpos()" id="BD-PB-FSETPOS" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid infinite recursion" id="BD-PB-INFREC" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Avoid data loss when converting between integer types" id="BD-PB-INTDL" sev="2" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not rely on an environment pointer following an operation that may invalidate it" id="BD-PB-INVENV" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Pointers returned by certain Standard Library functions should not be used following a subsequent call to the same or related function" id="BD-PB-INVRET" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not use an object after its lifetime has ended" id="BD-PB-LIFETIME" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="The Standard Library function memcmp shall not be used to compare null terminated strings" id="BD-PB-MCCSTR" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Avoid calls to memory-setting functions that can be optimized out by the compiler" id="BD-PB-MEMOPT" sev="2" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Properly define new handlers" id="BD-PB-NEWHAN" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid throwing exceptions from functions that are declared not to throw" id="BD-PB-NOEXCEPT" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Declare non-returning functions with the attribute that specifies that they do not return" id="BD-PB-NORETDECL" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Never return from functions that should not return" id="BD-PB-NORETURN" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid accessing arrays and pointers out of bounds" id="BD-PB-OVERFARRAY" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="An object shall not be assigned or copied to an overlapping object" id="BD-PB-OVERLAP" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not treat arrays polymorphically" id="BD-PB-POLARR" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="A pointer operand and any pointer resulting from pointer arithmetic using that operand shall both address elements of the same array" id="BD-PB-PTRARR" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not compare two unrelated pointers" id="BD-PB-PTRCMP" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not subtract two pointers that do not address elements of the same array" id="BD-PB-PTRSUB" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not store an already-owned pointer value in an unrelated smart pointer" id="BD-PB-PTRVALUE" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not call putenv() with a pointer to an automatic variable as the argument" id="BD-PB-PUTENV" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Properly define signal handlers" id="BD-PB-SIGHAN" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not return from a computational exception signal handler" id="BD-PB-SIGRETURN" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not alternately input and output from a stream without an intervening flush or positioning call" id="BD-PB-STREAMINOUT" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Do not subsequently use the argument to std::forward" id="BD-PB-SUBSEQFRWD" sev="2" total="0"/>
@@ -154,16 +131,11 @@
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid wraparounds when performing arithmetic integer operations" id="BD-PB-INTWRAP" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Ensure strings are zero terminated" id="BD-PB-NZTS" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Ensure the output buffer is large enough when using path manipulation functions" id="BD-PB-PATHBUF" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="A parameter shall be passed by reference if it can't be NULL" id="BD-PB-REFPARAM" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Always throw the created std::exception object" id="BD-PB-STDEXC" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Suspicious setting of stream flags" id="BD-PB-STREAMFLAGS" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Restore stream format" id="BD-PB-STREAMFMT" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Use macros for variable arguments correctly" id="BD-PB-VARARGS" sev="3" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid unused values" id="BD-PB-VOVR" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Avoid unreachable methods" id="BD-PB-UCMETH" sev="4" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-PB" desc="Guarantee that container indices are within the valid range" id="BD-PB-VALRANGE" sev="4" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="2;" authUrg="2;" cat="BD-PB" desc="Do not use floating-point expressions which may result in NaN and infinity values" id="BD-PB-NANINF" sev="5" total="2"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-PB" desc="Do not use recursion" id="BD-PB-RECFUN" sev="5" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-RES" desc="Properly deallocate dynamically allocated resources" id="BD-RES-BADDEALLOC" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-RES" desc="Ensure deallocation functions guarantee resource freeing" id="BD-RES-BADFREEF" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-RES" desc="Do not use resources that have been freed" id="BD-RES-FREE" sev="1" total="0"/>
@@ -183,15 +155,8 @@
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Protect against environment injection" id="BD-SECURITY-TDENV" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Protect against file name injection" id="BD-SECURITY-TDFNAMES" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Exclude unsanitized user input from format strings" id="BD-SECURITY-TDINPUT" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-SECURITY" desc="Avoid potential integer overflow/underflow on tainted data" id="BD-SECURITY-TDINTOVERF" sev="1" total="1"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-SECURITY" desc="Validate potentially tainted data before it is used in the controlling expression of a loop" id="BD-SECURITY-TDLOOP" sev="1" total="1"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Protect against using unprotected credentials" id="BD-SECURITY-TDPASSWD" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Validate potentially tainted data before it is used as a sleep function argument" id="BD-SECURITY-TDSLEEP" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Protect against SQL injection" id="BD-SECURITY-TDSQL" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Always specify absolute paths when executing commands" id="BD-SECURITY-EXECPATH" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Avoid passing unvalidated binary data to log methods" id="BD-SECURITY-LOG" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="BD-SECURITY" desc="Properly seed pseudorandom number generators" id="BD-SECURITY-RAND" sev="2" total="1"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Remove temporary resources before termination" id="BD-SECURITY-REMTMP" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Sensitive data should be cleared before being deallocated" id="BD-SECURITY-SENSFREE" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Avoid passing sensitive data to functions that write to log files" id="BD-SECURITY-SENSLOG" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-SECURITY" desc="Validate potentially tainted data before it is used to determine the size of memory allocation" id="BD-SECURITY-TDALLOC" sev="2" total="0"/>
@@ -199,31 +164,18 @@
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Avoid double locking" id="BD-TRS-DLOCK" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Avoid race conditions when using fork and file descriptors" id="BD-TRS-FORKFILE" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not abandon unreleased locks" id="BD-TRS-LOCK" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not use global variable with different locks set" id="BD-TRS-MLOCK" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not acquire locks in different order" id="BD-TRS-ORDER" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Avoid race conditions while checking for the existence of a symbolic link" id="BD-TRS-SYMLINK" sev="1" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Avoid time-of-check, time-of-use race conditions when accessing files" id="BD-TRS-TOCTOUF" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not use blocking functions while holding a lock" id="BD-TRS-TSHL" sev="1" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Declare objects shared between POSIX threads with appropriate storage durations" id="BD-TRS-ARG" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Make const member functions thread-safe" id="BD-TRS-CMF" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Variable should be used in context of single critical section" id="BD-TRS-DIFCS" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Avoid race conditions while accessing files" id="BD-TRS-FRC" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not join or detach a thread that was previously joined or detached" id="BD-TRS-JOINDETACH" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not destroy a mutex while it is locked" id="BD-TRS-LOCKDSTR" sev="2" total="0"/>
             <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="The Standard Library function mtx_timedlock() shall not be invoked on a mutex that does not support timeout" id="BD-TRS-TIMEDLOCK" sev="2" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Use locks to prevent race conditions when modifying bit fields" id="BD-TRS-BITLOCK" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not destroy another thread's mutex" id="BD-TRS-DSTRLOCK" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="Do not release a lock that has not been acquired" id="BD-TRS-REVLOCK" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="There shall be no data races between threads" id="BD-TRS-THRDR" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="A thread synchronization object should not be destroyed by a thread" id="BD-TRS-THRDSTR" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="A thread synchronization object should not be initialized by a thread" id="BD-TRS-THRINIT" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="A thread should not be created by another thread" id="BD-TRS-THRTHR" sev="3" total="0"/>
-            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="BD-TRS" desc="A thread-specific storage should not be created by a thread" id="BD-TRS-THRTSS" sev="3" total="0"/>
          </RulesList>
          <SeverityList>
-            <Severity authTot="14;" authUrg="14;" id="1" total="14"/>
-            <Severity authTot="14;" authUrg="14;" id="2" total="14"/>
-            <Severity authTot="3;" authUrg="3;" id="5" total="3"/>
+            <Severity authTot="12;" authUrg="12;" id="1" total="12"/>
+            <Severity authTot="10;" authUrg="10;" id="2" total="10"/>
          </SeverityList>
       </Rules>
       
@@ -289,25 +241,6 @@
           <Anns>
             <Ann msg="Allocated memory: rec" kind="var"/>
             <Ann msg="Point where allocated memory is lost" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="The &quot;srand&quot; function should be called before the call to the &quot;rand&quot; function to seed pseudo-random number generator" ln="75" locFile="/RockStarDisplay/src/main.c" ruleSAFMsg="Point where the method is called" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="68" rule="BD-SECURITY-RAND" FirstElSrcRngStartPos="0" lnHash="2067786456" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Properly seed pseudorandom number generators" FirstElSrcRngStartln="67" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1774885379" lang="cpp" violId="3db5ce48-3049-3c42-9dce-f2de19a19fcf" locEndPos="0" urgent="true" locEndLn="76" goals="1," locStartln="75" sev="2" locRef="1" tool="c++test" lineHash="2067786456" unbViolId="5987fac3-d63b-31ce-87b8-b96ef2d68a48" locType="sr" hash="-1029869511" causeLocRef="1">
-      <ElDescList>
-        <ElDesc lineHash="222593671" ln="67" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="67" srcRngEndLn="68" srcRngFile="/RockStarDisplay/src/main.c" desc="static void acquisition_cycle(void)" ElType=".C" rngLn="67">
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1445468032" ln="69" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="69" srcRngEndLn="70" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t raw_ecg;" ElType="." rngLn="69"/>
-        <ElDesc lineHash="-1158585619" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t filtered;" ElType="." rngLn="70"/>
-        <ElDesc lineHash="1205599030" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t red;" ElType="." rngLn="71"/>
-        <ElDesc lineHash="-376759994" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t ir;" ElType="." rngLn="72"/>
-        <ElDesc lineHash="-372772" ln="73" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="73" srcRngEndLn="74" srcRngFile="/RockStarDisplay/src/main.c" desc="VitalSample_t sample;" ElType="." rngLn="73"/>
-        <ElDesc lineHash="2067786456" ln="75" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="75" srcRngEndLn="76" srcRngFile="/RockStarDisplay/src/main.c" desc="rand()" ElType=".P" rngLn="75">
-          <Anns>
-            <Ann msg="Point where the method is called" kind="point"/>
           </Anns>
         </ElDesc>
       </ElDescList>
@@ -389,45 +322,6 @@
             <Ann msg="Tainted data: argv[1]" kind="comment"/>
             <Ann msg="Copying tainted value to buffer" kind="point"/>
           </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Evaluation of &quot;(raw_sample * gain)&quot; may result in possible overflow/underflow" ln="47" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Point of possible overflow/underflow" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="76" rule="BD-SECURITY-TDINTOVERF" FirstElSrcRngStartPos="0" lnHash="723733732" ruleSCSCMsg="Point where value is defined by tainting function" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Avoid potential integer overflow/underflow on tainted data" FirstElSrcRngStartln="75" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1028879281" lang="cpp" violId="e4b76be4-a20f-3a29-a285-d15664f9f4fc" locEndPos="0" urgent="true" locEndLn="48" goals="1," locStartln="47" sev="1" locRef="2" tool="c++test" lineHash="723733732" unbViolId="eac64631-1643-3971-954b-381370074bab" locType="sr" hash="-63440193" causeLocRef="1">
-      <ElDescList>
-        <ElDesc lineHash="-1445468032" ln="69" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="69" srcRngEndLn="70" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t raw_ecg;" ElType="." rngLn="69"/>
-        <ElDesc lineHash="-1158585619" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t filtered;" ElType="." rngLn="70"/>
-        <ElDesc lineHash="1205599030" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t red;" ElType="." rngLn="71"/>
-        <ElDesc lineHash="-376759994" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t ir;" ElType="." rngLn="72"/>
-        <ElDesc lineHash="-372772" ln="73" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="73" srcRngEndLn="74" srcRngFile="/RockStarDisplay/src/main.c" desc="VitalSample_t sample;" ElType="." rngLn="73"/>
-        <ElDesc lineHash="2067786456" ln="75" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="75" srcRngEndLn="76" srcRngFile="/RockStarDisplay/src/main.c" desc="rand()" ElType=".C" rngLn="75">
-          <Anns>
-            <Ann msg="Point where value is defined by tainting function" kind="cause"/>
-            <Ann msg="Tainted data: rand()" kind="var"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="2067786456" ln="75" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="75" srcRngEndLn="76" srcRngFile="/RockStarDisplay/src/main.c" desc="raw_ecg = (int16_t) (rand() % 4096 - 2048);" ElType="!" rngLn="75"/>
-        <ElDesc lineHash="1474472636" ln="76" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="76" srcRngEndLn="77" srcRngFile="/RockStarDisplay/src/main.c" desc="red = (uint16_t) (rand() % 65535);" ElType="." rngLn="76">
-          <Anns>
-            <Ann msg="Tainted data: raw_ecg" kind="var"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="179694966" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/main.c" desc="ir = (uint16_t) (rand() % 65535);" ElType="." rngLn="77"/>
-        <ElDesc lineHash="802912087" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="-1029869511" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/main.c" desc="ecg_processor_push_sample(&amp;g_ecg, raw_ecg, g_tick_ms);" ElType="!" rngLn="79">
-          <ElDescList>
-            <ElDesc lineHash="846493638" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-63440193" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t gained;" ElType="." rngLn="32"/>
-            <ElDesc lineHash="-1812735701" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-63440193" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int gain;" ElType="." rngLn="33"/>
-            <ElDesc lineHash="1582432618" ln="35" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-63440193" srcRngStartln="35" srcRngEndLn="36" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="switch (ecg->lead) {" ElType="." rngLn="35">
-              <Anns>
-                <Ann msg="Switch evaluation: ecg->lead (assuming &quot;case default&quot;)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="723733732" ln="47" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-63440193" srcRngStartln="47" srcRngEndLn="48" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="gained = (int16_t) ((raw_sample * gain) / 100);" ElType=".P" rngLn="47">
-              <Anns>
-                <Ann msg="Tainted data: (int)raw_sample * gain" kind="var"/>
-                <Ann msg="Point of possible overflow/underflow" kind="point"/>
-              </Anns>
-            </ElDesc>
-          </ElDescList>
         </ElDesc>
       </ElDescList>
     </FlowViol>
@@ -584,733 +478,6 @@
             <Ann msg="Variable assignment: tmp$2 = (tmp$0 - tmp$1) -> tmp$2 = -65535" kind="valEval"/>
             <Ann msg="Variable assignment: tmp$3 = (uint16_t)tmp$2 -> tmp$3 = 1" kind="valEval"/>
             <Ann msg="Integer type conversion point" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Infinity or NaN may be returned as a result of division by &quot;(double)mon->ir_ac / (double)mon->ir_dc&quot; value which may possibly be zero" ln="65" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="The point where potentially unsafe value has been received" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="58" rule="BD-PB-NANINF" FirstElSrcRngStartPos="0" lnHash="550022010" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Do not use floating-point expressions which may result in NaN and infinity values" FirstElSrcRngStartln="57" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1094441923" lang="cpp" violId="c3eceee8-d060-37ff-ae66-d1b4ab91417a" locEndPos="0" urgent="true" locEndLn="66" goals="1," locStartln="65" sev="5" locRef="3" tool="c++test" lineHash="550022010" unbViolId="1dccb719-dc59-30a1-a9c0-a83ac5689167" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="-1646115105" ln="57" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="57" srcRngEndLn="58" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_ac = compute_ac(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType=".C" rngLn="57">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (assuming true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="!" rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="!" rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="!" rngLn="45">
-              <Anns>
-                <Ann msg="Variable assignment: tmp$0 = (tmp$1 - tmp$2) -> tmp$0 = 0" kind="valEval"/>
-                <Ann msg="Variable assignment: tmp$3 = (uint16_t)tmp$0 -> tmp$3 = 0" kind="valEval"/>
-                <Ann msg="Returning value: tmp$3 == 0" kind="valEval"/>
-              </Anns>
-            </ElDesc>
-          </ElDescList>
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-            <Ann msg="Variable assignment: mon->ir_ac = compute_ac(mon->ir_samples,64) -> mon->ir_ac = 0" kind="valEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1901719579" ln="59" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="59" srcRngEndLn="60" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {" ElType="." rngLn="59">
-          <Anns>
-            <Ann msg="Condition evaluation: (mon->ir_samples[(int)signed_index - 1] > 4000) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1905178045" ln="62" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="62" srcRngEndLn="63" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->motion_artifact = false;" ElType="." rngLn="62"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="-144885530" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="((double) mon->ir_ac / (double) mon->ir_dc);" ElType="!" rngLn="66"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType=".P" rngLn="65">
-          <Anns>
-            <Ann msg="The point where potentially unsafe value has been received" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Division by &quot;(double)mon->ir_ac / (double)mon->ir_dc&quot; which may possibly be zero" ln="65" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="Point of division by zero" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="58" rule="BD-PB-ZERO" FirstElSrcRngStartPos="0" lnHash="550022010" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Avoid division by zero" FirstElSrcRngStartln="57" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1219596284" lang="cpp" violId="6658d6df-aa2d-34c8-a23b-2f1d216e3e75" locEndPos="0" urgent="true" locEndLn="66" goals="1," locStartln="65" sev="1" locRef="3" tool="c++test" lineHash="550022010" unbViolId="c40a3370-eafc-3d33-b039-29a476f2735e" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="-1646115105" ln="57" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="57" srcRngEndLn="58" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_ac = compute_ac(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType=".C" rngLn="57">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (assuming true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="!" rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="!" rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="!" rngLn="45">
-              <Anns>
-                <Ann msg="Variable assignment: tmp$0 = (tmp$1 - tmp$2) -> tmp$0 = 0" kind="valEval"/>
-                <Ann msg="Variable assignment: tmp$3 = (uint16_t)tmp$0 -> tmp$3 = 0" kind="valEval"/>
-                <Ann msg="Returning value: tmp$3 == 0" kind="valEval"/>
-              </Anns>
-            </ElDesc>
-          </ElDescList>
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-            <Ann msg="Variable assignment: mon->ir_ac = compute_ac(mon->ir_samples,64) -> mon->ir_ac = 0" kind="valEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1901719579" ln="59" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="59" srcRngEndLn="60" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {" ElType="." rngLn="59">
-          <Anns>
-            <Ann msg="Condition evaluation: (mon->ir_samples[(int)signed_index - 1] > 4000) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1905178045" ln="62" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="62" srcRngEndLn="63" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->motion_artifact = false;" ElType="." rngLn="62"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="-144885530" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="((double) mon->ir_ac / (double) mon->ir_dc);" ElType="!" rngLn="66"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType=".P" rngLn="65">
-          <Anns>
-            <Ann msg="Point of division by zero" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Errno may not be set to 0 before the call to the errno-setting-function &quot;log10&quot;" ln="79" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="The call to an errno-setting-function" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="49" rule="BD-PB-ERRNO" FirstElSrcRngStartPos="0" lnHash="1696044102" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Properly use errno value" FirstElSrcRngStartln="48" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1267581903" lang="cpp" violId="e5e41006-e55d-3ea5-ae7a-7b8a39cb18d7" locEndPos="0" urgent="true" locEndLn="80" goals="1," locStartln="79" sev="2" locRef="3" tool="c++test" lineHash="1696044102" unbViolId="28680196-06f0-3130-8eae-2a417771f263" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="-1431170085" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="void spo2_monitor_update(Spo2Monitor_t* mon)" ElType=".C" rngLn="48">
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1106716481" ln="50" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="50" srcRngEndLn="51" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double ratio;" ElType="." rngLn="50"/>
-        <ElDesc lineHash="-640227324" ln="51" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="51" srcRngEndLn="52" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double sat;" ElType="." rngLn="51"/>
-        <ElDesc lineHash="2128576337" ln="52" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="52" srcRngEndLn="53" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int16_t signed_index = (int16_t) mon->index;" ElType="." rngLn="52"/>
-        <ElDesc lineHash="981872221" ln="54" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="54" srcRngEndLn="55" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_dc = compute_dc(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="54">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1600831195" ln="55" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="55" srcRngEndLn="56" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_dc = compute_dc(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="55">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="1442412925" ln="56" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="56" srcRngEndLn="57" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_ac = compute_ac(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="56">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1646115105" ln="57" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="57" srcRngEndLn="58" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_ac = compute_ac(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="57">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1901719579" ln="59" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="59" srcRngEndLn="60" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {" ElType="." rngLn="59">
-          <Anns>
-            <Ann msg="Condition evaluation: (mon->ir_samples[(int)signed_index - 1] > 4000) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1905178045" ln="62" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="62" srcRngEndLn="63" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->motion_artifact = false;" ElType="." rngLn="62"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="-144885530" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="((double) mon->ir_ac / (double) mon->ir_dc);" ElType="." rngLn="66"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="478785118" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);" ElType="." rngLn="68"/>
-        <ElDesc lineHash="1231340017" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat > (double) SPO2_MAX_VALID_PCT) {" ElType="." rngLn="70">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat > 100.0) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="892711941" ln="73" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="73" srcRngEndLn="74" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat &lt; (double) SPO2_MIN_VALID_PCT) {" ElType="." rngLn="73">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat &lt; 50.0) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1325943657" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->spo2_percent = (uint8_t) sat;" ElType="." rngLn="77"/>
-        <ElDesc lineHash="1696044102" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="log10(...)" ElType=".P" rngLn="79">
-          <Anns>
-            <Ann msg="The call to an errno-setting-function" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Errno is not tested against 0 after the call to the errno-setting-function &quot;log10&quot;" ln="79" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="The call to an errno-setting-function" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="80" rule="BD-PB-ERRNO" FirstElSrcRngStartPos="0" lnHash="1696044102" ruleSCSCMsg="The value of errno should be checked by this point" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Properly use errno value" FirstElSrcRngStartln="79" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1670687737" lang="cpp" violId="b47fd4d3-ccff-3bcb-8593-da4522bfd37b" locEndPos="0" urgent="true" locEndLn="80" goals="1," locStartln="79" sev="2" locRef="3" tool="c++test" lineHash="1696044102" unbViolId="2e968a2f-d230-3f08-88ed-fa732395ef19" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="1696044102" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="log10(...)" ElType=".P" rngLn="79">
-          <Anns>
-            <Ann msg="The call to an errno-setting-function" kind="point"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1696044102" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->pulse_rate_bpm = (uint16_t) (60.0 + 10.0 * log10(ratio));" ElType=".C" rngLn="79">
-          <Anns>
-            <Ann msg="The value of errno should be checked by this point" kind="cause"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Infinity value may be returned as a result of the &quot;log10&quot; function call with improper value of its 1. argument (the passed value: 0; the expected value: !=0)" ln="79" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="The point where potentially unsafe value has been received" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="49" rule="BD-PB-NANINF" FirstElSrcRngStartPos="0" lnHash="1696044102" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Do not use floating-point expressions which may result in NaN and infinity values" FirstElSrcRngStartln="48" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1403470809" lang="cpp" violId="b1f43727-6ea7-3288-ae94-d567c73a070d" locEndPos="0" urgent="true" locEndLn="80" goals="1," locStartln="79" sev="5" locRef="3" tool="c++test" lineHash="1696044102" unbViolId="da827947-20c0-32f2-9bb7-0dbc99d06dbc" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="-1431170085" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="void spo2_monitor_update(Spo2Monitor_t* mon)" ElType=".C" rngLn="48">
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1106716481" ln="50" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="50" srcRngEndLn="51" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double ratio;" ElType="." rngLn="50"/>
-        <ElDesc lineHash="-640227324" ln="51" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="51" srcRngEndLn="52" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double sat;" ElType="." rngLn="51"/>
-        <ElDesc lineHash="2128576337" ln="52" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="52" srcRngEndLn="53" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int16_t signed_index = (int16_t) mon->index;" ElType="." rngLn="52"/>
-        <ElDesc lineHash="981872221" ln="54" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="54" srcRngEndLn="55" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_dc = compute_dc(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="54">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1600831195" ln="55" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="55" srcRngEndLn="56" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_dc = compute_dc(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="55">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="1442412925" ln="56" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="56" srcRngEndLn="57" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_ac = compute_ac(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="56">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1646115105" ln="57" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="57" srcRngEndLn="58" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_ac = compute_ac(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="57">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1901719579" ln="59" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="59" srcRngEndLn="60" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {" ElType="." rngLn="59">
-          <Anns>
-            <Ann msg="Condition evaluation: (mon->ir_samples[(int)signed_index - 1] > 4000) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1905178045" ln="62" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="62" srcRngEndLn="63" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->motion_artifact = false;" ElType="." rngLn="62"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="-144885530" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="((double) mon->ir_ac / (double) mon->ir_dc);" ElType="." rngLn="66"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="478785118" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);" ElType="." rngLn="68"/>
-        <ElDesc lineHash="1231340017" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat > (double) SPO2_MAX_VALID_PCT) {" ElType="." rngLn="70">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat > 100.0) (true)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1167983332" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sat = (double) SPO2_MAX_VALID_PCT;" ElType="." rngLn="71"/>
-        <ElDesc lineHash="892711941" ln="73" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="73" srcRngEndLn="74" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat &lt; (double) SPO2_MIN_VALID_PCT) {" ElType="." rngLn="73">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat &lt; 50.0) (false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1325943657" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->spo2_percent = (uint8_t) sat;" ElType="." rngLn="77"/>
-        <ElDesc lineHash="1696044102" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="log10(...)" ElType=".P" rngLn="79">
-          <Anns>
-            <Ann msg="The point where potentially unsafe value has been received" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="A possibly wrong value has been passed as the 1. argument to the &quot;log10&quot; function (the expected value: >=0)" ln="79" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="The point where the wrong value is passed to the function" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="49" rule="BD-API-VALPARAM" FirstElSrcRngStartPos="0" lnHash="1696044102" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Validate values passed to library functions" FirstElSrcRngStartln="48" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1755776960" lang="cpp" violId="a6f9f82d-c1b9-34b9-8670-795ce9cb2047" locEndPos="0" urgent="true" locEndLn="80" goals="1," locStartln="79" sev="2" locRef="3" tool="c++test" lineHash="1696044102" unbViolId="f9c3cc3f-8500-38b2-b429-a9e1ec18f051" locType="sr" hash="-1571248249" causeLocRef="3">
-      <ElDescList>
-        <ElDesc lineHash="-1431170085" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="void spo2_monitor_update(Spo2Monitor_t* mon)" ElType=".C" rngLn="48">
-          <Anns>
-            <Ann msg="Start of the path" kind="cause"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1106716481" ln="50" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="50" srcRngEndLn="51" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double ratio;" ElType="." rngLn="50"/>
-        <ElDesc lineHash="-640227324" ln="51" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="51" srcRngEndLn="52" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="double sat;" ElType="." rngLn="51"/>
-        <ElDesc lineHash="2128576337" ln="52" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="52" srcRngEndLn="53" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int16_t signed_index = (int16_t) mon->index;" ElType="." rngLn="52"/>
-        <ElDesc lineHash="981872221" ln="54" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="54" srcRngEndLn="55" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_dc = compute_dc(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="54">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1600831195" ln="55" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="55" srcRngEndLn="56" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_dc = compute_dc(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="55">
-          <ElDescList>
-            <ElDesc lineHash="954147957" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint32_t sum = 0;" ElType="." rngLn="28"/>
-            <ElDesc lineHash="1679375043" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="29"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-459838298" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sum += buf[i];" ElType="." rngLn="31"/>
-            <ElDesc lineHash="2093441353" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="30">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1477264189" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return sum / n;" ElType="." rngLn="33"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="1442412925" ln="56" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="56" srcRngEndLn="57" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->red_ac = compute_ac(mon->red_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="56">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1646115105" ln="57" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="57" srcRngEndLn="58" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->ir_ac = compute_ac(mon->ir_samples, SPO2_WINDOW_SIZE);" ElType="." rngLn="57">
-          <ElDescList>
-            <ElDesc lineHash="-554294817" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType="." rngLn="38"/>
-            <ElDesc lineHash="589504212" ln="39" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="39" srcRngEndLn="40" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="." rngLn="39"/>
-            <ElDesc lineHash="1679375043" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="40"/>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (true)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (true)" kind="condEval"/>
-                <Ann msg="Entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-150154010" ln="42" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="42" srcRngEndLn="43" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] > max_v) max_v = buf[i];" ElType="." rngLn="42">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] > max_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="357502824" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (buf[i] &lt; min_v) min_v = buf[i];" ElType="." rngLn="43">
-              <Anns>
-                <Ann msg="Condition evaluation: (buf[i] &lt; min_v) (assuming false)" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="2093441353" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="41">
-              <Anns>
-                <Ann msg="Loop condition evaluation: (i &lt; n) (false)" kind="condEval"/>
-                <Ann msg="Not entering the loop" kind="condEval"/>
-              </Anns>
-            </ElDesc>
-            <ElDesc lineHash="-1952424546" ln="45" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="45" srcRngEndLn="46" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType="." rngLn="45"/>
-          </ElDescList>
-        </ElDesc>
-        <ElDesc lineHash="-1901719579" ln="59" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="59" srcRngEndLn="60" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {" ElType="." rngLn="59">
-          <Anns>
-            <Ann msg="Condition evaluation: (mon->ir_samples[(int)signed_index - 1] > 4000) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1905178045" ln="62" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="62" srcRngEndLn="63" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->motion_artifact = false;" ElType="." rngLn="62"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="-144885530" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="((double) mon->ir_ac / (double) mon->ir_dc);" ElType="." rngLn="66"/>
-        <ElDesc lineHash="550022010" ln="65" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="65" srcRngEndLn="66" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="ratio = ((double) mon->red_ac / (double) mon->red_dc) /" ElType="." rngLn="65"/>
-        <ElDesc lineHash="478785118" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="sat = SPO2_CURVE_A - (SPO2_CURVE_B * ratio);" ElType="." rngLn="68"/>
-        <ElDesc lineHash="1231340017" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat > (double) SPO2_MAX_VALID_PCT) {" ElType="." rngLn="70">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat > 100.0) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="892711941" ln="73" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="73" srcRngEndLn="74" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="if (sat &lt; (double) SPO2_MIN_VALID_PCT) {" ElType="." rngLn="73">
-          <Anns>
-            <Ann msg="Condition evaluation: (sat &lt; 50.0) (assuming false)" kind="condEval"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="-1325943657" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->spo2_percent = (uint8_t) sat;" ElType="." rngLn="77"/>
-        <ElDesc lineHash="1696044102" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="-1571248249" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="log10(...)" ElType=".P" rngLn="79">
-          <Anns>
-            <Ann msg="The point where the wrong value is passed to the function" kind="point"/>
-          </Anns>
-        </ElDesc>
-      </ElDescList>
-    </FlowViol>
-    <FlowViol msg="Method &quot;alarm_manager_dispatch&quot; is calling itself" ln="78" locFile="/RockStarDisplay/src/alarm_manager.c" ruleSAFMsg="Recursive method header" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="94" rule="BD-PB-RECFUN" FirstElSrcRngStartPos="0" lnHash="318090906" ruleSCSCMsg="Recursive method call" FirstElSrcRngFile="/RockStarDisplay/src/alarm_manager.c" rule.header="Do not use recursion" FirstElSrcRngStartln="93" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1188067054" lang="cpp" violId="802198b1-b8ab-387c-89bb-03f052d26661" locEndPos="0" urgent="true" locEndLn="79" goals="1," locStartln="78" sev="5" locRef="5" tool="c++test" lineHash="318090906" unbViolId="47f9c23b-36bd-3519-8f90-cb817ec4d9c5" locType="sr" hash="-1525539694" causeLocRef="5">
-      <ElDescList>
-        <ElDesc lineHash="318090906" ln="78" srcRngStartPos="0" srcRngEndPos="0" locRef="5" locType="sr" srcRnghash="-1525539694" srcRngStartln="78" srcRngEndLn="79" srcRngFile="/RockStarDisplay/src/alarm_manager.c" desc="void alarm_manager_dispatch(AlarmManager_t* mgr)" ElType=".P" rngLn="78">
-          <Anns>
-            <Ann msg="Recursive method header" kind="point"/>
-          </Anns>
-        </ElDesc>
-        <ElDesc lineHash="1195224988" ln="93" srcRngStartPos="0" srcRngEndPos="0" locRef="5" locType="sr" srcRnghash="-1525539694" srcRngStartln="93" srcRngEndLn="94" srcRngFile="/RockStarDisplay/src/alarm_manager.c" desc="alarm_manager_dispatch(mgr);" ElType=".C" rngLn="93">
-          <Anns>
-            <Ann msg="Recursive method call" kind="cause"/>
           </Anns>
         </ElDesc>
       </ElDescList>
@@ -1750,14 +917,14 @@
   </StdViols>
 
       <TestedFilesDetails>
-         <Total name="Total (Suppressed)" supp="0" total="31">
-            <Project id="RockStarDisplay" name="RockStarDisplay" supp="0" total="31">
-               <Res name="src" supp="0" total="31">
-                  <Res loc="/RockStarDisplay/src/main.c" locRef="1" locType="sr" name="main.c" supp="0" total="3"/>
-                  <Res loc="/RockStarDisplay/src/ecg_processor.c" locRef="2" locType="sr" name="ecg_processor.c" supp="0" total="5"/>
-                  <Res loc="/RockStarDisplay/src/spo2_monitor.c" locRef="3" locType="sr" name="spo2_monitor.c" supp="0" total="8"/>
+         <Total name="Total (Suppressed)" supp="0" total="22">
+            <Project id="RockStarDisplay" name="RockStarDisplay" supp="0" total="22">
+               <Res name="src" supp="0" total="22">
+                  <Res loc="/RockStarDisplay/src/main.c" locRef="1" locType="sr" name="main.c" supp="0" total="2"/>
+                  <Res loc="/RockStarDisplay/src/ecg_processor.c" locRef="2" locType="sr" name="ecg_processor.c" supp="0" total="4"/>
+                  <Res loc="/RockStarDisplay/src/spo2_monitor.c" locRef="3" locType="sr" name="spo2_monitor.c" supp="0" total="2"/>
                   <Res loc="/RockStarDisplay/src/nibp_monitor.c" locRef="4" locType="sr" name="nibp_monitor.c" supp="0" total="0"/>
-                  <Res loc="/RockStarDisplay/src/alarm_manager.c" locRef="5" locType="sr" name="alarm_manager.c" supp="0" total="1"/>
+                  <Res loc="/RockStarDisplay/src/alarm_manager.c" locRef="5" locType="sr" name="alarm_manager.c" supp="0" total="0"/>
                   <Res loc="/RockStarDisplay/src/patient_record.c" locRef="6" locType="sr" name="patient_record.c" supp="0" total="2"/>
                   <Res loc="/RockStarDisplay/src/data_logger.c" locRef="7" locType="sr" name="data_logger.c" supp="0" total="10"/>
                   <Res loc="/RockStarDisplay/src/comm_link.c" locRef="8" locType="sr" name="comm_link.c" supp="0" total="2"/>
