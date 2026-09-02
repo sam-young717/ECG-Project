@@ -1,0 +1,270 @@
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-163_b
+<b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
+<l>57
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-163_b
+<b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
+<l>71
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>FORMAT-50
+<b>The left hand operand of the '+' operator should be in parentheses
+<l>100
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-20_4
+<b>'malloc' function should not be used
+<l>116
+<k>35
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-8_7
+<b>Global variable 'ECG_FIR_TAPS' is being used only in a single function 'ecg_processor_apply_filter'
+<l>14
+<k>22
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-161_e
+<b>The left hand operand of the '>>' operator has essentially signed type: signed int
+<l>76
+<k>23
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-164_a
+<b>Operands of the '+' operator have different essential types: 'unsigned short' and 'signed char'
+<l>57
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-164_a
+<b>Operands of the '-' operator have different essential types: 'unsigned short' and 'signed char'
+<l>71
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-164_a
+<b>Operands of the '<' operator have different essential types: 'unsigned int' and 'short'
+<l>89
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-164_a
+<b>Operands of the '>' operator have different essential types: 'unsigned int' and 'short'
+<l>102
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-164_a
+<b>Operands of the '*' operator have different essential types: 'short' and 'unsigned long'
+<l>116
+<k>42
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>27
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-35
+<b>Missing default branch in switch statement
+<l>43
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>PB-29
+<b>Left-hand operand of right-shift operator is a variable 'acc' of 'signed int' type
+<l>76
+<k>23
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'ecg_processor_detect_qrs' function
+<l>85
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'ecg_processor_detect_qrs' function
+<l>91
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'ecg_processor_detect_qrs' function
+<l>106
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-156_a
+<b>Essential type of LHS operand (32 bit) is wider than essential type of composite expression in RHS operand (16 bit)
+<l>100
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>120
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>121
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-14_7
+<b>'return' statement should be at the end of the 'ecg_processor_reset' function
+<l>118
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>27
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>PB-29
+<b>Left-hand operand of right-shift operator is a variable 'acc' of 'signed int' type
+<l>76
+<k>23
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>120
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>121
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>41
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>67
+<k>5
+<s>false
+<N>
+<f>
+<L>0

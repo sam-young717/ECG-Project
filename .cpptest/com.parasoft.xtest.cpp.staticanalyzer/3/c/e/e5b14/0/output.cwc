@@ -1,0 +1,110 @@
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>MISRA2004-14_4
+<b>Do not use the 'goto' statement
+<l>67
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-164_a
+<b>Operands of the '*' operator have different essential types: 'unsigned short' and 'signed char'
+<l>60
+<k>31
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-164_a
+<b>Operands of the '*' operator have different essential types: 'unsigned short' and 'signed char'
+<l>61
+<k>31
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-164_a
+<b>Operands of the '>' operator have different essential types: 'unsigned short' and 'signed char'
+<l>64
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-164_a
+<b>Operands of the '>' operator have different essential types: 'unsigned int' and 'int'
+<l>83
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-164_a
+<b>Operands of the '<' operator have different essential types: 'unsigned short' and 'signed char'
+<l>98
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>20
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-152
+<b>Composite expression with 'signed' essential type category shall not be cast to different essential type category 'unsigned'
+<l>60
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-152
+<b>Composite expression with 'signed' essential type category shall not be cast to different essential type category 'unsigned'
+<l>61
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-35
+<b>Missing default branch in switch statement
+<l>87
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>20
+<k>5
+<s>false
+<N>
+<f>
+<L>0

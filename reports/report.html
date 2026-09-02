@@ -1,0 +1,2587 @@
+<html xmlns:graph="graph" xmlns:results="results" lang="en">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <style type="text/css">
+    BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    .textArea {width:99%; height: 235px; padding:0.5%; resize: none; border:1px; border-style: solid; border-color: #CBCBCB; outline: none; overflow:auto;}
+
+    A:link {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:active {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:visited {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #999999;text-decoration: none;}
+    A:hover {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: underline;}
+    A.gray_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: underline;}
+    A.red_link:link {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:active {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:visited {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:hover {font-family: Arial;font-size: 12px;color: #990000;text-decoration: underline;}
+    A.green_link:link {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:active {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:visited {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:hover {font-family: Arial;font-size: 12px;color: #008040;text-decoration: underline;}
+    A.black_link:link {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:active {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:visited {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:hover {font-family: Arial;font-size: 12px;color: #000000;text-decoration: underline;}
+
+    A.blue_link:link {font-family: Arial;font-size: 12px;color: #006B9B;text-decoration: none;}
+    A.blue_link:active {font-family: Arial;font-size: 12px;color: #006B9B;text-decoration: none;}
+    A.blue_link:visited {font-family: Arial;font-size: 12px;color: #006B9B;text-decoration: none;}
+    A.blue_link:hover {font-family: Arial;font-size: 12px;color: #006B9B;text-decoration: underline;}
+
+    A.gray_red_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    DIV.suite_details{background:#EDEDED;padding:8px}
+
+    DIV.test_comment{color:#666666;}
+
+    DIV.arr_right
+    {
+        position: relative;
+        left: +1px;
+        top: +3px;
+        height: 0px;
+        width: 0;
+        border-left: 5px solid #FFFFFF;
+        border-right: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+    DIV.arr_down
+    {
+        position: relative;
+        left: -3px;
+        top: +5px;
+        height: 0px;
+        width: 0;
+        border-top: 5px solid #FFFFFF;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+       }
+
+    TABLE.main_header_top {
+         padding: 10px;
+         background: #333333;
+         border-spacing: 0px;
+    }
+
+    TABLE.main_header {
+         padding-top:2px;
+         padding-bottom:1px;
+         background: #006699;
+         text-align: center;
+    }
+
+    FONT.main_header {
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;
+    }
+
+    H1.main_header {
+        font-weight:normal;
+        margin-bottom:0px;
+    }
+
+    TABLE.main_header_small {
+         padding-top:1px;
+         padding-bottom:2px;
+         background: #006699;
+         text-align:center;
+    }
+
+    TABLE.header_separator {
+         padding-top:1px;
+         padding-bottom:2px;
+         background: #CCCCCC;
+         text-align:center;
+    }
+
+    FONT.main_header_small {
+         font-size: 12px;
+         font-family: Arial, Helvetica, sans-serif;
+         color: #FFFFFF;
+    }
+    
+    DIV.section_header { 
+         padding: 8px; 
+         color: #FFFFFF; 
+         font-size: 14px;
+         font-family: Arial, Helvetica, sans-serif;
+         background: #004877;
+    }
+
+    TABLE.section_header { 
+         padding: 8px; 
+         color: #FFFFFF; 
+         font-size: 14px;
+         font-family: Arial, Helvetica, sans-serif;
+         background: #004877;
+    }
+
+    DIV.header{ padding-top: 10px; font-size: 32px; FONT-FAMILY: Arial, sans-serif; COLOR:#000000 }
+    DIV.small_header{ padding-top: 5px; padding-bottom: 5px; font-size: 28px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000 }
+    FONT.title{font-size: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000 }
+    FONT.gray {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #999999;}    
+    FONT.gray2, FONT.gray_red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #666666;}
+    FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}
+    FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000;}
+    FONT.black {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    FONT.red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000;}
+    FONT.red2 {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000; text-decoration: underline;}
+    FONT.blue {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #427fb6;}
+    FONT.green {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #008040;}
+    FONT.orange {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #F69500;}
+    FONT.goldenrod {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #DAA520;}    
+    FONT.small {font-size: 3px;font-family: Arial, Helvetica, sans-serif;color: #cccccc;}
+    IMG.screenshot{float:left; margin-right: 20px; }
+    SELECT.cs_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SELECT.ju_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SPAN.toggle_button{width: 16px; padding-right: 2px; display: inline-block;cursor: pointer;} 
+    TD.associations{vertical-align: top;}
+    TD.collapse_controls{text-align:right;}
+    TD.cs_authors{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;border: 1px; bordercolor: #d9c8ac;}
+    TD.error{background-color:#F2C6C5}
+    TD.errorsingleborder{ padding:8px; background-color:#F2C6C5;}
+
+    TD.summary_cell { padding: 5px; padding-left: 20px; color: #000000; font-size: 13px; font-family: Arial, Helvetica, sans-serif; background: #EDEDED }
+    TD.summary_stats_cell { padding: 5px; padding-left: 20px; color: #000000; font-size: 14px; font-family: Arial, Helvetica, sans-serif; background: #FFFFFF }
+    TABLE.summary_stats_cell { border: 1px solid #000000 }
+
+    TD.section_header
+    {
+        padding: 0px;
+        color:#FFFFFF; 
+        background-color:#004877;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    TD.header_separator
+    {
+        padding: 0px;
+        color:#FFFFFF; 
+        background-color: #CCCCCC;
+    }
+
+    TD.testSuiteTree {padding-top:4px;padding-bottom:4px;}
+    TD.singleborder{ padding:8px;}
+    TD.right_separator{ border-right:1px #FFFFFF solid}
+    TD.left_separator{ border-left:1px #FFFFFF solid}
+    TD.left_separator_gray{ border-left:1px #ceced2 solid}
+    TD.right_separator_gray{ border-right:1px #ceced2 solid}
+    TD.top_separator_gray{ border-top:1px #ceced2 solid}
+    TD.bottom_separator_gray{ border-bottom:1px #ceced2 solid}
+    TABLE.header{background-color:#FFFFFF}
+    TABLE.singleborder{}
+    TABLE.doubleborder{}
+    TABLE.singleborder_blue{}
+    TABLE.singleborder_main{}
+    TD.fixed_width{width: 150px;}
+    TD.no_error{}
+    TD.suite_details{padding-top:2px; padding-bottom:2px }
+    UL.metrics {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:12px;}
+    UL.root {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:3px;}
+    UL {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:12px;}
+    LI.tree {padding-top:2px; padding-bottom:2px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left: 0px;}
+
+    LI.root { 
+        margin: 0;
+        padding-left: 0px;
+        padding-top:8px;
+        padding-bottom:8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        color: #000000; 
+        list-style-type: none;
+        
+            background-color: #CCCCCC; 
+        
+    }
+
+    TD.root {
+        padding-top:8px;
+        padding-bottom:8px;
+        
+            background-color: #CCCCCC; 
+         
+    }
+    TD.tree { padding-top:2px; padding-bottom:2px;}
+
+    PRE.tree { line-height: 16px; margin:0px; }
+
+    tr.alternated { background-color: #EDEDED }
+    tr.alternating:nth-child(even) { background-color: #EDEDED }
+    li.alternating:nth-child(even) { background-color: #EDEDED }
+
+    tr.errorsingleborder:nth-child(even) { background-color: #F2C6C5 }
+    tr.errorsingleborder:nth-child(odd)  { background-color: #F7D3D2 }
+    tr.no_errorsingleborder { }
+    
+    
+    TD.header_card_count {padding: 25px}
+    TD.header_card_label {padding: 10px 5px;}
+    
+    #foldheader{cursor:pointer;cursor:hand ;}
+    #cs_foldheader{cursor:pointer;cursor:hand ;}
+    #cr_foldheader{cursor:pointer;cursor:hand ;}
+    #metrics_foldheader{cursor:pointer;cursor:hand ;}
+    #exec_foldheader{cursor:pointer;cursor:hand ;}
+    #paramsHeader {word-break:break-all;overflow: auto; padding: 3px;}
+    </style><title>C/C++test&nbsp;Report&nbsp;[2026-09-02T12:01:03-04:00]
+
+</title><script language="JavaScript">
+    var nwin;
+    function openWin (loc_to_open) {
+       if (!nwin || nwin.closed) {
+          nwin = window.open(loc_to_open,'');
+       } else {
+          nwin.location = loc_to_open;
+       }
+       nwin.focus();
+    }
+    function openDevReport (dev_rep_name) {
+       openWin(dev_rep_name);
+    }
+    </script><script language="JavaScript">
+    function sortBySeverity(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }
+    if(sev != null) sev.style.display='block';
+    if(sev_title != null) sev_title.style.display='block';
+    if(sev_link != null) {
+       sev_link.className="gray_red_link";
+    }
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }
+    if(cat != null) cat.style.display='none';
+    if(cat_title != null) cat_title.style.display='none';
+    if(cat_link != null) {
+       cat_link.className="blue_link";
+    }
+    }
+
+    function sortByCategory(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }
+    if(sev != null) sev.style.display='none';
+    if(sev_title != null) sev_title.style.display='none';
+    if(sev_link != null) { 
+        sev_link.className="blue_link";
+    }       
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }
+    if(cat != null) cat.style.display='block';
+    if(cat_title != null) cat_title.style.display='block';
+    if(cat_link != null) { 
+        cat_link.className="gray_red_link";
+    }
+    }
+    </script><script language="JavaScript">
+    var ns6=document.getElementById && !document.all
+    var ie4=document.all && navigator.userAgent.indexOf("Opera")==-1
+
+    function checkcontained(e)
+    {
+       cur=ns6 ? e.target : event.srcElement;
+
+       if (cur.classList.contains("nofolding")) {
+			return;
+	   }
+	
+       checkFor("foldinglist", "foldheader", cur);
+       checkFor("cs_foldinglist", "cs_foldheader", cur);
+       checkFor("cr_foldinglist", "cr_foldheader", cur);
+       checkFor("metrics_foldinglist", "metrics_foldheader", cur);
+       checkFor("exec_foldinglist", "exec_foldheader", cur);
+    }
+
+    function toggleDiv(divSectionId)
+    {
+        var divArrowId = divSectionId + "_arrow";
+        if (document.getElementById(divSectionId).style.display == "none") {
+            document.getElementById(divSectionId).style.display = "";
+            document.getElementById(divArrowId).className="arr_down";
+        } else {
+            document.getElementById(divSectionId).style.display = "none";
+            document.getElementById(divArrowId).className="arr_right";
+        }
+    }
+
+    function checkFor(foldinglist, foldheader, cur)
+    {
+        var iscontained=0;
+        i = 0;
+        if (cur.id==foldheader) {
+           iscontained=1;
+        } 
+        while (ns6 && cur.parentNode || (ie4 && cur.parentElement)) {
+             if (cur.id==foldheader||cur.id==foldinglist){
+                iscontained=(cur.id==foldheader)? 1 : 0;
+                break;
+             }
+             cur=ns6? cur.parentNode : cur.parentElement;
+        }
+
+        if (iscontained) {
+           var foldercontent=ns6? cur.nextSibling.nextSibling : cur['nextSibling'];
+           if (foldercontent.style.display=="none"){
+               foldercontent.style.display="";
+           } else {
+               foldercontent.style.display="none";
+           }
+        }
+    }
+    function expandCSDetails() {
+       expandCollapseAll("cs_foldinglist", true);
+    }
+
+    function collapseCSDetails() {
+       expandCollapseAll("cs_foldinglist", false);
+    }
+
+    function expandCRDetails() {
+    expandCollapseAll("cr_foldinglist", true);
+    }
+
+    function collapseCRDetails() {
+    expandCollapseAll("cr_foldinglist", false);
+    }
+
+    function expandMetricsDetails() {
+    expandCollapseAll("metrics_foldinglist", true);
+    }
+
+    function collapseMetricsDetails() {
+    expandCollapseAll("metrics_foldinglist", false);
+    }
+
+    function expandExecDetails() {
+       expandCollapseAll("exec_foldinglist", true);
+    }
+
+    function collapseExecDetails() {
+       expandCollapseAll("exec_foldinglist", false);
+    }
+
+    function expandCvgDetails() {
+       expandCollapseAll("cvg_foldinglist", true);
+    }
+
+    function collapseCvgDetails() {
+       expandCollapseAll("cvg_foldinglist", false);
+    }
+
+    function expandCollapseAll(foldinglistID, collapse)
+    {
+        if (document.getElementById && document.createElement) {
+            m = document.getElementById(foldinglistID).getElementsByTagName('ul');
+            var i;
+            for (i = 0; i < m.length; i++) {
+              if (collapse) {
+                 m[i].style.display='block';
+              } else {
+                 m[i].style.display='none';
+              }
+            }
+        }
+    }
+
+    function expandViolaion(headerID, violationID, startIndex)
+    {
+        var violation = document.getElementById(violationID);
+        var m = document.getElementById(headerID).getElementsByTagName('td');
+        
+        if (violation.style.display === '') {
+            violation.style.display = 'none';
+            for (i = startIndex; i < m.length; i++) {
+                m[i].style.backgroundColor = "#FFFFFF";
+            }
+        }
+        else{
+            violation.style.display = '';
+            for (i = startIndex; i < m.length; i++) {
+                m[i].style.backgroundColor = "#E0E0E0";
+            }        
+        }
+    }
+
+    if (ie4||ns6) {
+       document.onclick=checkcontained;
+    }
+    </script></head>
+<body bgcolor="#FFFFFF" style="margin:0;padding:0">
+<table role="main" class="singleborder_main" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" class="main_header_top">
+<tr></tr>
+</table>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" class="main_header">
+<tr>
+<td width="20%" align="left" class="main_header"><img src="rep_header_logo_x10.png" alt="rep_header_logo_x10.png"></td>
+<td width="60%" class="main_header">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="main_header">
+<table width="100%" class="main_header">
+<tr>
+<td align="center" class="main_header">
+<H1 class="main_header"><font class="main_header">Parasoft&nbsp;C/C++test&nbsp;Report</font></H1>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" class="main_header_small">
+<tr>
+<td align="center" class="main_header_small"><font class="main_header_small">C/C++test&nbsp;2026.1.0</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="main_header"></td>
+</tr>
+</table><br xmlns:textutil="textutil" xmlns:authors="authors"><table width="100%" style="padding-bottom:10px;padding-top:0px" cellspacing="0">
+<tr>
+<td align="center">
+<table width="100%" class="singleborder_blue" style="padding-left:25px;padding-right:25px;padding-bottom:25px;padding-top:5px" cellspacing="0" bgcolor="#FFFFFF">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2">
+<table width="100%" cellpadding="0" cellspacing="0" class="section_header">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="section_header">Session Summary</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="summary_cell">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="20%" class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Build ID:</b></td>
+<td class="summary_cell" style="word-break: break-word;">2026-09-02</td>
+</tr>
+<tr>
+<td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Test Configuration:</b></td>
+<td class="summary_cell" style="word-break: break-word;">builtin://Flow Analysis Standard</td>
+</tr>
+<tr>
+<td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Started:</b></td>
+<td class="summary_cell">2026-09-02T12:01:03-04:00</td>
+</tr>
+<tr>
+<td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Performed on:</b></td>
+<td class="summary_cell">syoung-pc by syoung</td>
+</tr>
+<tr>
+<td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Session Tag:</b></td>
+<td class="summary_cell" style="word-break: break-word;">${scontrol_branch}-linux_x86_64</td>
+</tr>
+<tr>
+<td class="summary_cell" style="white-space: nowrap; vertical-align: baseline;"><b>Project:</b></td>
+<td class="summary_cell"></td>
+</tr>
+</table>
+</td>
+<td class="summary_cell" align="right" valign="top" style="padding-right:60px;"><br><table width="400px" class="summary_stats_cell" cellpadding="0" bgcolor="#FFFFFF" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" bgcolor="#FFFFFF" cellspacing="0">
+<tr>
+<td class="summary_stats_cell"><a xmlns:textutil="textutil" xmlns:authors="authors" class="blue_link" style="font-size: 14px" href="#cs"><b>Static Analysis</b></a></td>
+<td class="summary_stats_cell">Severity 1 Findings: 12</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a xmlns:textutil="textutil" xmlns:authors="authors" name="cs"></a>&nbsp;
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="0" cellspacing="0" class="section_header">
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="section_header">Summary - Static Analysis</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="2" cellspacing="0">
+<tr>
+<td align="center"><img src="standard_summary_09-02-26_12-01-03.jpeg" alt="standard_summary_09-02-26_12-01-03.jpeg"></td>
+</tr>
+</table>&nbsp;
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="0" cellspacing="0" class="section_header" onclick="javascript:toggleDiv('cs_details_section')">
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0">
+<tr cols="2">
+<td class="section_header" valign="top">
+<div style="display:table-cell" class="arr_down" id="cs_details_section_arrow"><span style="zoom:1;"></span></div>
+</td>
+<td class="section_header">Details - Static Analysis</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div xmlns:textutil="textutil" id="cs_details_section">
+<table class="header" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="15%"></td>
+<td align="center">
+<div class="header">Static Analysis</div>
+</td>
+<td width="15%" align="right" valign="bottom"></td>
+</tr>
+</table><br><table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="80%">
+<table width="100%" class="singleborder" cellpadding="0" cellspacing="0">
+<tr>
+<td class="singleborder right_separator" width="40%" align="center" bgcolor="#CCCCCC"><b>Module</b>&nbsp;
+</td>
+<td class="singleborder  right_separator" align="center" bgcolor="#CCCCCC" colspan="3">&nbsp;<b>Findings</b>&nbsp;
+</td>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC" colspan="2">&nbsp;<b>Files</b></td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC" colspan="2">&nbsp;<b>Lines</b></td>
+</tr>
+<tr>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC"><span style="zoom:1;"></span></td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">suppressed</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">total</td>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC">per 10,000 lines</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">checked</td>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC">total</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">checked</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">total</td>
+</tr>
+<tr class="alternating">
+<td class="singleborder right_separator" align="left">&nbsp;RockStarDisplay</td>
+<td class="singleborder" align="center">&nbsp;0&nbsp;</td>
+<td class="singleborder" align="center">22&nbsp;</td>
+<td class="singleborder right_separator" align="center">187&nbsp;</td>
+<td class="singleborder" align="center">&nbsp;15&nbsp;</td>
+<td class="singleborder  right_separator" align="center">15&nbsp;</td>
+<td class="singleborder" align="center">&nbsp;1175&nbsp;</td>
+<td class="singleborder" align="center">1175&nbsp;</td>
+</tr>
+<tr>
+<td class="singleborder  right_separator" align="left" bgcolor="#CCCCCC">&nbsp;<b>Total</b> [0:00:17]
+
+</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">&nbsp;<b>0</b>&nbsp;
+</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC">&nbsp;<b>22</b>&nbsp;
+</td>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC">&nbsp;<b>187</b>&nbsp;
+</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC"><b>15</b>&nbsp;
+</td>
+<td class="singleborder right_separator" align="center" bgcolor="#CCCCCC"><b>15</b>&nbsp;
+</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC"><b>1175</b>&nbsp;
+</td>
+<td class="singleborder" align="center" bgcolor="#CCCCCC"><b>1175</b>&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table class="header" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="30%">&nbsp;</td>
+<td align="center">
+<div class="small_header" id="cs_title_cat" style="display:block;">All Findings&nbsp;by Category</div>
+<div class="small_header" id="cs_title_sev" style="display:none;">All Findings&nbsp;by Severity</div>
+</td>
+<td align="right" width="30%"><a xmlns:authors="authors" id="cs_link_cat" class="blue_link" href="javascript:sortByCategory()">Category</a>&nbsp;
+|
+&nbsp;<a xmlns:authors="authors" id="cs_link_sev" class="blue_link" href="javascript:sortBySeverity()">Severity</a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table xmlns:authors="authors" width="100%" class="header_separator" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" class="header_separator"></td>
+</tr>
+</table><br xmlns:authors="authors"></td>
+</tr>
+<tr>
+<td align="left">
+<div id="cs_cat" style="display:block;">
+<table width="100%" class="doubleborder" cellpadding="0" cellspacing="0">
+<tr>
+<td class="tree">&nbsp;
+[<b>17</b>]
+&nbsp;&nbsp;<b>Possible Bugs</b>&nbsp;<font class="gray">(BD-PB)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid use before initialization&nbsp;<font class="gray">(BD-PB-NOTINIT-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>5</b>]
+&nbsp;&nbsp;Avoid null pointer dereferencing&nbsp;<font class="gray">(BD-PB-NP-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid division by zero&nbsp;<font class="gray">(BD-PB-ZERO-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid accessing arrays out of bounds&nbsp;<font class="gray">(BD-PB-ARRAY-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>3</b>]
+&nbsp;&nbsp;Avoid conditions that always evaluate to the same value&nbsp;<font class="gray">(BD-PB-CC-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>4</b>]
+&nbsp;&nbsp;Always check the returned value of non-void function&nbsp;<font class="gray">(BD-PB-CHECKRETGEN-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid calls to memory-setting functions that can be optimized out by the compiler&nbsp;<font class="gray">(BD-PB-MEMOPT-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree">&nbsp;
+[<b>3</b>]
+&nbsp;&nbsp;<b>Resources</b>&nbsp;<font class="gray">(BD-RES)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>3</b>]
+&nbsp;&nbsp;Ensure resources are freed&nbsp;<font class="gray">(BD-RES-LEAKS-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree">&nbsp;
+[<b>2</b>]
+&nbsp;&nbsp;<b>Security</b>&nbsp;<font class="gray">(BD-SECURITY)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Prevent buffer overflows from tainted data&nbsp;<font class="gray">(BD-SECURITY-BUFWRITE-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left">
+<div id="cs_sev" style="display:none;">
+<table width="100%" class="doubleborder" cellpadding="0" cellspacing="0">
+<tr>
+<td class="tree">&nbsp;
+[<b>12</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;1 - Highest</b></td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid use before initialization&nbsp;<font class="gray">(BD-PB-NOTINIT-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>5</b>]
+&nbsp;&nbsp;Avoid null pointer dereferencing&nbsp;<font class="gray">(BD-PB-NP-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid division by zero&nbsp;<font class="gray">(BD-PB-ZERO-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>3</b>]
+&nbsp;&nbsp;Ensure resources are freed&nbsp;<font class="gray">(BD-RES-LEAKS-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Prevent buffer overflows from tainted data&nbsp;<font class="gray">(BD-SECURITY-BUFWRITE-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree">&nbsp;
+[<b>10</b>]
+&nbsp;&nbsp;<b>Severity&nbsp;2 - High</b></td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid accessing arrays out of bounds&nbsp;<font class="gray">(BD-PB-ARRAY-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>3</b>]
+&nbsp;&nbsp;Avoid conditions that always evaluate to the same value&nbsp;<font class="gray">(BD-PB-CC-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>4</b>]
+&nbsp;&nbsp;Always check the returned value of non-void function&nbsp;<font class="gray">(BD-PB-CHECKRETGEN-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
+</td>
+</tr>
+<tr>
+<td class="tree_node">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<b>1</b>]
+&nbsp;&nbsp;Avoid calls to memory-setting functions that can be optimized out by the compiler&nbsp;<font class="gray">(BD-PB-MEMOPT-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="40%"></td>
+<td width="20%" align="center">
+<div class="small_header">Findings by File</div>
+</td>
+<td align="right" width="40%"><a xmlns:authors="authors" class="gray_link" href="javascript:expandCSDetails()">Expand All</a>&nbsp;&nbsp;&nbsp;<a xmlns:authors="authors" class="gray_link" href="javascript:collapseCSDetails()">Collapse All</a>&nbsp;&nbsp;&nbsp;<a xmlns:authors="authors" class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table xmlns:authors="authors" width="100%" class="header_separator" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" class="header_separator"></td>
+</tr>
+</table><br xmlns:authors="authors"></td>
+</tr>
+<tr>
+<td>
+<table width="100%" class="doubleborder" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left">
+<ul class="root" id="cs_foldinglist">
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+(0)                              
+&nbsp;</b><b>Total (Suppressed)</b></li>
+<ul id="cs_foldinglist">
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+(0)                              
+&nbsp;</b><b>RockStarDisplay</b></li>
+<ul id="cs_foldinglist">
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;0
+(0)                              
+&nbsp;</b><b>include</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>alarm_manager.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>comm_link.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>data_logger.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>ecg_processor.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>nibp_monitor.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>patient_record.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>spo2_monitor.h</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+</ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;22
+(0)                              
+&nbsp;</b><b>src</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>alarm_manager.c</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+(0)                              
+&nbsp;</b><b>comm_link.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId0H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId0H','ViolId0', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">36:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Condition "!bsp_endpoint_reachable(...)" always evaluates to false</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
+</tr>
+<tr id="ViolId0" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">comm_link.c&nbsp;(34):&nbsp;</font><font color="black">bool comm_link_connect(CommLink_t* link, const char* endpoint)</font><font color="green"></font>
+<font color="gray">comm_link.c&nbsp;(36):&nbsp;</font><font color="black">bsp_endpoint_reachable(...)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">main.c&nbsp;(25):&nbsp;</font><font color="black">bool bsp_endpoint_reachable(const char* e) { (void) e; return true; }</font>
+<font color="#B71C1C"><b>Point where senseless condition is used</b>&nbsp;
+</font><font color="#B71C1C">comm_link.c&nbsp;(36):&nbsp;</font><font color="black">if (!bsp_endpoint_reachable(endpoint)) {</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId1H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId1H','ViolId1', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">70:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Condition "written == offset" always evaluates to true</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
+</tr>
+<tr id="ViolId1" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">comm_link.c&nbsp;(43):&nbsp;</font><font color="black">bool comm_link_send(CommLink_t* link, const CommFrame_t* frame)</font><font color="green"></font>
+<font color="gray">comm_link.c&nbsp;(45):&nbsp;</font><font color="black">uint16_t offset = 0;</font>
+<font color="gray">comm_link.c&nbsp;(46):&nbsp;</font><font color="gray">int written;</font>
+<font color="gray">comm_link.c&nbsp;(48):&nbsp;</font><font color="gray">if (!link-&gt;is_connected) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: !link-&gt;is_connected (assuming false)</font>
+<font color="gray">comm_link.c&nbsp;(52):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = COMM_START_BYTE;</font>
+<font color="gray">comm_link.c&nbsp;(53):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = (uint8_t) (link-&gt;tx_sequence &gt;&gt; 24);</font>
+<font color="gray">comm_link.c&nbsp;(54):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = (uint8_t) (link-&gt;tx_sequence &gt;&gt; 16);</font>
+<font color="gray">comm_link.c&nbsp;(55):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = (uint8_t) (link-&gt;tx_sequence &gt;&gt; 8);</font>
+<font color="gray">comm_link.c&nbsp;(56):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = (uint8_t) (link-&gt;tx_sequence );</font>
+<font color="gray">comm_link.c&nbsp;(57):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = (uint8_t) frame-&gt;type;</font>
+<font color="gray">comm_link.c&nbsp;(58):&nbsp;</font><font color="black">link-&gt;tx_buffer[offset++] = frame-&gt;length;</font>
+<font color="gray">comm_link.c&nbsp;(60):&nbsp;</font><font color="gray">memcpy(&amp;link-&gt;tx_buffer[offset], frame-&gt;payload, frame-&gt;length);</font>
+<font color="gray">comm_link.c&nbsp;(61):&nbsp;</font><font color="black">offset += frame-&gt;length;</font>
+<font color="gray">comm_link.c&nbsp;(63):&nbsp;</font><font color="gray">link-&gt;tx_buffer[offset] = comm_crc8(link-&gt;tx_buffer, offset);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(15):&nbsp;</font><font color="gray">uint8_t crc = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(16):&nbsp;</font><font color="gray">uint16_t i;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(17):&nbsp;</font><font color="gray">for (i = 0; i &lt; len; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; len) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(18):&nbsp;</font><font color="gray">crc ^= buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(17):&nbsp;</font><font color="gray">for (i = 0; i &lt; len; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; len) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(18):&nbsp;</font><font color="gray">crc ^= buf[i];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(17):&nbsp;</font><font color="gray">for (i = 0; i &lt; len; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; len) (false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(20):&nbsp;</font><font color="gray">return crc;</font>
+<font color="gray">comm_link.c&nbsp;(64):&nbsp;</font><font color="black">offset++;</font>
+<font color="gray">comm_link.c&nbsp;(66):&nbsp;</font><font color="gray">link-&gt;tx_len = offset;</font>
+<font color="gray">comm_link.c&nbsp;(67):&nbsp;</font><font color="gray">link-&gt;tx_sequence++;</font>
+<font color="gray">comm_link.c&nbsp;(69):&nbsp;</font><font color="black">written = bsp_uart_write(link-&gt;tx_buffer, offset);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">main.c&nbsp;(23):&nbsp;</font><font color="black">int bsp_uart_write(const uint8_t* d, uint16_t n) { (void) d; return (int) n; }</font>
+<font color="#B71C1C"><b>Point where senseless condition is used</b>&nbsp;
+</font><font color="#B71C1C">comm_link.c&nbsp;(70):&nbsp;</font><font color="black">return written == (int) offset;</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;10
+(0)                              
+&nbsp;</b><b>data_logger.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId2H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId2H','ViolId2', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">25:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Value returned from method "fopen" should be checked</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
+</tr>
+<tr id="ViolId2" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(13):&nbsp;</font><font color="gray">FILE* fp;</font>
+<font color="gray">data_logger.c&nbsp;(14):&nbsp;</font><font color="gray">char path[LOGGER_PATH_MAX];</font>
+<font color="gray">data_logger.c&nbsp;(16):&nbsp;</font><font color="gray">sprintf(path, "%s/vitals_%s.csv", directory, patient_id);</font>
+<font color="gray">data_logger.c&nbsp;(17):&nbsp;</font><font color="gray">strcpy(logger-&gt;log_path, path);</font>
+<font color="#1569C7"><b>Method call</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(19):&nbsp;</font><font color="black">fp = fopen(logger-&gt;log_path, "a+");</font><font color="green"></font>
+<font color="gray">data_logger.c&nbsp;(20):&nbsp;</font><font color="gray">logger-&gt;file_handle = (void*) fp;</font>
+<font color="gray">data_logger.c&nbsp;(21):&nbsp;</font><font color="gray">logger-&gt;bytes_written = 0;</font>
+<font color="gray">data_logger.c&nbsp;(22):&nbsp;</font><font color="gray">logger-&gt;records_written = 0;</font>
+<font color="gray">data_logger.c&nbsp;(23):&nbsp;</font><font color="gray">logger-&gt;is_open = true;</font>
+<font color="#B71C1C"><b>Point by which returned value should be checked</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(25):&nbsp;</font><font color="black">fprintf(fp, LOGGER_CSV_HEADER);</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId3H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId3H','ViolId3', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">25:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">"fp" may possibly be null</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
+</tr>
+<tr id="ViolId3" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(13):&nbsp;</font><font color="gray">FILE* fp;</font>
+<font color="gray">data_logger.c&nbsp;(14):&nbsp;</font><font color="gray">char path[LOGGER_PATH_MAX];</font>
+<font color="gray">data_logger.c&nbsp;(16):&nbsp;</font><font color="gray">sprintf(path, "%s/vitals_%s.csv", directory, patient_id);</font>
+<font color="gray">data_logger.c&nbsp;(17):&nbsp;</font><font color="gray">strcpy(logger-&gt;log_path, path);</font>
+<font color="#1569C7"><b>Source of null value</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(19):&nbsp;</font><font color="black">fp = fopen(logger-&gt;log_path, "a+");</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: fp</font>
+<font color="gray">data_logger.c&nbsp;(20):&nbsp;</font><font color="gray">logger-&gt;file_handle = (void*) fp;</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: fp</font>
+<font color="gray">data_logger.c&nbsp;(21):&nbsp;</font><font color="gray">logger-&gt;bytes_written = 0;</font>
+<font color="gray">data_logger.c&nbsp;(22):&nbsp;</font><font color="gray">logger-&gt;records_written = 0;</font>
+<font color="gray">data_logger.c&nbsp;(23):&nbsp;</font><font color="gray">logger-&gt;is_open = true;</font>
+<font color="#B71C1C"><b>Null pointer dereferencing point</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(25):&nbsp;</font><font color="black">fprintf(fp, LOGGER_CSV_HEADER);</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: fp</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId4H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId4H','ViolId4', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">53:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Condition "!logger_rotate(...)" always evaluates to false</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CC-2</font></td>
+</tr>
+<tr id="ViolId4" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(30):&nbsp;</font><font color="black">bool data_logger_append(DataLogger_t* logger, const VitalSample_t* sample)</font><font color="green"></font>
+<font color="gray">data_logger.c&nbsp;(32):&nbsp;</font><font color="gray">FILE* fp = (FILE*) logger-&gt;file_handle;</font>
+<font color="gray">data_logger.c&nbsp;(33):&nbsp;</font><font color="gray">char line[LOGGER_LINE_MAX];</font>
+<font color="gray">data_logger.c&nbsp;(34):&nbsp;</font><font color="gray">int written;</font>
+<font color="gray">data_logger.c&nbsp;(36):&nbsp;</font><font color="gray">if (!logger-&gt;is_open) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: !logger-&gt;is_open (assuming false)</font>
+<font color="gray">data_logger.c&nbsp;(40):&nbsp;</font><font color="gray">written = sprintf(line, "%u,%u,%u,%u,%u,%u\n",</font>
+<font color="gray">data_logger.c&nbsp;(42):&nbsp;</font><font color="gray">(unsigned) sample-&gt;heart_rate,</font>
+<font color="gray">data_logger.c&nbsp;(43):&nbsp;</font><font color="gray">(unsigned) sample-&gt;spo2,</font>
+<font color="gray">data_logger.c&nbsp;(44):&nbsp;</font><font color="gray">(unsigned) sample-&gt;systolic,</font>
+<font color="gray">data_logger.c&nbsp;(45):&nbsp;</font><font color="gray">(unsigned) sample-&gt;diastolic,</font>
+<font color="gray">data_logger.c&nbsp;(46):&nbsp;</font><font color="gray">(unsigned) sample-&gt;respiration);</font>
+<font color="gray">data_logger.c&nbsp;(40):&nbsp;</font><font color="gray">written = sprintf(line, "%u,%u,%u,%u,%u,%u\n",</font>
+<font color="gray">data_logger.c&nbsp;(48):&nbsp;</font><font color="gray">fwrite(line, 1, (size_t) written, fp);</font>
+<font color="gray">data_logger.c&nbsp;(49):&nbsp;</font><font color="gray">logger-&gt;bytes_written += (uint32_t) written;</font>
+<font color="gray">data_logger.c&nbsp;(50):&nbsp;</font><font color="gray">logger-&gt;records_written++;</font>
+<font color="gray">data_logger.c&nbsp;(52):&nbsp;</font><font color="gray">if (logger-&gt;bytes_written &gt;= LOGGER_ROTATE_BYTES) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (logger-&gt;bytes_written &gt;= 262144) (assuming true)</font>
+<font color="gray">data_logger.c&nbsp;(53):&nbsp;</font><font color="black">logger_rotate(...)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(81):&nbsp;</font><font color="gray">FILE* fp = (FILE*) logger-&gt;file_handle;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(82):&nbsp;</font><font color="gray">char rotated[LOGGER_PATH_MAX];</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(83):&nbsp;</font><font color="gray">FILE* nfp;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(85):&nbsp;</font><font color="gray">sprintf(rotated, "%s.%u.bak", logger-&gt;log_path, (unsigned) logger-&gt;records_written);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(86):&nbsp;</font><font color="gray">fclose(fp);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(87):&nbsp;</font><font color="gray">rename(logger-&gt;log_path, rotated);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(89):&nbsp;</font><font color="gray">nfp = fopen(logger-&gt;log_path, "w");</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(90):&nbsp;</font><font color="gray">logger-&gt;file_handle = (void*) nfp;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(91):&nbsp;</font><font color="gray">logger-&gt;bytes_written = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(92):&nbsp;</font><font color="gray">fprintf(nfp, LOGGER_CSV_HEADER);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">data_logger.c&nbsp;(93):&nbsp;</font><font color="black">return true;</font>
+<font color="#B71C1C"><b>Point where senseless condition is used</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(53):&nbsp;</font><font color="black">if (!logger_rotate(logger)) {</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId5H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId5H','ViolId5', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">92:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Value returned from method "fopen" should be checked</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
+</tr>
+<tr id="ViolId5" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(81):&nbsp;</font><font color="gray">FILE* fp = (FILE*) logger-&gt;file_handle;</font>
+<font color="gray">data_logger.c&nbsp;(82):&nbsp;</font><font color="gray">char rotated[LOGGER_PATH_MAX];</font>
+<font color="gray">data_logger.c&nbsp;(83):&nbsp;</font><font color="gray">FILE* nfp;</font>
+<font color="gray">data_logger.c&nbsp;(85):&nbsp;</font><font color="gray">sprintf(rotated, "%s.%u.bak", logger-&gt;log_path, (unsigned) logger-&gt;records_written);</font>
+<font color="gray">data_logger.c&nbsp;(86):&nbsp;</font><font color="gray">fclose(fp);</font>
+<font color="gray">data_logger.c&nbsp;(87):&nbsp;</font><font color="gray">rename(logger-&gt;log_path, rotated);</font>
+<font color="#1569C7"><b>Method call</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(89):&nbsp;</font><font color="black">nfp = fopen(logger-&gt;log_path, "w");</font><font color="green"></font>
+<font color="gray">data_logger.c&nbsp;(90):&nbsp;</font><font color="gray">logger-&gt;file_handle = (void*) nfp;</font>
+<font color="gray">data_logger.c&nbsp;(91):&nbsp;</font><font color="gray">logger-&gt;bytes_written = 0;</font>
+<font color="#B71C1C"><b>Point by which returned value should be checked</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(92):&nbsp;</font><font color="black">fprintf(nfp, LOGGER_CSV_HEADER);</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId6H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId6H','ViolId6', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">92:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">"nfp" may possibly be null</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
+</tr>
+<tr id="ViolId6" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(81):&nbsp;</font><font color="gray">FILE* fp = (FILE*) logger-&gt;file_handle;</font>
+<font color="gray">data_logger.c&nbsp;(82):&nbsp;</font><font color="gray">char rotated[LOGGER_PATH_MAX];</font>
+<font color="gray">data_logger.c&nbsp;(83):&nbsp;</font><font color="gray">FILE* nfp;</font>
+<font color="gray">data_logger.c&nbsp;(85):&nbsp;</font><font color="gray">sprintf(rotated, "%s.%u.bak", logger-&gt;log_path, (unsigned) logger-&gt;records_written);</font>
+<font color="gray">data_logger.c&nbsp;(86):&nbsp;</font><font color="gray">fclose(fp);</font>
+<font color="gray">data_logger.c&nbsp;(87):&nbsp;</font><font color="gray">rename(logger-&gt;log_path, rotated);</font>
+<font color="#1569C7"><b>Source of null value</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(89):&nbsp;</font><font color="black">nfp = fopen(logger-&gt;log_path, "w");</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: nfp</font>
+<font color="gray">data_logger.c&nbsp;(90):&nbsp;</font><font color="gray">logger-&gt;file_handle = (void*) nfp;</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: nfp</font>
+<font color="gray">data_logger.c&nbsp;(91):&nbsp;</font><font color="gray">logger-&gt;bytes_written = 0;</font>
+<font color="#B71C1C"><b>Null pointer dereferencing point</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(92):&nbsp;</font><font color="black">fprintf(nfp, LOGGER_CSV_HEADER);</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: nfp</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId7H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId7H','ViolId7', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">108:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Data obtained from a file ("buffer") is used in a loop condition</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-TDLOOP-1</font></td>
+</tr>
+<tr id="ViolId7" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(98):&nbsp;</font><font color="gray">FILE* src;</font>
+<font color="gray">data_logger.c&nbsp;(99):&nbsp;</font><font color="gray">FILE* dst;</font>
+<font color="gray">data_logger.c&nbsp;(100):&nbsp;</font><font color="gray">char buffer[512];</font>
+<font color="gray">data_logger.c&nbsp;(101):&nbsp;</font><font color="gray">size_t n;</font>
+<font color="gray">data_logger.c&nbsp;(103):&nbsp;</font><font color="gray">src = fopen(logger-&gt;log_path, "rb");</font>
+<font color="gray">data_logger.c&nbsp;(104):&nbsp;</font><font color="gray">dst = fopen(dest_path, "wb");</font>
+<font color="gray">data_logger.c&nbsp;(105):&nbsp;</font><font color="gray">if (src == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (src == 0) (assuming false)</font>
+<font color="#1569C7"><b>Tainting point</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(108):&nbsp;</font><font color="black">fread(...)</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: buffer[]</font>
+<font color="gray">data_logger.c&nbsp;(108):&nbsp;</font><font color="gray">while ((n = fread(buffer, 1, sizeof(buffer), src)) &gt; 0) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (n &gt; 0) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+<font color="gray">data_logger.c&nbsp;(109):&nbsp;</font><font color="black">fwrite(buffer, 1, n, dst);</font>
+<font color="#B71C1C"><b>Tainted data use in a loop condition</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(108):&nbsp;</font><font color="black">fread(...)</font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: buffer</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId8H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId8H','ViolId8', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">109:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Value returned from method "fopen" should be checked</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
+</tr>
+<tr id="ViolId8" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(98):&nbsp;</font><font color="gray">FILE* src;</font>
+<font color="gray">data_logger.c&nbsp;(99):&nbsp;</font><font color="gray">FILE* dst;</font>
+<font color="gray">data_logger.c&nbsp;(100):&nbsp;</font><font color="gray">char buffer[512];</font>
+<font color="gray">data_logger.c&nbsp;(101):&nbsp;</font><font color="gray">size_t n;</font>
+<font color="gray">data_logger.c&nbsp;(103):&nbsp;</font><font color="gray">src = fopen(logger-&gt;log_path, "rb");</font>
+<font color="#1569C7"><b>Method call</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(104):&nbsp;</font><font color="black">dst = fopen(dest_path, "wb");</font><font color="green"></font>
+<font color="gray">data_logger.c&nbsp;(105):&nbsp;</font><font color="gray">if (src == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (src == 0) (assuming false)</font>
+<font color="gray">data_logger.c&nbsp;(108):&nbsp;</font><font color="gray">while ((n = fread(buffer, 1, sizeof(buffer), src)) &gt; 0) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (n &gt; 0) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+<font color="#B71C1C"><b>Point by which returned value should be checked</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(109):&nbsp;</font><font color="black">fwrite(buffer, 1, n, dst);</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId9H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId9H','ViolId9', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">109:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">"dst" may possibly be null</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
+</tr>
+<tr id="ViolId9" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(98):&nbsp;</font><font color="gray">FILE* src;</font>
+<font color="gray">data_logger.c&nbsp;(99):&nbsp;</font><font color="gray">FILE* dst;</font>
+<font color="gray">data_logger.c&nbsp;(100):&nbsp;</font><font color="gray">char buffer[512];</font>
+<font color="gray">data_logger.c&nbsp;(101):&nbsp;</font><font color="gray">size_t n;</font>
+<font color="gray">data_logger.c&nbsp;(103):&nbsp;</font><font color="gray">src = fopen(logger-&gt;log_path, "rb");</font>
+<font color="#1569C7"><b>Source of null value</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(104):&nbsp;</font><font color="black">dst = fopen(dest_path, "wb");</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font>
+<font color="gray">data_logger.c&nbsp;(105):&nbsp;</font><font color="gray">if (src == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (src == 0) (assuming false)</font>
+<font color="gray">data_logger.c&nbsp;(108):&nbsp;</font><font color="gray">while ((n = fread(buffer, 1, sizeof(buffer), src)) &gt; 0) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (n &gt; 0) (assuming true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+<font color="#B71C1C"><b>Null pointer dereferencing point</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(109):&nbsp;</font><font color="black">fwrite(buffer, 1, n, dst);</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId10H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId10H','ViolId10', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">112:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">"dst" may possibly be null</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
+</tr>
+<tr id="ViolId10" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(98):&nbsp;</font><font color="gray">FILE* src;</font>
+<font color="gray">data_logger.c&nbsp;(99):&nbsp;</font><font color="gray">FILE* dst;</font>
+<font color="gray">data_logger.c&nbsp;(100):&nbsp;</font><font color="gray">char buffer[512];</font>
+<font color="gray">data_logger.c&nbsp;(101):&nbsp;</font><font color="gray">size_t n;</font>
+<font color="gray">data_logger.c&nbsp;(103):&nbsp;</font><font color="gray">src = fopen(logger-&gt;log_path, "rb");</font>
+<font color="#1569C7"><b>Source of null value</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(104):&nbsp;</font><font color="black">dst = fopen(dest_path, "wb");</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font>
+<font color="gray">data_logger.c&nbsp;(105):&nbsp;</font><font color="gray">if (src == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (src == 0) (assuming false)</font>
+<font color="gray">data_logger.c&nbsp;(108):&nbsp;</font><font color="gray">while ((n = fread(buffer, 1, sizeof(buffer), src)) &gt; 0) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (n &gt; 0) (assuming false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+<font color="gray">data_logger.c&nbsp;(111):&nbsp;</font><font color="gray">fclose(src);</font>
+<font color="#B71C1C"><b>Null pointer dereferencing point</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(112):&nbsp;</font><font color="black">fclose(dst);</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: dst</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId11H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId11H','ViolId11', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">114:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">File not closed: dst</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
+</tr>
+<tr id="ViolId11" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">data_logger.c&nbsp;(98):&nbsp;</font><font color="gray">FILE* src;</font>
+<font color="gray">data_logger.c&nbsp;(99):&nbsp;</font><font color="gray">FILE* dst;</font>
+<font color="gray">data_logger.c&nbsp;(100):&nbsp;</font><font color="gray">char buffer[512];</font>
+<font color="gray">data_logger.c&nbsp;(101):&nbsp;</font><font color="gray">size_t n;</font>
+<font color="gray">data_logger.c&nbsp;(103):&nbsp;</font><font color="gray">src = fopen(logger-&gt;log_path, "rb");</font>
+<font color="#1569C7"><b>Point where file is opened</b>
+</font><font color="#1569C7">data_logger.c&nbsp;(104):&nbsp;</font><font color="black">dst = fopen(dest_path, "wb");</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Opened file: dst</font>
+<font color="gray">data_logger.c&nbsp;(105):&nbsp;</font><font color="gray">if (src == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (src == 0) (assuming true)</font>
+<font color="gray">data_logger.c&nbsp;(106):&nbsp;</font><font color="gray">return false;</font>
+<font color="#B71C1C"><b>Point where opened file is lost</b>&nbsp;
+</font><font color="#B71C1C">data_logger.c&nbsp;(114):&nbsp;</font><font color="black">}</font><font color="green">&nbsp;&nbsp;***&nbsp;Opened file: dst</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;4
+(0)                              
+&nbsp;</b><b>ecg_processor.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId12H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId12H','ViolId12', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">47:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Non-initialized "gain" is used</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NOTINIT-1</font></td>
+</tr>
+<tr id="ViolId12" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">ecg_processor.c&nbsp;(32):&nbsp;</font><font color="gray">int16_t gained;</font>
+<font color="#1569C7"><b>Source of not initialized value</b>
+</font><font color="#1569C7">ecg_processor.c&nbsp;(33):&nbsp;</font><font color="black">int gain;</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Not initialized value: gain</font>
+<font color="gray">ecg_processor.c&nbsp;(35):&nbsp;</font><font color="gray">switch (ecg-&gt;lead) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Switch evaluation: ecg-&gt;lead (assuming "case default")</font>
+<font color="#B71C1C"><b>Usage point</b>&nbsp;
+</font><font color="#B71C1C">ecg_processor.c&nbsp;(47):&nbsp;</font><font color="black">gained = (int16_t) ((raw_sample * gain) / 100);</font><font color="green">&nbsp;&nbsp;***&nbsp;Not initialized value: gain</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId13H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId13H','ViolId13', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">63:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Possibly accessing array "ECG_FIR_TAPS" out of bounds at index [1...17]. Correct index(es): [0...16]</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ARRAY-2</font></td>
+</tr>
+<tr id="ViolId13" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">ecg_processor.c&nbsp;(55):&nbsp;</font><font color="black">int16_t ecg_processor_apply_filter(const EcgProcessor_t* ecg)</font><font color="green"></font>
+<font color="gray">ecg_processor.c&nbsp;(57):&nbsp;</font><font color="gray">int32_t acc = 0;</font>
+<font color="gray">ecg_processor.c&nbsp;(58):&nbsp;</font><font color="gray">int i;</font>
+<font color="gray">ecg_processor.c&nbsp;(59):&nbsp;</font><font color="gray">uint16_t idx = ecg-&gt;head;</font>
+<font color="gray">ecg_processor.c&nbsp;(61):&nbsp;</font><font color="gray">for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt;= 17) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+<font color="gray">ecg_processor.c&nbsp;(62):&nbsp;</font><font color="gray">idx = (idx - 1) % ECG_RING_SIZE;</font>
+<font color="gray">ecg_processor.c&nbsp;(63):&nbsp;</font><font color="gray">acc += (int32_t) ecg-&gt;samples[idx] * (int32_t) ECG_FIR_TAPS[i];</font>
+<font color="gray">ecg_processor.c&nbsp;(61):&nbsp;</font><font color="gray">for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt;= 17) (true)</font><font color="green">&nbsp;&nbsp;***&nbsp;Entering the loop</font>
+<font color="gray">ecg_processor.c&nbsp;(62):&nbsp;</font><font color="gray">idx = (idx - 1) % ECG_RING_SIZE;</font>
+<font color="#B71C1C"><b>Out of bounds access point</b>&nbsp;
+</font><font color="#B71C1C">ecg_processor.c&nbsp;(63):&nbsp;</font><font color="black">acc += (int32_t) ecg-&gt;samples[idx] * (int32_t) ECG_FIR_TAPS[i];</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId14H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId14H','ViolId14', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">107:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Call to "memcpy" may be optimized out by the compiler as the "scratch" buffer is not used later</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-MEMOPT-2</font></td>
+</tr>
+<tr id="ViolId14" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">ecg_processor.c&nbsp;(101):&nbsp;</font><font color="black">void ecg_processor_reset(EcgProcessor_t* ecg)</font><font color="green"></font>
+<font color="gray">ecg_processor.c&nbsp;(103):&nbsp;</font><font color="gray">int16_t* scratch = (int16_t*) malloc(ECG_RING_SIZE * sizeof(int16_t));</font>
+<font color="gray">ecg_processor.c&nbsp;(104):&nbsp;</font><font color="gray">if (scratch == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (scratch == 0) (assuming false)</font>
+<font color="#B71C1C"><b>Use of the memory-setting function</b>&nbsp;
+</font><font color="#B71C1C">ecg_processor.c&nbsp;(107):&nbsp;</font><font color="black">memcpy(scratch, ecg-&gt;samples, sizeof(ecg-&gt;samples));</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId15H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId15H','ViolId15', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">113:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Memory not deallocated: scratch, memcpy(...)</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
+</tr>
+<tr id="ViolId15" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Point where memory is allocated</b>
+</font><font color="#1569C7">ecg_processor.c&nbsp;(103):&nbsp;</font><font color="black">malloc(...)</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: malloc(...)</font>
+<font color="gray">ecg_processor.c&nbsp;(103):&nbsp;</font><font color="black">int16_t* scratch = (int16_t*) malloc(ECG_RING_SIZE * sizeof(int16_t));</font>
+<font color="gray">ecg_processor.c&nbsp;(104):&nbsp;</font><font color="gray">if (scratch == NULL) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: scratch</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (scratch == 0) (assuming false)</font>
+<font color="gray">ecg_processor.c&nbsp;(107):&nbsp;</font><font color="black">memcpy(scratch, ecg-&gt;samples, sizeof(ecg-&gt;samples));</font>
+<font color="gray">ecg_processor.c&nbsp;(108):&nbsp;</font><font color="gray">memset(ecg-&gt;samples, 0, sizeof(ecg-&gt;samples));</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: scratch, memcpy(...)</font>
+<font color="gray">ecg_processor.c&nbsp;(109):&nbsp;</font><font color="gray">ecg-&gt;head = 0;</font>
+<font color="gray">ecg_processor.c&nbsp;(110):&nbsp;</font><font color="gray">ecg-&gt;tail = 0;</font>
+<font color="gray">ecg_processor.c&nbsp;(111):&nbsp;</font><font color="gray">ecg-&gt;heart_rate_bpm = 0;</font>
+<font color="gray">ecg_processor.c&nbsp;(112):&nbsp;</font><font color="gray">ecg-&gt;last_qrs_tick = 0;</font>
+<font color="#B71C1C"><b>Point where allocated memory is lost</b>&nbsp;
+</font><font color="#B71C1C">ecg_processor.c&nbsp;(113):&nbsp;</font><font color="black">}</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: scratch, memcpy(...)</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+(0)                              
+&nbsp;</b><b>main.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId16H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId16H','ViolId16', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">65:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Memory not deallocated: rec</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-RES-LEAKS-1</font></td>
+</tr>
+<tr id="ViolId16" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">main.c&nbsp;(54):&nbsp;</font><font color="gray">char id[MAX_PATIENT_ID_LEN];</font>
+<font color="gray">main.c&nbsp;(55):&nbsp;</font><font color="gray">char name[MAX_PATIENT_NAME_LEN];</font>
+<font color="gray">main.c&nbsp;(56):&nbsp;</font><font color="gray">int age;</font>
+<font color="gray">main.c&nbsp;(57):&nbsp;</font><font color="gray">PatientRecord_t* rec;</font>
+<font color="gray">main.c&nbsp;(59):&nbsp;</font><font color="gray">sscanf(raw_line, "%[^,],%[^,],%d", id, name, &amp;age);</font>
+<font color="gray">main.c&nbsp;(61):&nbsp;</font><font color="black">rec = patient_record_create(id, name, (uint8_t) age);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(13):&nbsp;</font><font color="gray">PatientRecord_t* record;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#1569C7"><b>Point where memory is allocated</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#1569C7">patient_record.c&nbsp;(15):&nbsp;</font><font color="black">malloc(...)</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: malloc(...)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(15):&nbsp;</font><font color="black">record = (PatientRecord_t*) malloc(sizeof(PatientRecord_t));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(17):&nbsp;</font><font color="gray">strcpy(record-&gt;id, id);</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: record</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(18):&nbsp;</font><font color="gray">strcpy(record-&gt;name, name);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(19):&nbsp;</font><font color="gray">record-&gt;age_years = age;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(20):&nbsp;</font><font color="gray">record-&gt;status = PATIENT_STATUS_ADMITTED;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(21):&nbsp;</font><font color="gray">record-&gt;admit_tick = g_admit_tick_counter++;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(23):&nbsp;</font><font color="black">return record;</font>
+<font color="gray">main.c&nbsp;(62):&nbsp;</font><font color="black">patient_record_assign_room(rec, "ICU-01");</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: rec</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(33):&nbsp;</font><font color="gray">strcpy(record-&gt;room, room_id);</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: record</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(34):&nbsp;</font><font color="black">return true;</font>
+<font color="gray">main.c&nbsp;(63):&nbsp;</font><font color="black">patient_record_register(rec);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(65):&nbsp;</font><font color="gray">if (g_patient_count &gt;= MAX_ACTIVE_PATIENTS) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: record</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (g_patient_count &gt;= 8) (assuming true)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">patient_record.c&nbsp;(66):&nbsp;</font><font color="black">return false;</font>
+<font color="gray">main.c&nbsp;(64):&nbsp;</font><font color="gray">return 0;</font>
+<font color="#B71C1C"><b>Point where allocated memory is lost</b>&nbsp;
+</font><font color="#B71C1C">main.c&nbsp;(65):&nbsp;</font><font color="black">}</font><font color="green">&nbsp;&nbsp;***&nbsp;Allocated memory: rec</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId17H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId17H','ViolId17', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">111:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">The size of "admit_line" is 128, and the size of its input, "argv[1]", was not checked. Possible buffer overflow.</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-SECURITY-BUFWRITE-1</font></td>
+</tr>
+<tr id="ViolId17" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Tainting buffer input</b>
+</font><font color="#1569C7">main.c&nbsp;(98):&nbsp;</font><font color="black">int main(int argc, char** argv)</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: argv[]</font>
+<font color="gray">main.c&nbsp;(100):&nbsp;</font><font color="gray">char admit_line[128];</font>
+<font color="gray">main.c&nbsp;(101):&nbsp;</font><font color="gray">int loop_count;</font>
+<font color="gray">main.c&nbsp;(103):&nbsp;</font><font color="gray">ecg_processor_init(&amp;g_ecg, ECG_LEAD_II);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(19):&nbsp;</font><font color="gray">memset(ecg-&gt;samples, 0, sizeof(ecg-&gt;samples));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(20):&nbsp;</font><font color="gray">ecg-&gt;head = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(21):&nbsp;</font><font color="gray">ecg-&gt;tail = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(22):&nbsp;</font><font color="gray">ecg-&gt;dc_baseline = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(23):&nbsp;</font><font color="gray">ecg-&gt;detection_threshold = ECG_ADAPTIVE_THRESH_INIT;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(24):&nbsp;</font><font color="gray">ecg-&gt;last_qrs_tick = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(25):&nbsp;</font><font color="gray">ecg-&gt;heart_rate_bpm = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(26):&nbsp;</font><font color="gray">ecg-&gt;lead = lead;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">ecg_processor.c&nbsp;(27):&nbsp;</font><font color="gray">ecg-&gt;is_initialized = true;</font>
+<font color="gray">main.c&nbsp;(104):&nbsp;</font><font color="gray">spo2_monitor_init(&amp;g_spo2);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(12):&nbsp;</font><font color="gray">memset(mon, 0, sizeof(*mon));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">spo2_monitor.c&nbsp;(13):&nbsp;</font><font color="gray">mon-&gt;spo2_percent = SPO2_MAX_VALID_PCT;</font>
+<font color="gray">main.c&nbsp;(105):&nbsp;</font><font color="gray">nibp_monitor_init(&amp;g_nibp);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">nibp_monitor.c&nbsp;(11):&nbsp;</font><font color="gray">memset(nibp, 0, sizeof(*nibp));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">nibp_monitor.c&nbsp;(12):&nbsp;</font><font color="gray">nibp-&gt;state = NIBP_STATE_IDLE;</font>
+<font color="gray">main.c&nbsp;(106):&nbsp;</font><font color="gray">alarm_manager_init(&amp;g_alarms);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">alarm_manager.c&nbsp;(12):&nbsp;</font><font color="gray">memset(mgr, 0, sizeof(*mgr));</font>
+<font color="gray">main.c&nbsp;(107):&nbsp;</font><font color="gray">comm_link_init(&amp;g_link);</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(25):&nbsp;</font><font color="gray">memset(link-&gt;tx_buffer, 0, sizeof(link-&gt;tx_buffer));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(26):&nbsp;</font><font color="gray">memset(link-&gt;rx_buffer, 0, sizeof(link-&gt;rx_buffer));</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(27):&nbsp;</font><font color="gray">link-&gt;tx_len = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(28):&nbsp;</font><font color="gray">link-&gt;rx_len = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(29):&nbsp;</font><font color="gray">link-&gt;tx_sequence = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(30):&nbsp;</font><font color="gray">link-&gt;rx_sequence = 0;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(31):&nbsp;</font><font color="gray">link-&gt;is_connected = false;</font>
+<font color="gray">main.c&nbsp;(108):&nbsp;</font><font color="gray">comm_link_connect(&amp;g_link, "central-station.local");</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(36):&nbsp;</font><font color="gray">bsp_endpoint_reachable(...)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">main.c&nbsp;(25):&nbsp;</font><font color="gray">bool bsp_endpoint_reachable(const char* e) { (void) e; return true; }</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(36):&nbsp;</font><font color="gray">if (!bsp_endpoint_reachable(endpoint)) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: !bsp_endpoint_reachable(...) (false)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(39):&nbsp;</font><font color="gray">link-&gt;is_connected = true;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">comm_link.c&nbsp;(40):&nbsp;</font><font color="gray">return true;</font>
+<font color="gray">main.c&nbsp;(110):&nbsp;</font><font color="gray">if (argc &gt; 1) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: (argc &gt; 1) (assuming true)</font>
+<font color="#B71C1C"><b>Copying tainted value to buffer</b>&nbsp;
+</font><font color="#B71C1C">main.c&nbsp;(111):&nbsp;</font><font color="black">strcpy(admit_line, argv[1]);</font><font color="green">&nbsp;&nbsp;***&nbsp;Tainted data: argv[1]</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<li id="item" class="tree">&nbsp;&nbsp;&nbsp;<b>&nbsp;0
+(0)                              
+&nbsp;</b><b>nibp_monitor.c</b></li>
+<ul id="cs_foldinglist" style="display:none"></ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+(0)                              
+&nbsp;</b><b>patient_record.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId18H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId18H','ViolId18', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">17:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Value returned from method "malloc" should be checked</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-CHECKRETGEN-2</font></td>
+</tr>
+<tr id="ViolId18" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">patient_record.c&nbsp;(13):&nbsp;</font><font color="gray">PatientRecord_t* record;</font>
+<font color="#1569C7"><b>Method call</b>
+</font><font color="#1569C7">patient_record.c&nbsp;(15):&nbsp;</font><font color="black">malloc(...)</font><font color="green"></font>
+<font color="gray">patient_record.c&nbsp;(15):&nbsp;</font><font color="gray">record = (PatientRecord_t*) malloc(sizeof(PatientRecord_t));</font>
+<font color="#B71C1C"><b>Point by which returned value should be checked</b>&nbsp;
+</font><font color="#B71C1C">patient_record.c&nbsp;(17):&nbsp;</font><font color="black">strcpy(record-&gt;id, id);</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId19H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId19H','ViolId19', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">17:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">"record" may possibly be null</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-NP-1</font></td>
+</tr>
+<tr id="ViolId19" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="gray">patient_record.c&nbsp;(13):&nbsp;</font><font color="gray">PatientRecord_t* record;</font>
+<font color="#1569C7"><b>Source of null value</b>
+</font><font color="#1569C7">patient_record.c&nbsp;(15):&nbsp;</font><font color="black">malloc(...)</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: malloc(...)</font>
+<font color="gray">patient_record.c&nbsp;(15):&nbsp;</font><font color="black">record = (PatientRecord_t*) malloc(sizeof(PatientRecord_t));</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: malloc(...) -&gt; record</font>
+<font color="#B71C1C"><b>Null pointer dereferencing point</b>&nbsp;
+</font><font color="#B71C1C">patient_record.c&nbsp;(17):&nbsp;</font><font color="black">strcpy(record-&gt;id, id);</font><font color="green">&nbsp;&nbsp;***&nbsp;Null value carrier: record</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<li id="cs_foldheader" class="tree">&nbsp;<font class="gray">+</font><b>&nbsp;2
+(0)                              
+&nbsp;</b><b>spo2_monitor.c</b></li>
+<ul id="cs_foldinglist" style="display:none">
+<li id="item">
+<table width="89%" class="details" cellspacing="0">
+<tr valign="bottom" id="ViolId20H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId20H','ViolId20', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">33:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Division by "n" which may possibly be zero</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-ZERO-1</font></td>
+</tr>
+<tr id="ViolId20" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(30):&nbsp;</font><font color="black">for (i = 0; i &lt; n; i++) {</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: i = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Condition evaluation: i &lt; (int)n (assuming 0) -&gt; n = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (assuming false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+<font color="#B71C1C"><b>Point of division by zero</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(33):&nbsp;</font><font color="black">return sum / n;</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$0 = (unsigned int)n -&gt; tmp$0 = 0</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="bottom" id="ViolId21H" style="cursor:pointer" onclick="javascript:expandViolaion('ViolId21H','ViolId21', '1')">
+<td width="2%"></td>
+<td width="1%" align="right">&nbsp;<font class="gray"><span>+</span></font>&nbsp;
+</td>
+<td width="2%" align="right" valign="top"><font class="gray">45:&nbsp;</font></td>
+<td valign="top" class="tree"><span style="white-space: pre-wrap;">Data loss during type conversion: value of (uint16_t)((int)max_v - (int)min_v) will be 1 instead of -65,535. Result type range:
+[0..2^16)</span></td>
+<td valign="top" width="10%" nowrap>&nbsp;<a class="gray_link" href="#cs_dev1">syoung</a>&nbsp;
+</td>
+<td align="right" valign="top" width="10%" nowrap><font class="gray">BD-PB-INTDL-2</font></td>
+</tr>
+<tr id="ViolId21" style="display:none">
+<td style="padding-left:10px" class="tree">&nbsp;</td>
+<!--bd_legend_required_marker-->
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5"></td>
+<td bgcolor="#F5F5F5" colspan="3">
+<table width="100%" style="table-layout:fixed">
+<tr>
+<td><pre class="tree" wrap="wrap"><font color="#1569C7"><b>Start of the path</b>
+</font><font color="#1569C7">spo2_monitor.c&nbsp;(38):&nbsp;</font><font color="black">uint16_t max_v = 0;</font><font color="green"></font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: max_v = 0</font>
+<font color="gray">spo2_monitor.c&nbsp;(39):&nbsp;</font><font color="black">uint16_t min_v = 0xFFFFu;</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: min_v = 65535</font>
+<font color="gray">spo2_monitor.c&nbsp;(40):&nbsp;</font><font color="gray">int i;</font>
+<font color="gray">spo2_monitor.c&nbsp;(41):&nbsp;</font><font color="gray">for (i = 0; i &lt; n; i++) {</font><font color="green">&nbsp;&nbsp;***&nbsp;Loop condition evaluation: (i &lt; n) (assuming false)</font><font color="green">&nbsp;&nbsp;***&nbsp;Not entering the loop</font>
+<font color="#B71C1C"><b>Integer type conversion point</b>&nbsp;
+</font><font color="#B71C1C">spo2_monitor.c&nbsp;(45):&nbsp;</font><font color="black">return (uint16_t) (max_v - min_v);</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$0 = (int)max_v -&gt; tmp$0 = 0</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$1 = (int)min_v -&gt; tmp$1 = 65535</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$2 = (tmp$0 - tmp$1) -&gt; tmp$2 = -65535</font><font color="green">&nbsp;&nbsp;***&nbsp;Variable assignment: tmp$3 = (uint16_t)tmp$2 -&gt; tmp$3 = 1</font><font color="green"></font></pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><table width="800" style="padding-left:4px" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="3"><b>Flow Analysis Legend:<br><br></b></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#1569C7"><b>Message</b></font> - violation cause
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#B71C1C"><b>Message</b></font> - violation point
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="green"><b>Message</b></font> - path element annotation
+</td>
+</tr>
+<!--bd_legend_present_marker-->
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="25%"></td>
+<td align="center">
+<div class="small_header">Active Rules</div>
+</td>
+<td align="right" width="25%"><a xmlns:authors="authors" class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table xmlns:authors="authors" width="100%" class="header_separator" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" class="header_separator"></td>
+</tr>
+</table><br xmlns:authors="authors"></td>
+</tr>
+<tr>
+<td align="left">
+<table width="100%" cellpadding="0" cellspacing="0" class="doubleborder">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;<b>[105/144]
+&nbsp;Flow Analysis</b>&nbsp;<font class="gray">(BD)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[3/8]
+&nbsp;Incorrect API usage</b>&nbsp;<font class="gray">(BD-API)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass incorrect values to library functions&nbsp;<font class="gray">(BD-API-BADPARAM-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass negative values to functions expecting non-negative arguments&nbsp;<font class="gray">(BD-API-NEGPARAM-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not check for a non-negative value after passing as a non-negative argument&nbsp;<font class="gray">(BD-API-REVNEGPARAM-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[62/74]
+&nbsp;Possible Bugs</b>&nbsp;<font class="gray">(BD-PB)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always catch exceptions&nbsp;<font class="gray">(BD-PB-EXCEPT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid signed integer overflows&nbsp;<font class="gray">(BD-PB-INTUB-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid use before initialization&nbsp;<font class="gray">(BD-PB-NOTINIT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomic objects shall be properly initialized before being accessed&nbsp;<font class="gray">(BD-PB-NOTINITAT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid null pointer dereferencing&nbsp;<font class="gray">(BD-PB-NP-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid buffer overflow due to defining incorrect format limits&nbsp;<font class="gray">(BD-PB-OVERFFMT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid overflow due to reading a not zero terminated string&nbsp;<font class="gray">(BD-PB-OVERFNZT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid overflow when reading from a buffer&nbsp;<font class="gray">(BD-PB-OVERFRD-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid overflow when writing to a buffer&nbsp;<font class="gray">(BD-PB-OVERFWR-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not point to a wrapped object that has been freed&nbsp;<font class="gray">(BD-PB-WRAPESC-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid division by zero&nbsp;<font class="gray">(BD-PB-ZERO-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid accessing arrays out of bounds&nbsp;<font class="gray">(BD-PB-ARRAY-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A pointer pointing to an element of an array of objects shall not be passed to a smart pointer of single object type&nbsp;<font class="gray">(BD-PB-ARRPTR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid incorrect shift operations&nbsp;<font class="gray">(BD-PB-BADSHIFT-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use the correct byte ordering when transferring data between systems&nbsp;<font class="gray">(BD-PB-BYTEORD-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid conditions that always evaluate to the same value&nbsp;<font class="gray">(BD-PB-CC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consistently check the returned value of non-void functions&nbsp;<font class="gray">(BD-PB-CHECKRET-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always check the returned value of non-void function&nbsp;<font class="gray">(BD-PB-CHECKRETGEN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid accessing collections out of bounds&nbsp;<font class="gray">(BD-PB-COOB-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not modify the alignment of objects by calling realloc()&nbsp;<font class="gray">(BD-PB-DNMPTR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The macro EOF should be compared with the unmodified return value from the Standard Library function&nbsp;<font class="gray">(BD-PB-EOFCOMP-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly use errno value&nbsp;<font class="gray">(BD-PB-ERRNO-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly define exit handlers&nbsp;<font class="gray">(BD-PB-EXITHAN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset strings on fgets() or fgetws() failure&nbsp;<font class="gray">(BD-PB-FGETS-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only use values for fsetpos() that are returned from fgetpos()&nbsp;<font class="gray">(BD-PB-FSETPOS-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid data loss when converting between integer types&nbsp;<font class="gray">(BD-PB-INTDL-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not rely on an environment pointer following an operation that may invalidate it&nbsp;<font class="gray">(BD-PB-INVENV-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pointers returned by certain Standard Library functions should not be used following a subsequent call to the same or related
+function&nbsp;<font class="gray">(BD-PB-INVRET-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Standard Library function memcmp shall not be used to compare null terminated strings&nbsp;<font class="gray">(BD-PB-MCCSTR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid calls to memory-setting functions that can be optimized out by the compiler&nbsp;<font class="gray">(BD-PB-MEMOPT-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly define new handlers&nbsp;<font class="gray">(BD-PB-NEWHAN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid throwing exceptions from functions that are declared not to throw&nbsp;<font class="gray">(BD-PB-NOEXCEPT-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Never return from functions that should not return&nbsp;<font class="gray">(BD-PB-NORETURN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid accessing arrays and pointers out of bounds&nbsp;<font class="gray">(BD-PB-OVERFARRAY-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An object shall not be assigned or copied to an overlapping object&nbsp;<font class="gray">(BD-PB-OVERLAP-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not treat arrays polymorphically&nbsp;<font class="gray">(BD-PB-POLARR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not compare two unrelated pointers&nbsp;<font class="gray">(BD-PB-PTRCMP-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not subtract two pointers that do not address elements of the same array&nbsp;<font class="gray">(BD-PB-PTRSUB-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not store an already-owned pointer value in an unrelated smart pointer&nbsp;<font class="gray">(BD-PB-PTRVALUE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not call putenv() with a pointer to an automatic variable as the argument&nbsp;<font class="gray">(BD-PB-PUTENV-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not return from a computational exception signal handler&nbsp;<font class="gray">(BD-PB-SIGRETURN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not alternately input and output from a stream without an intervening flush or positioning call&nbsp;<font class="gray">(BD-PB-STREAMINOUT-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not subsequently use the argument to std::forward&nbsp;<font class="gray">(BD-PB-SUBSEQFRWD-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not rely on the value of a moved-from object&nbsp;<font class="gray">(BD-PB-SUBSEQMOVE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid switch with unreachable branches&nbsp;<font class="gray">(BD-PB-SWITCH-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly define terminate handlers&nbsp;<font class="gray">(BD-PB-TERMHAN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly define unexpected handlers&nbsp;<font class="gray">(BD-PB-UNEXPHAN-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use the ungetc function on a stream with the file position indicator zero&nbsp;<font class="gray">(BD-PB-UNGETC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use dynamic type of an object under construction&nbsp;<font class="gray">(BD-PB-VCTOR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use dynamic type of an object under destruction&nbsp;<font class="gray">(BD-PB-VDTOR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure the size of the variable length array is in valid range&nbsp;<font class="gray">(BD-PB-VLASIZE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The same file shall not be opened for read and write access at the same time on different streams&nbsp;<font class="gray">(BD-PB-WRRDSTR-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid writing to a stream which has been opened as read only&nbsp;<font class="gray">(BD-PB-WRROS-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid value change when converting between integer types&nbsp;<font class="gray">(BD-PB-INTVC-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid wraparounds when performing arithmetic integer operations&nbsp;<font class="gray">(BD-PB-INTWRAP-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure strings are zero terminated&nbsp;<font class="gray">(BD-PB-NZTS-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure the output buffer is large enough when using path manipulation functions&nbsp;<font class="gray">(BD-PB-PATHBUF-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always throw the created std::exception object&nbsp;<font class="gray">(BD-PB-STDEXC-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suspicious setting of stream flags&nbsp;<font class="gray">(BD-PB-STREAMFLAGS-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restore stream format&nbsp;<font class="gray">(BD-PB-STREAMFMT-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid unused values&nbsp;<font class="gray">(BD-PB-VOVR-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guarantee that container indices are within the valid range&nbsp;<font class="gray">(BD-PB-VALRANGE-4)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[8/8]
+&nbsp;Resources</b>&nbsp;<font class="gray">(BD-RES)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properly deallocate dynamically allocated resources&nbsp;<font class="gray">(BD-RES-BADDEALLOC-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure deallocation functions guarantee resource freeing&nbsp;<font class="gray">(BD-RES-BADFREEF-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use resources that have been freed&nbsp;<font class="gray">(BD-RES-FREE-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allocate sufficient memory to hold an object of a given type&nbsp;<font class="gray">(BD-RES-INSUFMEM-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not free resources using invalid pointers&nbsp;<font class="gray">(BD-RES-INVFREE-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure resources are freed&nbsp;<font class="gray">(BD-RES-LEAKS-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid cyclic shared_ptr references&nbsp;<font class="gray">(BD-RES-CSP-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not create variables on the stack above the defined limits&nbsp;<font class="gray">(BD-RES-STACKLIM-3)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[17/24]
+&nbsp;Security</b>&nbsp;<font class="gray">(BD-SECURITY)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid tainted data in array indexes&nbsp;<font class="gray">(BD-SECURITY-ARRAY-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prevent buffer overflows from tainted data&nbsp;<font class="gray">(BD-SECURITY-BUFWRITE-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid unsafe use of a value obtained from arithmetic operations on tainted value&nbsp;<font class="gray">(BD-SECURITY-INTOVERF-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid buffer overflow from tainted data due to defining incorrect format limits&nbsp;<font class="gray">(BD-SECURITY-OVERFFMT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid buffer read overflow from tainted data&nbsp;<font class="gray">(BD-SECURITY-OVERFRD-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid buffer write overflow from tainted data&nbsp;<font class="gray">(BD-SECURITY-OVERFWR-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against command injection&nbsp;<font class="gray">(BD-SECURITY-TDCMD-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid printing tainted data on the output console&nbsp;<font class="gray">(BD-SECURITY-TDCONSOLE-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against environment injection&nbsp;<font class="gray">(BD-SECURITY-TDENV-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against file name injection&nbsp;<font class="gray">(BD-SECURITY-TDFNAMES-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exclude unsanitized user input from format strings&nbsp;<font class="gray">(BD-SECURITY-TDINPUT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate potentially tainted data before it is used in the controlling expression of a loop&nbsp;<font class="gray">(BD-SECURITY-TDLOOP-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protect against SQL injection&nbsp;<font class="gray">(BD-SECURITY-TDSQL-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sensitive data should be cleared before being deallocated&nbsp;<font class="gray">(BD-SECURITY-SENSFREE-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid passing sensitive data to functions that write to log files&nbsp;<font class="gray">(BD-SECURITY-SENSLOG-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate potentially tainted data before it is used to determine the size of memory allocation&nbsp;<font class="gray">(BD-SECURITY-TDALLOC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable resolving XML external entities (XXE) in libxerces-c&nbsp;<font class="gray">(BD-SECURITY-XXEXRC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[4/5]
+&nbsp;Containers</b>&nbsp;<font class="gray">(BD-CO)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not access iterator out of range&nbsp;<font class="gray">(BD-CO-ITOUT-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use valid references, pointers, and iterators to reference elements of a basic_string&nbsp;<font class="gray">(BD-CO-STRMOD-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not pass empty container iterators to std algorithms as destinations&nbsp;<font class="gray">(BD-CO-EMPCON-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not modify container while iterating over it&nbsp;<font class="gray">(BD-CO-ITMOD-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[11/23]
+&nbsp;Threads &amp; Synchronization</b>&nbsp;<font class="gray">(BD-TRS)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid double locking&nbsp;<font class="gray">(BD-TRS-DLOCK-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid race conditions when using fork and file descriptors&nbsp;<font class="gray">(BD-TRS-FORKFILE-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not abandon unreleased locks&nbsp;<font class="gray">(BD-TRS-LOCK-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not acquire locks in different order&nbsp;<font class="gray">(BD-TRS-ORDER-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid race conditions while checking for the existence of a symbolic link&nbsp;<font class="gray">(BD-TRS-SYMLINK-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not use blocking functions while holding a lock&nbsp;<font class="gray">(BD-TRS-TSHL-1)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declare objects shared between POSIX threads with appropriate storage durations&nbsp;<font class="gray">(BD-TRS-ARG-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variable should be used in context of single critical section&nbsp;<font class="gray">(BD-TRS-DIFCS-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid race conditions while accessing files&nbsp;<font class="gray">(BD-TRS-FRC-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not join or detach a thread that was previously joined or detached&nbsp;<font class="gray">(BD-TRS-JOINDETACH-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="tree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Standard Library function mtx_timedlock() shall not be invoked on a mutex that does not support timeout&nbsp;<font class="gray">(BD-TRS-TIMEDLOCK-2)</font>&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div><br></td>
+</tr>
+</table><script language="JavaScript">
+    if(document.getElementById("cs_link_cat") != null) {
+       document.getElementById("cs_link_cat").className="gray_red_link";
+    }
+    if(document.getElementById("cs_link_cattrue") != null) {
+       document.getElementById("cs_link_cattrue").className="gray_red_link";
+    }
+    </script></td>
+</tr>
+</table>
+<table style="padding-right:25px;padding-left:25px" width="100%" cellspacing="0">
+<tr>
+<td>
+<table width="100%" class="singleborder_blue" bgcolor="#FFFFFF" cellspacing="0" align="center" rules="none">
+<tr>
+<td bgcolor="#FFFFFF" align="center">
+<div class="small_header">Test Parameters</div>
+</td>
+</tr>
+<tr>
+<td>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" class="header_separator" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" class="header_separator"></td>
+</tr>
+</table><br xmlns:textutil="textutil" xmlns:authors="authors"></td>
+</tr>
+<tr>
+<td style="" bgcolor="#FFFFFF" align="left">
+<table class="doubleborder" width="100%" cellpadding="2" cellspacing="0" align="center">
+<tr>
+<td class="tree" align="left">
+<div id="paramsHeader">cpptestcli -compiler gcc_9-64 -config builtin://Flow Analysis Standard -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports
+-resource /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay -module . -input build/compile_commands.json
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br></td>
+</tr>
+</table>
+</body>
+</html>

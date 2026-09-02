@@ -1,0 +1,4 @@
+{
+    "cpptest.testConfiguration": "builtin://Flow Analysis Standard",
+    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -input build/compile_commands.json"
+}

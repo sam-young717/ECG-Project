@@ -1,0 +1,670 @@
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'sprintf' library function should not be used
+<l>22
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fopen' library function should not be used
+<l>25
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fprintf' library function should not be used
+<l>32
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'sprintf' library function should not be used
+<l>47
+<k>15
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fwrite' library function should not be used
+<l>55
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fflush' library function should not be used
+<l>73
+<k>12
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fclose' library function should not be used
+<l>80
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'sprintf' library function should not be used
+<l>92
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fclose' library function should not be used
+<l>93
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'rename' library function should not be used
+<l>94
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fopen' library function should not be used
+<l>96
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fprintf' library function should not be used
+<l>99
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fopen' library function should not be used
+<l>110
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fopen' library function should not be used
+<l>111
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fread' library function should not be used
+<l>115
+<k>17
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fwrite' library function should not be used
+<l>116
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fclose' library function should not be used
+<l>118
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-110
+<b>The 'fclose' library function should not be used
+<l>119
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-128_b
+<b>Pointer to void type should not be converted to a pointer to object type 'FILE *'
+<l>39
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-128_b
+<b>Pointer to void type should not be converted to a pointer to object type 'FILE *'
+<l>69
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-128_b
+<b>Pointer to void type should not be converted to a pointer to object type 'FILE *'
+<l>78
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-128_b
+<b>Pointer to void type should not be converted to a pointer to object type 'FILE *'
+<l>88
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-138
+<b>Assignment operator '=' is used in improper context
+<l>115
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-138
+<b>Assignment operator '=' is used in improper context
+<l>115
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-138
+<b>Assignment operator '=' is used in improper context
+<l>115
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-138
+<b>Assignment operator '=' is used in improper context
+<l>115
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-164_a
+<b>Operands of the '>=' operator have different essential types: 'unsigned int' and 'short'
+<l>59
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-164_a
+<b>Operands of the '>' operator have different essential types: 'unsigned long' and 'signed char'
+<l>115
+<k>12
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>92
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>93
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "rename" return value
+<l>94
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fprintf" return value
+<l>99
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>22
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "strcpy" return value
+<l>23
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fprintf" return value
+<l>32
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fwrite" return value
+<l>55
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_append' function
+<l>44
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_append' function
+<l>61
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_append' function
+<l>64
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_flush' function
+<l>71
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_flush' function
+<l>73
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>80
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>92
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>93
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "rename" return value
+<l>94
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fprintf" return value
+<l>99
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fwrite" return value
+<l>116
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>118
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>119
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_export' function
+<l>113
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'data_logger_export' function
+<l>120
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>22
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "strcpy" return value
+<l>23
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fprintf" return value
+<l>32
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fwrite" return value
+<l>55
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>80
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fwrite" return value
+<l>116
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>118
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>CODSTA-122_a
+<b>Unused function's "fclose" return value
+<l>119
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>41
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>48
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>49
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>50
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>51
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>52
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>53
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>92
+<k>54
+<s>false
+<N>
+<f>
+<L>0

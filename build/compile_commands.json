@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/main.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/main.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/patient_record.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/data_logger.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o"
+}
+]

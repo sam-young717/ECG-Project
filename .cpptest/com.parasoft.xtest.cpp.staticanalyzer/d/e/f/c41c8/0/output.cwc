@@ -1,0 +1,290 @@
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-110
+<b>The 'sprintf' library function should not be used
+<l>38
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-110
+<b>The 'sprintf' library function should not be used
+<l>100
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-163_b
+<b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
+<l>40
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-163_b
+<b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
+<l>69
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-163_b
+<b>The expression of the 'essentially signed' type is assigned to an object with the 'essentially unsigned' type
+<l>58
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>FORMAT-50
+<b>The left hand operand of the '&&' operator should be in parentheses
+<l>59
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '+' operator have different essential types: 'unsigned short' and 'signed char'
+<l>40
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '+' operator have different essential types: 'unsigned short' and 'signed char'
+<l>69
+<k>22
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '>=' operator have different essential types: 'unsigned short' and 'signed char'
+<l>26
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '==' operator have different essential types: 'unsigned short' and 'signed char'
+<l>52
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '%' operator have different essential types: 'unsigned short' and 'signed char'
+<l>58
+<k>24
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-164_a
+<b>Operands of the '<' operator have different essential types: 'unsigned short' and 'signed char'
+<l>78
+<k>17
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_audio_beep' function with external linkage in an implementation file
+<l>12
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_led_flash' function with external linkage in an implementation file
+<l>13
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_console_write' function with external linkage in an implementation file
+<l>14
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>18
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>38
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'alarm_manager_raise' function
+<l>27
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'alarm_manager_raise' function
+<l>43
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>65
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'alarm_manager_pop' function
+<l>53
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'alarm_manager_pop' function
+<l>72
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>100
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-14_7
+<b>'return' statement should be at the end of the 'alarm_manager_dispatch' function
+<l>92
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>18
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>38
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>65
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>CODSTA-122_a
+<b>Unused function's "sprintf" return value
+<l>100
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'unsigned' should not be used
+<l>38
+<k>40
+<s>false
+<N>
+<f>
+<L>0

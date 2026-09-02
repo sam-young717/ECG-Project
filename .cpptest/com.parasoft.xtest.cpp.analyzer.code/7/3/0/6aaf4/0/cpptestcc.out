@@ -1,0 +1,4 @@
+/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c:13: warning: "SYSTEM_TICK_MS" redefined
+   13 | #define SYSTEM_TICK_MS           1U
+      | 
+<command-line>: note: this is the location of the previous definition

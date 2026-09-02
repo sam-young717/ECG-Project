@@ -1,0 +1,14 @@
+file=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
+compiler=gcc_9-64
+working_dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build
+arg=/usr/bin/cc
+arg=-DCARDIO_MONITOR_FW_VERSION="1.4.2"
+arg=-DECG_SAMPLE_RATE_HZ=250
+arg=-DSPO2_SAMPLE_RATE_HZ=100
+arg=-DSYSTEM_TICK_MS=10
+arg=-I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include
+arg=-g
+arg=-std=c99
+arg=-fno-common
+arg=-c
+arg=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c

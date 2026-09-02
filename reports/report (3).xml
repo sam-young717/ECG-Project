@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="2026-09-01" climode="true" endTime="2026-09-01T12:13:49-04:00" execEnv="linux_x86_64" hasViols="true" id="1786910632850" lang="en" machine="syoung-pc" prjModule="RockStarDisplay" project="" tag="${scontrol_branch}-linux_x86_64" time="2026-09-01T12:13:27-04:00" toolDispName="C/C++test" toolId="c++test" toolName="DTP Engine for C/C++" toolVer="2026.1.0" user="syoung">
+   <TestParameters cmdLn="cpptestcli -compiler gcc_9-64 -config builtin://CWE Top 25 2024 -report /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/reports -resource /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay -module . -input build/compile_commands.json"/>
+   <TestConfig machine="syoung-pc" name="CWE Top 25 2024" pseudoUrl="builtin://CWE Top 25 2024" user="syoung"/>
+   <Authors>
+      <Author id="dev1" name="syoung"/>
+   </Authors>
+   <Analyzers>
+      <Analyzer id="com.parasoft.xtest.scope.analyzer" name="Scope Analyzer" ver="10.7.4.20260510"/>
+      <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.code" name="Parasoft C/C++ Code Analyzer" ver="10.7.4.20260522B3002"/>
+      <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.pattern" name="Parasoft C/C++ Static Analyzer" ver="10.7.4.20260522B3002"/>
+      <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.flow" name="Parasoft C/C++ Flow Analyzer" ver="10.7.4.20260424B6732"/>
+      <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.global" name="Parasoft C/C++ Global Static Analyzer" ver="10.7.4.20260522B3002"/>
+   </Analyzers>
+   <VersionInfos>
+      <StorageInfo ownerId="" resultId="ISetupResult" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricsViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IExecutionViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IDupCodeViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IFlowAnalysisViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IFunctionalViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IChangeImpactViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="ICodingStandardsViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IUnitTestViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IVisualDiffViolation" ver="1" ver10x="1"/>
+   </VersionInfos>
+   <Goals tsks="34">
+      
+   </Goals>
+   <Scope>
+      <Repositories/>
+      <Locations>
+         <Loc auth="syoung" hash="703442500" locRef="1" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/main.c" totLns="139" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c"/>
+         <Loc auth="syoung" hash="-342234449" locRef="2" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/ecg_processor.c" totLns="127" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c"/>
+         <Loc auth="syoung" hash="690983367" locRef="3" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/spo2_monitor.c" totLns="105" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c"/>
+         <Loc auth="syoung" hash="-1835350665" locRef="4" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/nibp_monitor.c" totLns="122" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c"/>
+         <Loc auth="syoung" hash="-492012022" locRef="5" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/alarm_manager.c" totLns="110" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c"/>
+         <Loc auth="syoung" hash="-920441706" locRef="6" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/patient_record.c" totLns="87" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c"/>
+         <Loc auth="syoung" hash="2068971408" locRef="7" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/data_logger.c" totLns="121" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c"/>
+         <Loc auth="syoung" hash="934807802" locRef="8" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="src/comm_link.c" totLns="123" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c"/>
+         <Loc auth="syoung" hash="540022002" locRef="9" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/nibp_monitor.h" totLns="50" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/nibp_monitor.h"/>
+         <Loc auth="syoung" hash="-1255904526" locRef="10" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/comm_link.h" totLns="52" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/comm_link.h"/>
+         <Loc auth="syoung" hash="1919738525" locRef="11" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/patient_record.h" totLns="45" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/patient_record.h"/>
+         <Loc auth="syoung" hash="-1392637281" locRef="12" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/ecg_processor.h" totLns="44" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/ecg_processor.h"/>
+         <Loc auth="syoung" hash="1536342311" locRef="13" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/spo2_monitor.h" totLns="38" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/spo2_monitor.h"/>
+         <Loc auth="syoung" hash="-477797045" locRef="14" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/alarm_manager.h" totLns="55" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/alarm_manager.h"/>
+         <Loc auth="syoung" hash="2112770315" locRef="15" projId="RockStarDisplay" projPath="/RockStarDisplay" project="RockStarDisplay" resProjPath="include/data_logger.h" totLns="41" uri="file:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include/data_logger.h"/>
+      </Locations>
+   </Scope>
+   
+  <SetupProblems/>
+
+   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:14">
+      <Projects>
+         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="15" checkedLns="1259" id="RockStarDisplay" name="RockStarDisplay" qfixErrs="0" suppErrs="0" totErrs="34" totFiles="15" totLns="1259"/>
+      </Projects>
+      
+      
+      <Rules>
+         <CategoriesList>
+            <Category authTot="0;" authUrg="0;" desc="Common Weakness Enumeration" name="CWE" rules="268" total="0">
+               <Category authTot="1;" authUrg="1;" desc="CWE-125 Out-of-bounds Read" name="CWE-125" rules="6" total="1"/>
+               <Category authTot="1;" authUrg="1;" desc="CWE-400 Uncontrolled Resource Consumption" name="CWE-400" rules="3" total="1"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-269 Improper Privilege Management" name="CWE-269" rules="2" total="0"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-863 Incorrect Authorization" name="CWE-863" rules="1" total="0"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-200 Information Exposure" name="CWE-200" rules="1" total="0"/>
+               <Category authTot="5;" authUrg="5;" desc="CWE-476 NULL Pointer Dereference" name="CWE-476" rules="1" total="5"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-287 Improper Authentication" name="CWE-287" rules="2" total="0"/>
+               <Category authTot="2;" authUrg="2;" desc="CWE-190 Integer Overflow or Wraparound" name="CWE-190" rules="11" total="2"/>
+               <Category authTot="1;" authUrg="1;" desc="CWE-20 Improper Input Validation" name="CWE-20" rules="9" total="1"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')" name="CWE-22" rules="1" total="0"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-77 Improper Neutralization of Special Elements used in a Command ('Command Injection')" name="CWE-77" rules="1" total="0"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')" name="CWE-78" rules="1" total="0"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')" name="CWE-89" rules="1" total="0"/>
+               <Category authTot="8;" authUrg="8;" desc="CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer" name="CWE-119" rules="12" total="8"/>
+               <Category authTot="0;" authUrg="0;" desc="CWE-416 Use After Free" name="CWE-416" rules="3" total="0"/>
+               <Category authTot="2;" authUrg="2;" desc="CWE-787 Out-of-bounds Write" name="CWE-787" rules="9" total="2"/>
+               <Category authTot="14;" authUrg="14;" desc="CWE-798 Use of Hard-coded Credentials" name="CWE-798" rules="1" total="14"/>
+            </Category>
+         </CategoriesList>
+         <RulesList>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid buffer overflow due to defining incorrect format limits" id="CWE-119-c" origId="BD-PB-OVERFFMT" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid overflow when reading from a buffer" id="CWE-119-d" origId="BD-PB-OVERFRD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid overflow when writing to a buffer" id="CWE-119-e" origId="BD-PB-OVERFWR" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid tainted data in array indexes" id="CWE-119-f" origId="BD-SECURITY-ARRAY" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-119" desc="Prevent buffer overflows from tainted data" id="CWE-119-g" origId="BD-SECURITY-BUFWRITE" sev="1" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid buffer read overflow from tainted data" id="CWE-119-h" origId="BD-SECURITY-OVERFRD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid buffer write overflow from tainted data" id="CWE-119-i" origId="BD-SECURITY-OVERFWR" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-119" desc="Avoid accessing arrays out of bounds" id="CWE-119-a" origId="BD-PB-ARRAY" sev="2" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid accessing arrays and pointers out of bounds" id="CWE-119-b" origId="BD-PB-OVERFARRAY" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Avoid accessing collections out of bounds" id="CWE-119-l" origId="BD-PB-COOB" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="6;" authUrg="6;" cat="CWE-119" desc="Suspicious use of 'strcpy' without checking size of source buffer" id="CWE-119-j" origId="CODSTA-143" sev="3" total="6"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-119" desc="Ensure the output buffer is large enough when using path manipulation functions" id="CWE-119-k" origId="BD-PB-PATHBUF" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-125" desc="Avoid overflow when reading from a buffer" id="CWE-125-c" origId="BD-PB-OVERFRD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-125" desc="Avoid buffer read overflow from tainted data" id="CWE-125-d" origId="BD-SECURITY-OVERFRD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-125" desc="Avoid tainted data in array indexes" id="CWE-125-e" origId="BD-SECURITY-ARRAY" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-125" desc="Avoid accessing arrays out of bounds" id="CWE-125-a" origId="BD-PB-ARRAY" sev="2" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-125" desc="Avoid accessing arrays and pointers out of bounds" id="CWE-125-b" origId="BD-PB-OVERFARRAY" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-125" desc="Avoid accessing collections out of bounds" id="CWE-125-f" origId="BD-PB-COOB" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-190" desc="Avoid signed integer overflows" id="CWE-190-h" origId="BD-PB-INTUB" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-190" desc="Avoid potential integer overflow/underflow on tainted data" id="CWE-190-k" origId="BD-SECURITY-TDINTOVERF" sev="1" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-190" desc="Avoid data loss when converting between integer types" id="CWE-190-j" origId="BD-PB-INTDL" sev="2" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-190" desc="Avoid wraparounds when performing arithmetic integer operations" id="CWE-190-a" origId="BD-PB-INTWRAP" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Avoid possible integer overflow in expressions in which the result is cast to a wider integer type" id="CWE-190-b" origId="MISRA-048_a" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Avoid possible integer overflow in expressions in which the result is assigned to a variable of a wider integer type" id="CWE-190-c" origId="PB-65" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Avoid possible integer overflow in expressions in which the result is compared to an expression of a wider integer type" id="CWE-190-d" origId="PB-65_b" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Integer overflow or underflow in constant expression in '+', '-', '*' operator" id="CWE-190-e" origId="PB-66_a" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Integer overflow or underflow in constant expression in '&lt;&lt;' operator" id="CWE-190-f" origId="PB-66_b" sev="4" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Evaluation of constant unsigned integer expressions should not lead to wrap-around" id="CWE-190-g" origId="PB-73" sev="5" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-190" desc="Evaluation of constant unsigned integer expressions in preprocessor directives should not lead to wraparound" id="CWE-190-i" origId="PB-73_b" sev="5" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Avoid tainted data in array indexes" id="CWE-20-a" origId="BD-SECURITY-ARRAY" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-20" desc="Avoid potential integer overflow/underflow on tainted data" id="CWE-20-b" origId="BD-SECURITY-TDINTOVERF" sev="1" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Protect against command injection" id="CWE-20-d" origId="BD-SECURITY-TDCMD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Avoid printing tainted data on the output console" id="CWE-20-e" origId="BD-SECURITY-TDCONSOLE" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Protect against environment injection" id="CWE-20-f" origId="BD-SECURITY-TDENV" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Exclude unsanitized user input from format strings" id="CWE-20-g" origId="BD-SECURITY-TDINPUT" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Protect against SQL injection" id="CWE-20-h" origId="BD-SECURITY-TDSQL" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-20" desc="Avoid passing unvalidated binary data to log methods" id="CWE-20-c" origId="BD-SECURITY-LOG" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-20" desc="Untrusted data is used as a loop boundary" id="CWE-20-j" origId="SECURITY-38" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-200" desc="Do not print potentially sensitive information, resulting from an application error into exception messages" id="CWE-200-a" origId="SECURITY-15" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-22" desc="Protect against file name injection" id="CWE-22-a" origId="BD-SECURITY-TDFNAMES" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-269" desc="Observe correct revocation order while relinquishing privileges" id="CWE-269-a" origId="SECURITY-44" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-269" desc="Ensure that privilege relinquishment is successful" id="CWE-269-b" origId="SECURITY-45" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-287" desc="Protect against using unprotected credentials" id="CWE-287-b" origId="BD-SECURITY-TDPASSWD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-287" desc="Do not use weak encryption functions" id="CWE-287-a" origId="SECURITY-37" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-400" desc="Validate potentially tainted data before it is used in the controlling expression of a loop" id="CWE-400-b" origId="BD-SECURITY-TDLOOP" sev="1" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-400" desc="Validate potentially tainted data before it is used as a sleep function argument" id="CWE-400-c" origId="BD-SECURITY-TDSLEEP" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-400" desc="Do not create variables on the stack above the defined limits" id="CWE-400-a" origId="BD-RES-STACKLIM" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-416" desc="Do not use resources that have been freed" id="CWE-416-a" origId="BD-RES-FREE" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-416" desc="Do not point to a wrapped object that has been freed" id="CWE-416-b" origId="BD-PB-WRAPESC" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-416" desc="Freed memory shouldn't be accessed under any circumstances" id="CWE-416-c" origId="MRM-31" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="5;" authUrg="5;" cat="CWE-476" desc="Avoid null pointer dereferencing" id="CWE-476-a" origId="BD-PB-NP" sev="1" total="5"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-77" desc="Protect against command injection" id="CWE-77-a" origId="BD-SECURITY-TDCMD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-78" desc="Protect against command injection" id="CWE-78-a" origId="BD-SECURITY-TDCMD" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid buffer overflow due to defining incorrect format limits" id="CWE-787-c" origId="BD-PB-OVERFFMT" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid overflow when writing to a buffer" id="CWE-787-d" origId="BD-PB-OVERFWR" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-787" desc="Prevent buffer overflows from tainted data" id="CWE-787-e" origId="BD-SECURITY-BUFWRITE" sev="1" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid buffer write overflow from tainted data" id="CWE-787-f" origId="BD-SECURITY-OVERFWR" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid tainted data in array indexes" id="CWE-787-h" origId="BD-SECURITY-ARRAY" sev="1" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="1;" authUrg="1;" cat="CWE-787" desc="Avoid accessing arrays out of bounds" id="CWE-787-a" origId="BD-PB-ARRAY" sev="2" total="1"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid accessing arrays and pointers out of bounds" id="CWE-787-b" origId="BD-PB-OVERFARRAY" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Avoid accessing collections out of bounds" id="CWE-787-i" origId="BD-PB-COOB" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-787" desc="Ensure the output buffer is large enough when using path manipulation functions" id="CWE-787-g" origId="BD-PB-PATHBUF" sev="3" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="14;" authUrg="14;" cat="CWE-798" desc="Do not hard code string literals" id="CWE-798-a" origId="CODSTA-203" sev="5" total="14"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" authTot="0;" authUrg="0;" cat="CWE-863" desc="Do not use 'cuserid' function" id="CWE-863-a" origId="SECURITY-31" sev="2" total="0"/>
+            <Rule analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" authTot="0;" authUrg="0;" cat="CWE-89" desc="Protect against SQL injection" id="CWE-89-a" origId="BD-SECURITY-TDSQL" sev="1" total="0"/>
+         </RulesList>
+         <SeverityList>
+            <Severity authTot="10;" authUrg="10;" id="1" total="10"/>
+            <Severity authTot="4;" authUrg="4;" id="2" total="4"/>
+            <Severity authTot="6;" authUrg="6;" id="3" total="6"/>
+            <Severity authTot="14;" authUrg="14;" id="5" total="14"/>
+         </SeverityList>
+      </Rules>
+      
+  <Supps/>
+
+      
+  <StdViols>
+    <StdViol msg="The string literal is embedded directly in the code: Tachycardia" ln="47" locFile="/RockStarDisplay/src/main.c" locStartln="47" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-306959553" rule.header="Do not hard code string literals" tool="c++test" lineHash="-306959553" unbViolId="4048b55b-2d9b-307a-a3b9-f69947422daa" locStartPos="33" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="a30d4f06-3975-3a8c-8cfd-4e1282329364" locEndPos="34" locType="sr" urgent="true" hash="703442500" locEndLn="47" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: Bradycardia" ln="51" locFile="/RockStarDisplay/src/main.c" locStartln="51" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-650181249" rule.header="Do not hard code string literals" tool="c++test" lineHash="-650181249" unbViolId="7612e3d4-e6ed-30d6-b88b-ba5e8bf9d682" locStartPos="33" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="73d4fd62-bb95-350e-9ee4-05965ca70a74" locEndPos="34" locType="sr" urgent="true" hash="703442500" locEndLn="51" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: Low SpO2" ln="55" locFile="/RockStarDisplay/src/main.c" locStartln="55" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="1936532435" rule.header="Do not hard code string literals" tool="c++test" lineHash="1936532435" unbViolId="294a93af-9834-36d4-b2a9-81da881c838a" locStartPos="33" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="a9be6d7e-e0dc-3b29-9c27-a3b2c7c8db73" locEndPos="34" locType="sr" urgent="true" hash="703442500" locEndLn="55" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: %[^,],%[^,],%d" ln="67" locFile="/RockStarDisplay/src/main.c" locStartln="67" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="1520166457" rule.header="Do not hard code string literals" tool="c++test" lineHash="1520166457" unbViolId="24efc18f-6c66-367b-91a7-daeacb8eca75" locStartPos="21" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="4c946b53-4001-3e08-a9ef-60de6c69cdfe" locEndPos="22" locType="sr" urgent="true" hash="703442500" locEndLn="67" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: ICU-01" ln="70" locFile="/RockStarDisplay/src/main.c" locStartln="70" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-396794862" rule.header="Do not hard code string literals" tool="c++test" lineHash="-396794862" unbViolId="68c4797d-e8f3-31aa-9d96-244920fc5f9b" locStartPos="36" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="7cfcaf46-cf03-34bb-99a3-5a0129e53605" locEndPos="37" locType="sr" urgent="true" hash="703442500" locEndLn="70" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: central-station.local" ln="117" locFile="/RockStarDisplay/src/main.c" locStartln="117" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-1409673919" rule.header="Do not hard code string literals" tool="c++test" lineHash="-1409673919" unbViolId="ee608fb3-4da7-35d0-9061-db00e7c451b1" locStartPos="31" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="f3f8fa09-b447-3e9e-a862-a20a68c9ab34" locEndPos="32" locType="sr" urgent="true" hash="703442500" locEndLn="117" goals="1,"/>
+    <FlowViol msg="The size of &quot;admit_line&quot; is 128, and the size of its input, &quot;argv[1]&quot;, was not checked. Possible buffer overflow." ln="120" locFile="/RockStarDisplay/src/main.c" ruleSAFMsg="Copying tainted value to buffer" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="108" rule="CWE-119-g" FirstElSrcRngStartPos="0" lnHash="-2112219494" ruleSCSCMsg="Tainting buffer input" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Prevent buffer overflows from tainted data" FirstElSrcRngStartln="107" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1268418350" lang="cpp" violId="22f28bf8-a5e7-3fb6-972e-9a06c6534af3" locEndPos="0" urgent="true" locEndLn="121" goals="1," locStartln="120" sev="1" locRef="1" tool="c++test" lineHash="-2112219494" unbViolId="68093704-e400-3244-b37b-86e165fa4f47" locType="sr" hash="703442500" causeLocRef="1">
+      <ElDescList>
+        <ElDesc lineHash="-1324812625" ln="107" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="107" srcRngEndLn="108" srcRngFile="/RockStarDisplay/src/main.c" desc="int main(int argc, char** argv)" ElType=".C" rngLn="107">
+          <Anns>
+            <Ann msg="Tainting buffer input" kind="cause"/>
+            <Ann msg="Tainted data: argv[]" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-284633054" ln="109" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="109" srcRngEndLn="110" srcRngFile="/RockStarDisplay/src/main.c" desc="char admit_line[128];" ElType="." rngLn="109"/>
+        <ElDesc lineHash="1516605304" ln="110" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="110" srcRngEndLn="111" srcRngFile="/RockStarDisplay/src/main.c" desc="int loop_count;" ElType="." rngLn="110"/>
+        <ElDesc lineHash="203697419" ln="112" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="112" srcRngEndLn="113" srcRngFile="/RockStarDisplay/src/main.c" desc="ecg_processor_init(&amp;g_ecg, ECG_LEAD_II);" ElType="." rngLn="112">
+          <ElDescList>
+            <ElDesc lineHash="-445414366" ln="27" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="27" srcRngEndLn="28" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="memset(ecg->samples, 0, sizeof(ecg->samples));" ElType="." rngLn="27"/>
+            <ElDesc lineHash="-869828268" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->head = 0;" ElType="." rngLn="28"/>
+            <ElDesc lineHash="-726624028" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->tail = 0;" ElType="." rngLn="29"/>
+            <ElDesc lineHash="991661315" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->dc_baseline = 0;" ElType="." rngLn="30"/>
+            <ElDesc lineHash="-1774655121" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->detection_threshold = ECG_ADAPTIVE_THRESH_INIT;" ElType="." rngLn="31"/>
+            <ElDesc lineHash="-519700875" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->last_qrs_tick = 0;" ElType="." rngLn="32"/>
+            <ElDesc lineHash="-580091525" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->heart_rate_bpm = 0;" ElType="." rngLn="33"/>
+            <ElDesc lineHash="-943145486" ln="34" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="34" srcRngEndLn="35" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->lead = lead;" ElType="." rngLn="34"/>
+            <ElDesc lineHash="-225317277" ln="35" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="35" srcRngEndLn="36" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->is_initialized = true;" ElType="." rngLn="35"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="852256956" ln="113" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="113" srcRngEndLn="114" srcRngFile="/RockStarDisplay/src/main.c" desc="spo2_monitor_init(&amp;g_spo2);" ElType="." rngLn="113">
+          <ElDescList>
+            <ElDesc lineHash="-450922520" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="memset(mon, 0, sizeof(*mon));" ElType="." rngLn="20"/>
+            <ElDesc lineHash="-1831160201" ln="21" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="21" srcRngEndLn="22" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->spo2_percent = SPO2_MAX_VALID_PCT;" ElType="." rngLn="21"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="1346543708" ln="114" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="114" srcRngEndLn="115" srcRngFile="/RockStarDisplay/src/main.c" desc="nibp_monitor_init(&amp;g_nibp);" ElType="." rngLn="114">
+          <ElDescList>
+            <ElDesc lineHash="-1223675188" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="4" locType="sr" srcRnghash="-1835350665" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/nibp_monitor.c" desc="memset(nibp, 0, sizeof(*nibp));" ElType="." rngLn="20"/>
+            <ElDesc lineHash="1754680271" ln="21" srcRngStartPos="0" srcRngEndPos="0" locRef="4" locType="sr" srcRnghash="-1835350665" srcRngStartln="21" srcRngEndLn="22" srcRngFile="/RockStarDisplay/src/nibp_monitor.c" desc="nibp->state = NIBP_STATE_IDLE;" ElType="." rngLn="21"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="-407511334" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/main.c" desc="alarm_manager_init(&amp;g_alarms);" ElType="." rngLn="115">
+          <ElDescList>
+            <ElDesc lineHash="510671568" ln="18" srcRngStartPos="0" srcRngEndPos="0" locRef="5" locType="sr" srcRnghash="-492012022" srcRngStartln="18" srcRngEndLn="19" srcRngFile="/RockStarDisplay/src/alarm_manager.c" desc="memset(mgr, 0, sizeof(*mgr));" ElType="." rngLn="18"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="75428548" ln="116" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="116" srcRngEndLn="117" srcRngFile="/RockStarDisplay/src/main.c" desc="comm_link_init(&amp;g_link);" ElType="." rngLn="116">
+          <ElDescList>
+            <ElDesc lineHash="971606400" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="memset(link->tx_buffer, 0, sizeof(link->tx_buffer));" ElType="." rngLn="32"/>
+            <ElDesc lineHash="-1736159168" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="memset(link->rx_buffer, 0, sizeof(link->rx_buffer));" ElType="." rngLn="33"/>
+            <ElDesc lineHash="-1257601271" ln="34" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="34" srcRngEndLn="35" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->tx_len = 0;" ElType="." rngLn="34"/>
+            <ElDesc lineHash="330746631" ln="35" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="35" srcRngEndLn="36" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->rx_len = 0;" ElType="." rngLn="35"/>
+            <ElDesc lineHash="-540976353" ln="36" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="36" srcRngEndLn="37" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->tx_sequence = 0;" ElType="." rngLn="36"/>
+            <ElDesc lineHash="1047371549" ln="37" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="37" srcRngEndLn="38" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->rx_sequence = 0;" ElType="." rngLn="37"/>
+            <ElDesc lineHash="1400947420" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->is_connected = false;" ElType="." rngLn="38"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="-1409673919" ln="117" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="117" srcRngEndLn="118" srcRngFile="/RockStarDisplay/src/main.c" desc="comm_link_connect(&amp;g_link, &quot;central-station.local&quot;);" ElType="." rngLn="117">
+          <ElDescList>
+            <ElDesc lineHash="830133273" ln="44" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="44" srcRngEndLn="45" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="bsp_endpoint_reachable(...)" ElType="." rngLn="44">
+              <ElDescList>
+                <ElDesc lineHash="-1484352622" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/main.c" desc="bool bsp_endpoint_reachable(const char* e) { (void) e; return true; }" ElType="." rngLn="32"/>
+              </ElDescList>
+            </ElDesc>
+            <ElDesc lineHash="830133273" ln="44" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="44" srcRngEndLn="45" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="if (!bsp_endpoint_reachable(endpoint)) {" ElType="." rngLn="44">
+              <Anns>
+                <Ann msg="Condition evaluation: !bsp_endpoint_reachable(...) (false)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc lineHash="751372425" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->is_connected = true;" ElType="." rngLn="48"/>
+            <ElDesc lineHash="1410199933" ln="49" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="49" srcRngEndLn="50" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="return true;" ElType="." rngLn="49"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="2078694083" ln="119" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="119" srcRngEndLn="120" srcRngFile="/RockStarDisplay/src/main.c" desc="if (argc > 1) {" ElType="." rngLn="119">
+          <Anns>
+            <Ann msg="Condition evaluation: (argc > 1) (assuming true)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-2112219494" ln="120" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="120" srcRngEndLn="121" srcRngFile="/RockStarDisplay/src/main.c" desc="strcpy(admit_line, argv[1]);" ElType=".P" rngLn="120">
+          <Anns>
+            <Ann msg="Tainted data: argv[1]" kind="comment"/>
+            <Ann msg="Copying tainted value to buffer" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="The size of &quot;admit_line&quot; is 128, and the size of its input, &quot;argv[1]&quot;, was not checked. Possible buffer overflow." ln="120" locFile="/RockStarDisplay/src/main.c" ruleSAFMsg="Copying tainted value to buffer" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="108" rule="CWE-787-e" FirstElSrcRngStartPos="0" lnHash="-2112219494" ruleSCSCMsg="Tainting buffer input" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Prevent buffer overflows from tainted data" FirstElSrcRngStartln="107" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1273156427" lang="cpp" violId="d3c5a143-20f8-33e9-93b7-8fe68680c1ef" locEndPos="0" urgent="true" locEndLn="121" goals="1," locStartln="120" sev="1" locRef="1" tool="c++test" lineHash="-2112219494" unbViolId="4e4c6c4f-0c05-376f-bad5-2c60955a926b" locType="sr" hash="703442500" causeLocRef="1">
+      <ElDescList>
+        <ElDesc lineHash="-1324812625" ln="107" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="107" srcRngEndLn="108" srcRngFile="/RockStarDisplay/src/main.c" desc="int main(int argc, char** argv)" ElType=".C" rngLn="107">
+          <Anns>
+            <Ann msg="Tainting buffer input" kind="cause"/>
+            <Ann msg="Tainted data: argv[]" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-284633054" ln="109" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="109" srcRngEndLn="110" srcRngFile="/RockStarDisplay/src/main.c" desc="char admit_line[128];" ElType="." rngLn="109"/>
+        <ElDesc lineHash="1516605304" ln="110" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="110" srcRngEndLn="111" srcRngFile="/RockStarDisplay/src/main.c" desc="int loop_count;" ElType="." rngLn="110"/>
+        <ElDesc lineHash="203697419" ln="112" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="112" srcRngEndLn="113" srcRngFile="/RockStarDisplay/src/main.c" desc="ecg_processor_init(&amp;g_ecg, ECG_LEAD_II);" ElType="." rngLn="112">
+          <ElDescList>
+            <ElDesc lineHash="-445414366" ln="27" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="27" srcRngEndLn="28" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="memset(ecg->samples, 0, sizeof(ecg->samples));" ElType="." rngLn="27"/>
+            <ElDesc lineHash="-869828268" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->head = 0;" ElType="." rngLn="28"/>
+            <ElDesc lineHash="-726624028" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->tail = 0;" ElType="." rngLn="29"/>
+            <ElDesc lineHash="991661315" ln="30" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="30" srcRngEndLn="31" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->dc_baseline = 0;" ElType="." rngLn="30"/>
+            <ElDesc lineHash="-1774655121" ln="31" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="31" srcRngEndLn="32" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->detection_threshold = ECG_ADAPTIVE_THRESH_INIT;" ElType="." rngLn="31"/>
+            <ElDesc lineHash="-519700875" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->last_qrs_tick = 0;" ElType="." rngLn="32"/>
+            <ElDesc lineHash="-580091525" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->heart_rate_bpm = 0;" ElType="." rngLn="33"/>
+            <ElDesc lineHash="-943145486" ln="34" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="34" srcRngEndLn="35" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->lead = lead;" ElType="." rngLn="34"/>
+            <ElDesc lineHash="-225317277" ln="35" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="35" srcRngEndLn="36" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="ecg->is_initialized = true;" ElType="." rngLn="35"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="852256956" ln="113" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="113" srcRngEndLn="114" srcRngFile="/RockStarDisplay/src/main.c" desc="spo2_monitor_init(&amp;g_spo2);" ElType="." rngLn="113">
+          <ElDescList>
+            <ElDesc lineHash="-450922520" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="memset(mon, 0, sizeof(*mon));" ElType="." rngLn="20"/>
+            <ElDesc lineHash="-1831160201" ln="21" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="21" srcRngEndLn="22" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="mon->spo2_percent = SPO2_MAX_VALID_PCT;" ElType="." rngLn="21"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="1346543708" ln="114" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="114" srcRngEndLn="115" srcRngFile="/RockStarDisplay/src/main.c" desc="nibp_monitor_init(&amp;g_nibp);" ElType="." rngLn="114">
+          <ElDescList>
+            <ElDesc lineHash="-1223675188" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="4" locType="sr" srcRnghash="-1835350665" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/nibp_monitor.c" desc="memset(nibp, 0, sizeof(*nibp));" ElType="." rngLn="20"/>
+            <ElDesc lineHash="1754680271" ln="21" srcRngStartPos="0" srcRngEndPos="0" locRef="4" locType="sr" srcRnghash="-1835350665" srcRngStartln="21" srcRngEndLn="22" srcRngFile="/RockStarDisplay/src/nibp_monitor.c" desc="nibp->state = NIBP_STATE_IDLE;" ElType="." rngLn="21"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="-407511334" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/main.c" desc="alarm_manager_init(&amp;g_alarms);" ElType="." rngLn="115">
+          <ElDescList>
+            <ElDesc lineHash="510671568" ln="18" srcRngStartPos="0" srcRngEndPos="0" locRef="5" locType="sr" srcRnghash="-492012022" srcRngStartln="18" srcRngEndLn="19" srcRngFile="/RockStarDisplay/src/alarm_manager.c" desc="memset(mgr, 0, sizeof(*mgr));" ElType="." rngLn="18"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="75428548" ln="116" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="116" srcRngEndLn="117" srcRngFile="/RockStarDisplay/src/main.c" desc="comm_link_init(&amp;g_link);" ElType="." rngLn="116">
+          <ElDescList>
+            <ElDesc lineHash="971606400" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="memset(link->tx_buffer, 0, sizeof(link->tx_buffer));" ElType="." rngLn="32"/>
+            <ElDesc lineHash="-1736159168" ln="33" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="33" srcRngEndLn="34" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="memset(link->rx_buffer, 0, sizeof(link->rx_buffer));" ElType="." rngLn="33"/>
+            <ElDesc lineHash="-1257601271" ln="34" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="34" srcRngEndLn="35" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->tx_len = 0;" ElType="." rngLn="34"/>
+            <ElDesc lineHash="330746631" ln="35" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="35" srcRngEndLn="36" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->rx_len = 0;" ElType="." rngLn="35"/>
+            <ElDesc lineHash="-540976353" ln="36" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="36" srcRngEndLn="37" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->tx_sequence = 0;" ElType="." rngLn="36"/>
+            <ElDesc lineHash="1047371549" ln="37" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="37" srcRngEndLn="38" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->rx_sequence = 0;" ElType="." rngLn="37"/>
+            <ElDesc lineHash="1400947420" ln="38" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="38" srcRngEndLn="39" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->is_connected = false;" ElType="." rngLn="38"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="-1409673919" ln="117" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="117" srcRngEndLn="118" srcRngFile="/RockStarDisplay/src/main.c" desc="comm_link_connect(&amp;g_link, &quot;central-station.local&quot;);" ElType="." rngLn="117">
+          <ElDescList>
+            <ElDesc lineHash="830133273" ln="44" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="44" srcRngEndLn="45" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="bsp_endpoint_reachable(...)" ElType="." rngLn="44">
+              <ElDescList>
+                <ElDesc lineHash="-1484352622" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/main.c" desc="bool bsp_endpoint_reachable(const char* e) { (void) e; return true; }" ElType="." rngLn="32"/>
+              </ElDescList>
+            </ElDesc>
+            <ElDesc lineHash="830133273" ln="44" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="44" srcRngEndLn="45" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="if (!bsp_endpoint_reachable(endpoint)) {" ElType="." rngLn="44">
+              <Anns>
+                <Ann msg="Condition evaluation: !bsp_endpoint_reachable(...) (false)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc lineHash="751372425" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="link->is_connected = true;" ElType="." rngLn="48"/>
+            <ElDesc lineHash="1410199933" ln="49" srcRngStartPos="0" srcRngEndPos="0" locRef="8" locType="sr" srcRnghash="934807802" srcRngStartln="49" srcRngEndLn="50" srcRngFile="/RockStarDisplay/src/comm_link.c" desc="return true;" ElType="." rngLn="49"/>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc lineHash="2078694083" ln="119" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="119" srcRngEndLn="120" srcRngFile="/RockStarDisplay/src/main.c" desc="if (argc > 1) {" ElType="." rngLn="119">
+          <Anns>
+            <Ann msg="Condition evaluation: (argc > 1) (assuming true)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-2112219494" ln="120" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="120" srcRngEndLn="121" srcRngFile="/RockStarDisplay/src/main.c" desc="strcpy(admit_line, argv[1]);" ElType=".P" rngLn="120">
+          <Anns>
+            <Ann msg="Tainted data: argv[1]" kind="comment"/>
+            <Ann msg="Copying tainted value to buffer" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="120" locFile="/RockStarDisplay/src/main.c" locStartln="120" sev="3" auth="syoung" locRef="1" rule="CWE-119-j" lnHash="-2112219494" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="-2112219494" unbViolId="2fcc254f-059e-352f-873b-a05e2938faf6" locStartPos="8" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="af60f494-2260-35c6-9d5a-2bad97557b63" locEndPos="9" locType="sr" urgent="true" hash="703442500" locEndLn="120" goals="1,"/>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="122" locFile="/RockStarDisplay/src/main.c" locStartln="122" sev="3" auth="syoung" locRef="1" rule="CWE-119-j" lnHash="703668010" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="703668010" unbViolId="2f55ad2c-ab43-3463-a86c-e4a0fc82051c" locStartPos="8" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="7fab59e7-56d1-30c8-9ddf-8abe85aa4e1a" locEndPos="9" locType="sr" urgent="true" hash="703442500" locEndLn="122" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: P0001,John Doe,67" ln="122" locFile="/RockStarDisplay/src/main.c" locStartln="122" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="703668010" rule.header="Do not hard code string literals" tool="c++test" lineHash="703668010" unbViolId="3be7c88a-24f4-3e46-a90c-0f1bdfa940af" locStartPos="27" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="b0bf1bac-b3a9-3ac4-9274-e564c6092155" locEndPos="28" locType="sr" urgent="true" hash="703442500" locEndLn="122" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: /var/log/cardio" ln="126" locFile="/RockStarDisplay/src/main.c" locStartln="126" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-1379276321" rule.header="Do not hard code string literals" tool="c++test" lineHash="-1379276321" unbViolId="a56bde23-9137-3e81-9c6b-170703fa2645" locStartPos="32" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="e1bf023a-f4cf-37be-95fd-e9cc13e30078" locEndPos="33" locType="sr" urgent="true" hash="703442500" locEndLn="126" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: P0001" ln="126" locFile="/RockStarDisplay/src/main.c" locStartln="126" sev="5" auth="syoung" locRef="1" rule="CWE-798-a" lnHash="-1379276321" rule.header="Do not hard code string literals" tool="c++test" lineHash="-1379276321" unbViolId="271d2429-d940-3587-a183-c42d13bc5b05" locStartPos="51" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="c2a0e887-da54-3ab4-abb8-a9aaddf5a998" locEndPos="52" locType="sr" urgent="true" hash="703442500" locEndLn="126" goals="1,"/>
+    <FlowViol msg="Evaluation of &quot;(raw_sample * gain)&quot; may result in possible overflow/underflow" ln="55" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Point of possible overflow/underflow" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="85" rule="CWE-190-k" FirstElSrcRngStartPos="0" lnHash="723733732" ruleSCSCMsg="Point where value is defined by tainting function" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Avoid potential integer overflow/underflow on tainted data" FirstElSrcRngStartln="84" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1028879281" lang="cpp" violId="18c26888-84c4-3da5-bc3a-41ac4976f488" locEndPos="0" urgent="true" locEndLn="56" goals="1," locStartln="55" sev="1" locRef="2" tool="c++test" lineHash="723733732" unbViolId="4e968dc8-5a76-3e43-8cb6-b197c71e0723" locType="sr" hash="-342234449" causeLocRef="1">
+      <ElDescList>
+        <ElDesc lineHash="-1445468032" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t raw_ecg;" ElType="." rngLn="77"/>
+        <ElDesc lineHash="-1158585619" ln="78" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="78" srcRngEndLn="79" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t filtered;" ElType="." rngLn="78"/>
+        <ElDesc lineHash="1205599030" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t red;" ElType="." rngLn="79"/>
+        <ElDesc lineHash="-376759994" ln="80" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="80" srcRngEndLn="81" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t ir;" ElType="." rngLn="80"/>
+        <ElDesc lineHash="-372772" ln="81" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="81" srcRngEndLn="82" srcRngFile="/RockStarDisplay/src/main.c" desc="VitalSample_t sample;" ElType="." rngLn="81"/>
+        <ElDesc lineHash="2067786456" ln="84" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="84" srcRngEndLn="85" srcRngFile="/RockStarDisplay/src/main.c" desc="rand()" ElType=".C" rngLn="84">
+          <Anns>
+            <Ann msg="Point where value is defined by tainting function" kind="cause"/>
+            <Ann msg="Tainted data: rand()" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="2067786456" ln="84" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="84" srcRngEndLn="85" srcRngFile="/RockStarDisplay/src/main.c" desc="raw_ecg = (int16_t) (rand() % 4096 - 2048);" ElType="!" rngLn="84"/>
+        <ElDesc lineHash="1474472636" ln="85" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="85" srcRngEndLn="86" srcRngFile="/RockStarDisplay/src/main.c" desc="red = (uint16_t) (rand() % 65535);" ElType="." rngLn="85">
+          <Anns>
+            <Ann msg="Tainted data: raw_ecg" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="179694966" ln="86" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="86" srcRngEndLn="87" srcRngFile="/RockStarDisplay/src/main.c" desc="ir = (uint16_t) (rand() % 65535);" ElType="." rngLn="86"/>
+        <ElDesc lineHash="802912087" ln="88" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="88" srcRngEndLn="89" srcRngFile="/RockStarDisplay/src/main.c" desc="ecg_processor_push_sample(&amp;g_ecg, raw_ecg, g_tick_ms);" ElType="!" rngLn="88">
+          <ElDescList>
+            <ElDesc lineHash="846493638" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t gained;" ElType="." rngLn="40"/>
+            <ElDesc lineHash="-1812735701" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int gain;" ElType="." rngLn="41"/>
+            <ElDesc lineHash="1582432618" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="switch (ecg->lead) {" ElType="." rngLn="43">
+              <Anns>
+                <Ann msg="Switch evaluation: ecg->lead (assuming &quot;case default&quot;)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc lineHash="723733732" ln="55" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="55" srcRngEndLn="56" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="gained = (int16_t) ((raw_sample * gain) / 100);" ElType=".P" rngLn="55">
+              <Anns>
+                <Ann msg="Tainted data: (int)raw_sample * gain" kind="var"/>
+                <Ann msg="Point of possible overflow/underflow" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="Evaluation of &quot;(raw_sample * gain)&quot; may result in possible overflow/underflow" ln="55" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Point of possible overflow/underflow" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="85" rule="CWE-20-b" FirstElSrcRngStartPos="0" lnHash="723733732" ruleSCSCMsg="Point where value is defined by tainting function" FirstElSrcRngFile="/RockStarDisplay/src/main.c" rule.header="Avoid potential integer overflow/underflow on tainted data" FirstElSrcRngStartln="84" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="842782036" lang="cpp" violId="90a2eaef-ed37-3a05-b7a6-9fc51b4db958" locEndPos="0" urgent="true" locEndLn="56" goals="1," locStartln="55" sev="1" locRef="2" tool="c++test" lineHash="723733732" unbViolId="863ee846-a20c-373c-93fe-4cab834572c7" locType="sr" hash="-342234449" causeLocRef="1">
+      <ElDescList>
+        <ElDesc lineHash="-1445468032" ln="77" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="77" srcRngEndLn="78" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t raw_ecg;" ElType="." rngLn="77"/>
+        <ElDesc lineHash="-1158585619" ln="78" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="78" srcRngEndLn="79" srcRngFile="/RockStarDisplay/src/main.c" desc="int16_t filtered;" ElType="." rngLn="78"/>
+        <ElDesc lineHash="1205599030" ln="79" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="79" srcRngEndLn="80" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t red;" ElType="." rngLn="79"/>
+        <ElDesc lineHash="-376759994" ln="80" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="80" srcRngEndLn="81" srcRngFile="/RockStarDisplay/src/main.c" desc="uint16_t ir;" ElType="." rngLn="80"/>
+        <ElDesc lineHash="-372772" ln="81" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="81" srcRngEndLn="82" srcRngFile="/RockStarDisplay/src/main.c" desc="VitalSample_t sample;" ElType="." rngLn="81"/>
+        <ElDesc lineHash="2067786456" ln="84" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="84" srcRngEndLn="85" srcRngFile="/RockStarDisplay/src/main.c" desc="rand()" ElType=".C" rngLn="84">
+          <Anns>
+            <Ann msg="Point where value is defined by tainting function" kind="cause"/>
+            <Ann msg="Tainted data: rand()" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="2067786456" ln="84" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="84" srcRngEndLn="85" srcRngFile="/RockStarDisplay/src/main.c" desc="raw_ecg = (int16_t) (rand() % 4096 - 2048);" ElType="!" rngLn="84"/>
+        <ElDesc lineHash="1474472636" ln="85" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="85" srcRngEndLn="86" srcRngFile="/RockStarDisplay/src/main.c" desc="red = (uint16_t) (rand() % 65535);" ElType="." rngLn="85">
+          <Anns>
+            <Ann msg="Tainted data: raw_ecg" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="179694966" ln="86" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="86" srcRngEndLn="87" srcRngFile="/RockStarDisplay/src/main.c" desc="ir = (uint16_t) (rand() % 65535);" ElType="." rngLn="86"/>
+        <ElDesc lineHash="802912087" ln="88" srcRngStartPos="0" srcRngEndPos="0" locRef="1" locType="sr" srcRnghash="703442500" srcRngStartln="88" srcRngEndLn="89" srcRngFile="/RockStarDisplay/src/main.c" desc="ecg_processor_push_sample(&amp;g_ecg, raw_ecg, g_tick_ms);" ElType="!" rngLn="88">
+          <ElDescList>
+            <ElDesc lineHash="846493638" ln="40" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="40" srcRngEndLn="41" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t gained;" ElType="." rngLn="40"/>
+            <ElDesc lineHash="-1812735701" ln="41" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="41" srcRngEndLn="42" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int gain;" ElType="." rngLn="41"/>
+            <ElDesc lineHash="1582432618" ln="43" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="43" srcRngEndLn="44" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="switch (ecg->lead) {" ElType="." rngLn="43">
+              <Anns>
+                <Ann msg="Switch evaluation: ecg->lead (assuming &quot;case default&quot;)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc lineHash="723733732" ln="55" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="55" srcRngEndLn="56" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="gained = (int16_t) ((raw_sample * gain) / 100);" ElType=".P" rngLn="55">
+              <Anns>
+                <Ann msg="Tainted data: (int)raw_sample * gain" kind="var"/>
+                <Ann msg="Point of possible overflow/underflow" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="Possibly accessing array &quot;ECG_FIR_TAPS&quot; out of bounds at index [1...17]. Correct index(es): [0...16]" ln="72" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Out of bounds access point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="65" rule="CWE-119-a" FirstElSrcRngStartPos="0" lnHash="2118569055" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/ecg_processor.c" rule.header="Avoid accessing arrays out of bounds" FirstElSrcRngStartln="64" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-391213699" lang="cpp" violId="6adeae5d-a21e-3c27-a4f6-ff9b3353879a" locEndPos="0" urgent="true" locEndLn="73" goals="1," locStartln="72" sev="2" locRef="2" tool="c++test" lineHash="2118569055" unbViolId="c30de467-4b23-3e67-a5a1-6091b120cbef" locType="sr" hash="-342234449" causeLocRef="2">
+      <ElDescList>
+        <ElDesc lineHash="-559595370" ln="64" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="64" srcRngEndLn="65" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t ecg_processor_apply_filter(const EcgProcessor_t* ecg)" ElType=".C" rngLn="64">
+          <Anns>
+            <Ann msg="Start of the path" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-968624758" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int32_t acc = 0;" ElType="." rngLn="66"/>
+        <ElDesc lineHash="1679375043" ln="67" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="67" srcRngEndLn="68" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int i;" ElType="." rngLn="67"/>
+        <ElDesc lineHash="84336467" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="uint16_t idx = ecg->head;" ElType="." rngLn="68"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType="." rngLn="72"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType=".P" rngLn="72">
+          <Anns>
+            <Ann msg="Out of bounds access point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="Possibly accessing array &quot;ECG_FIR_TAPS&quot; out of bounds at index [1...17]. Correct index(es): [0...16]" ln="72" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Out of bounds access point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="65" rule="CWE-125-a" FirstElSrcRngStartPos="0" lnHash="2118569055" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/ecg_processor.c" rule.header="Avoid accessing arrays out of bounds" FirstElSrcRngStartln="64" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-391178560" lang="cpp" violId="cf382f17-3f3b-3a8e-bdf0-1a6a39085d41" locEndPos="0" urgent="true" locEndLn="73" goals="1," locStartln="72" sev="2" locRef="2" tool="c++test" lineHash="2118569055" unbViolId="cabcefee-b8ba-359a-a04e-98e39fdcc0bd" locType="sr" hash="-342234449" causeLocRef="2">
+      <ElDescList>
+        <ElDesc lineHash="-559595370" ln="64" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="64" srcRngEndLn="65" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t ecg_processor_apply_filter(const EcgProcessor_t* ecg)" ElType=".C" rngLn="64">
+          <Anns>
+            <Ann msg="Start of the path" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-968624758" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int32_t acc = 0;" ElType="." rngLn="66"/>
+        <ElDesc lineHash="1679375043" ln="67" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="67" srcRngEndLn="68" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int i;" ElType="." rngLn="67"/>
+        <ElDesc lineHash="84336467" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="uint16_t idx = ecg->head;" ElType="." rngLn="68"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType="." rngLn="72"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType=".P" rngLn="72">
+          <Anns>
+            <Ann msg="Out of bounds access point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="Possibly accessing array &quot;ECG_FIR_TAPS&quot; out of bounds at index [1...17]. Correct index(es): [0...16]" ln="72" locFile="/RockStarDisplay/src/ecg_processor.c" ruleSAFMsg="Out of bounds access point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="65" rule="CWE-787-a" FirstElSrcRngStartPos="0" lnHash="2118569055" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/ecg_processor.c" rule.header="Avoid accessing arrays out of bounds" FirstElSrcRngStartln="64" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-388572926" lang="cpp" violId="c9ba7930-3541-3a31-b694-1dbfb25dff34" locEndPos="0" urgent="true" locEndLn="73" goals="1," locStartln="72" sev="2" locRef="2" tool="c++test" lineHash="2118569055" unbViolId="4992d309-6111-3d40-96cc-c35858e9571b" locType="sr" hash="-342234449" causeLocRef="2">
+      <ElDescList>
+        <ElDesc lineHash="-559595370" ln="64" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="64" srcRngEndLn="65" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int16_t ecg_processor_apply_filter(const EcgProcessor_t* ecg)" ElType=".C" rngLn="64">
+          <Anns>
+            <Ann msg="Start of the path" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-968624758" ln="66" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="66" srcRngEndLn="67" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int32_t acc = 0;" ElType="." rngLn="66"/>
+        <ElDesc lineHash="1679375043" ln="67" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="67" srcRngEndLn="68" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="int i;" ElType="." rngLn="67"/>
+        <ElDesc lineHash="84336467" ln="68" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="68" srcRngEndLn="69" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="uint16_t idx = ecg->head;" ElType="." rngLn="68"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType="." rngLn="72"/>
+        <ElDesc lineHash="-946886461" ln="70" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="70" srcRngEndLn="71" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="for (i = 0; i &lt;= ECG_FILTER_TAPS; i++) {" ElType="." rngLn="70">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt;= 17) (true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="476292620" ln="71" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="71" srcRngEndLn="72" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="idx = (idx - 1) % ECG_RING_SIZE;" ElType="." rngLn="71"/>
+        <ElDesc lineHash="2118569055" ln="72" srcRngStartPos="0" srcRngEndPos="0" locRef="2" locType="sr" srcRnghash="-342234449" srcRngStartln="72" srcRngEndLn="73" srcRngFile="/RockStarDisplay/src/ecg_processor.c" desc="acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];" ElType=".P" rngLn="72">
+          <Anns>
+            <Ann msg="Out of bounds access point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="Data loss during type conversion: value of (uint16_t)((int)max_v - (int)min_v) will be 1 instead of -65,535. Result type range: [0..2^16)" ln="53" locFile="/RockStarDisplay/src/spo2_monitor.c" ruleSAFMsg="Integer type conversion point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="47" rule="CWE-190-j" FirstElSrcRngStartPos="0" lnHash="-1952424546" ruleSCSCMsg="Start of the path" FirstElSrcRngFile="/RockStarDisplay/src/spo2_monitor.c" rule.header="Avoid data loss when converting between integer types" FirstElSrcRngStartln="46" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="434472112" lang="cpp" violId="f728ff5a-e6ab-3488-9410-8d7a9b301650" locEndPos="0" urgent="true" locEndLn="54" goals="1," locStartln="53" sev="2" locRef="3" tool="c++test" lineHash="-1952424546" unbViolId="4a28705a-7faf-3f96-80e4-ba1b91748fa5" locType="sr" hash="690983367" causeLocRef="3">
+      <ElDescList>
+        <ElDesc lineHash="-554294817" ln="46" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="46" srcRngEndLn="47" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t max_v = 0;" ElType=".C" rngLn="46">
+          <Anns>
+            <Ann msg="Start of the path" kind="cause"/>
+            <Ann msg="Variable assignment: max_v = 0" kind="valEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="589504212" ln="47" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="47" srcRngEndLn="48" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="uint16_t min_v = 0xFFFFu;" ElType="!" rngLn="47">
+          <Anns>
+            <Ann msg="Variable assignment: min_v = 65535" kind="valEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="1679375043" ln="48" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="48" srcRngEndLn="49" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="int i;" ElType="." rngLn="48"/>
+        <ElDesc lineHash="2093441353" ln="49" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="49" srcRngEndLn="50" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="for (i = 0; i &lt; n; i++) {" ElType="." rngLn="49">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (i &lt; n) (assuming false)" kind="condEval"/>
+            <Ann msg="Not entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1952424546" ln="53" srcRngStartPos="0" srcRngEndPos="0" locRef="3" locType="sr" srcRnghash="690983367" srcRngStartln="53" srcRngEndLn="54" srcRngFile="/RockStarDisplay/src/spo2_monitor.c" desc="return (uint16_t) (max_v - min_v);" ElType=".P" rngLn="53">
+          <Anns>
+            <Ann msg="Variable assignment: tmp$0 = (int)max_v -> tmp$0 = 0" kind="valEval"/>
+            <Ann msg="Variable assignment: tmp$1 = (int)min_v -> tmp$1 = 65535" kind="valEval"/>
+            <Ann msg="Variable assignment: tmp$2 = (tmp$0 - tmp$1) -> tmp$2 = -65535" kind="valEval"/>
+            <Ann msg="Variable assignment: tmp$3 = (uint16_t)tmp$2 -> tmp$3 = 1" kind="valEval"/>
+            <Ann msg="Integer type conversion point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;record&quot; may possibly be null" ln="25" locFile="/RockStarDisplay/src/patient_record.c" ruleSAFMsg="Null pointer dereferencing point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="23" rule="CWE-476-a" FirstElSrcRngStartPos="0" lnHash="243310411" ruleSCSCMsg="Source of null value" FirstElSrcRngFile="/RockStarDisplay/src/patient_record.c" rule.header="Avoid null pointer dereferencing" FirstElSrcRngStartln="22" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="807786020" lang="cpp" violId="6ecfac07-7cca-36a8-87d1-cc25f0ade0b6" locEndPos="0" urgent="true" locEndLn="26" goals="1," locStartln="25" sev="1" locRef="6" tool="c++test" lineHash="243310411" unbViolId="d94ac24a-a8d9-3455-8082-768fad37dce5" locType="sr" hash="-920441706" causeLocRef="6">
+      <ElDescList>
+        <ElDesc lineHash="335690345" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="6" locType="sr" srcRnghash="-920441706" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/patient_record.c" desc="PatientRecord_t* record;" ElType="." rngLn="20"/>
+        <ElDesc lineHash="2019900556" ln="22" srcRngStartPos="0" srcRngEndPos="0" locRef="6" locType="sr" srcRnghash="-920441706" srcRngStartln="22" srcRngEndLn="23" srcRngFile="/RockStarDisplay/src/patient_record.c" desc="malloc(...)" ElType=".C" rngLn="22">
+          <Anns>
+            <Ann msg="Source of null value" kind="cause"/>
+            <Ann msg="Null value carrier: malloc(...)" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="2019900556" ln="22" srcRngStartPos="0" srcRngEndPos="0" locRef="6" locType="sr" srcRnghash="-920441706" srcRngStartln="22" srcRngEndLn="23" srcRngFile="/RockStarDisplay/src/patient_record.c" desc="record = (PatientRecord_t*) malloc(sizeof(PatientRecord_t));" ElType="!" rngLn="22">
+          <Anns>
+            <Ann msg="Null value carrier: malloc(...) -> record" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="243310411" ln="25" srcRngStartPos="0" srcRngEndPos="0" locRef="6" locType="sr" srcRnghash="-920441706" srcRngStartln="25" srcRngEndLn="26" srcRngFile="/RockStarDisplay/src/patient_record.c" desc="strcpy(record->id, id);" ElType=".P" rngLn="25">
+          <Anns>
+            <Ann msg="Null value carrier: record" kind="comment"/>
+            <Ann msg="Null pointer dereferencing point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="25" locFile="/RockStarDisplay/src/patient_record.c" locStartln="25" sev="3" auth="syoung" locRef="6" rule="CWE-119-j" lnHash="243310411" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="243310411" unbViolId="9f862ec3-3f4d-3c06-96d0-4094b82bb557" locStartPos="4" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="1b193d9c-6eba-3195-91a9-30d5b0ba7f73" locEndPos="5" locType="sr" urgent="true" hash="-920441706" locEndLn="25" goals="1,"/>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="26" locFile="/RockStarDisplay/src/patient_record.c" locStartln="26" sev="3" auth="syoung" locRef="6" rule="CWE-119-j" lnHash="-1571469589" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="-1571469589" unbViolId="5375bab2-8d5b-3a80-9f4a-b3105c8219f5" locStartPos="4" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="fb853e0b-5898-3232-8f0b-8dd469053300" locEndPos="5" locType="sr" urgent="true" hash="-920441706" locEndLn="26" goals="1,"/>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="42" locFile="/RockStarDisplay/src/patient_record.c" locStartln="42" sev="3" auth="syoung" locRef="6" rule="CWE-119-j" lnHash="936278899" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="936278899" unbViolId="089c15ed-2947-3ac3-b520-2a6ceb576c9d" locStartPos="4" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="1459a611-f21c-339e-8484-370c8dbf4771" locEndPos="5" locType="sr" urgent="true" hash="-920441706" locEndLn="42" goals="1,"/>
+    <StdViol msg="Found no size check of the source buffer before 'strcpy' call" ln="23" locFile="/RockStarDisplay/src/data_logger.c" locStartln="23" sev="3" auth="syoung" locRef="7" rule="CWE-119-j" lnHash="1160568505" rule.header="Suspicious use of 'strcpy' without checking size of source buffer" tool="c++test" lineHash="1160568505" unbViolId="3b840166-824b-38a8-983b-9fbdaa00f122" locStartPos="4" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="d2846d3f-1c36-3d60-b853-f93d56d74369" locEndPos="5" locType="sr" urgent="true" hash="2068971408" locEndLn="23" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: a+" ln="25" locFile="/RockStarDisplay/src/data_logger.c" locStartln="25" sev="5" auth="syoung" locRef="7" rule="CWE-798-a" lnHash="283028750" rule.header="Do not hard code string literals" tool="c++test" lineHash="283028750" unbViolId="23024094-9871-3f18-9612-1bdb51ff5ef0" locStartPos="33" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="f3591528-79e5-3391-a607-81f316afe594" locEndPos="34" locType="sr" urgent="true" hash="2068971408" locEndLn="25" goals="1,"/>
+    <FlowViol msg="&quot;fp&quot; may possibly be null" ln="32" locFile="/RockStarDisplay/src/data_logger.c" ruleSAFMsg="Null pointer dereferencing point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="26" rule="CWE-476-a" FirstElSrcRngStartPos="0" lnHash="488281504" ruleSCSCMsg="Source of null value" FirstElSrcRngFile="/RockStarDisplay/src/data_logger.c" rule.header="Avoid null pointer dereferencing" FirstElSrcRngStartln="25" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="223093734" lang="cpp" violId="2c228d8c-9679-3a58-8f54-42272a30d0dd" locEndPos="0" urgent="true" locEndLn="33" goals="1," locStartln="32" sev="1" locRef="7" tool="c++test" lineHash="488281504" unbViolId="a2dfe8d5-d4c9-3bc6-84b2-ab95117b6ea8" locType="sr" hash="2068971408" causeLocRef="7">
+      <ElDescList>
+        <ElDesc lineHash="1119751103" ln="19" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="19" srcRngEndLn="20" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* fp;" ElType="." rngLn="19"/>
+        <ElDesc lineHash="852764459" ln="20" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="20" srcRngEndLn="21" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="char path[LOGGER_PATH_MAX];" ElType="." rngLn="20"/>
+        <ElDesc lineHash="-1261142628" ln="22" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="22" srcRngEndLn="23" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="sprintf(path, &quot;%s/vitals_%s.csv&quot;, directory, patient_id);" ElType="." rngLn="22"/>
+        <ElDesc lineHash="1160568505" ln="23" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="23" srcRngEndLn="24" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="strcpy(logger->log_path, path);" ElType="." rngLn="23"/>
+        <ElDesc lineHash="283028750" ln="25" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="25" srcRngEndLn="26" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fp = fopen(logger->log_path, &quot;a+&quot;);" ElType=".C" rngLn="25">
+          <Anns>
+            <Ann msg="Source of null value" kind="cause"/>
+            <Ann msg="Null value carrier: fp" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="644786303" ln="26" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="26" srcRngEndLn="27" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->file_handle = (void*) fp;" ElType="." rngLn="26">
+          <Anns>
+            <Ann msg="Null value carrier: fp" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1889068304" ln="27" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="27" srcRngEndLn="28" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->bytes_written = 0;" ElType="." rngLn="27"/>
+        <ElDesc lineHash="728685013" ln="28" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="28" srcRngEndLn="29" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->records_written = 0;" ElType="." rngLn="28"/>
+        <ElDesc lineHash="2081785132" ln="29" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="29" srcRngEndLn="30" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->is_open = true;" ElType="." rngLn="29"/>
+        <ElDesc lineHash="488281504" ln="32" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="32" srcRngEndLn="33" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fprintf(fp, LOGGER_CSV_HEADER);" ElType=".P" rngLn="32">
+          <Anns>
+            <Ann msg="Null value carrier: fp" kind="comment"/>
+            <Ann msg="Null pointer dereferencing point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="The string literal is embedded directly in the code: tick_ms,hr,spo2,sys,dia,resp" ln="33" locFile="/RockStarDisplay/src/data_logger.c" locStartln="33" sev="5" auth="syoung" locRef="7" rule="CWE-798-a" lnHash="-191104736" rule.header="Do not hard code string literals" tool="c++test" lineHash="-191104736" unbViolId="b850d322-018c-35e7-8ffa-9ca8dc4569ca" locStartPos="47" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="e5626928-6694-30fb-8603-e5fc4fbf06bc" locEndPos="48" locType="sr" urgent="true" hash="2068971408" locEndLn="33" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: w" ln="96" locFile="/RockStarDisplay/src/data_logger.c" locStartln="96" sev="5" auth="syoung" locRef="7" rule="CWE-798-a" lnHash="1160913159" rule.header="Do not hard code string literals" tool="c++test" lineHash="1160913159" unbViolId="790d64ad-c2ac-3c8f-8c0d-20e1f39e37c7" locStartPos="34" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="ef92340c-0089-353b-a602-cf04de23327e" locEndPos="35" locType="sr" urgent="true" hash="2068971408" locEndLn="96" goals="1,"/>
+    <FlowViol msg="&quot;nfp&quot; may possibly be null" ln="99" locFile="/RockStarDisplay/src/data_logger.c" ruleSAFMsg="Null pointer dereferencing point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="97" rule="CWE-476-a" FirstElSrcRngStartPos="0" lnHash="396927524" ruleSCSCMsg="Source of null value" FirstElSrcRngFile="/RockStarDisplay/src/data_logger.c" rule.header="Avoid null pointer dereferencing" FirstElSrcRngStartln="96" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-1227794236" lang="cpp" violId="ab9dfb59-15d9-3590-aa08-b0f63aca90c3" locEndPos="0" urgent="true" locEndLn="100" goals="1," locStartln="99" sev="1" locRef="7" tool="c++test" lineHash="396927524" unbViolId="749a5a76-7402-3367-bf3d-9032ae48758b" locType="sr" hash="2068971408" causeLocRef="7">
+      <ElDescList>
+        <ElDesc lineHash="-1259551531" ln="88" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="88" srcRngEndLn="89" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* fp = (FILE*) logger->file_handle;" ElType="." rngLn="88"/>
+        <ElDesc lineHash="-822166501" ln="89" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="89" srcRngEndLn="90" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="char rotated[LOGGER_PATH_MAX];" ElType="." rngLn="89"/>
+        <ElDesc lineHash="352776245" ln="90" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="90" srcRngEndLn="91" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* nfp;" ElType="." rngLn="90"/>
+        <ElDesc lineHash="590019765" ln="92" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="92" srcRngEndLn="93" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="sprintf(rotated, &quot;%s.%u.bak&quot;, logger->log_path, (unsigned) logger->records_written);" ElType="." rngLn="92"/>
+        <ElDesc lineHash="317522322" ln="93" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="93" srcRngEndLn="94" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fclose(fp);" ElType="." rngLn="93"/>
+        <ElDesc lineHash="-1407901092" ln="94" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="94" srcRngEndLn="95" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="rename(logger->log_path, rotated);" ElType="." rngLn="94"/>
+        <ElDesc lineHash="1160913159" ln="96" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="96" srcRngEndLn="97" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="nfp = fopen(logger->log_path, &quot;w&quot;);" ElType=".C" rngLn="96">
+          <Anns>
+            <Ann msg="Source of null value" kind="cause"/>
+            <Ann msg="Null value carrier: nfp" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="632696449" ln="97" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="97" srcRngEndLn="98" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->file_handle = (void*) nfp;" ElType="." rngLn="97">
+          <Anns>
+            <Ann msg="Null value carrier: nfp" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="78446220" ln="98" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="98" srcRngEndLn="99" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="logger->bytes_written = 0;" ElType="." rngLn="98"/>
+        <ElDesc lineHash="396927524" ln="99" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="99" srcRngEndLn="100" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fprintf(nfp, LOGGER_CSV_HEADER);" ElType=".P" rngLn="99">
+          <Anns>
+            <Ann msg="Null value carrier: nfp" kind="comment"/>
+            <Ann msg="Null pointer dereferencing point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="The string literal is embedded directly in the code: rb" ln="110" locFile="/RockStarDisplay/src/data_logger.c" locStartln="110" sev="5" auth="syoung" locRef="7" rule="CWE-798-a" lnHash="1571858222" rule.header="Do not hard code string literals" tool="c++test" lineHash="1571858222" unbViolId="5b7da428-4be8-3854-8168-a3f229844285" locStartPos="34" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="9d547dc5-8229-31b9-9180-97104a7d614c" locEndPos="35" locType="sr" urgent="true" hash="2068971408" locEndLn="110" goals="1,"/>
+    <StdViol msg="The string literal is embedded directly in the code: wb" ln="111" locFile="/RockStarDisplay/src/data_logger.c" locStartln="111" sev="5" auth="syoung" locRef="7" rule="CWE-798-a" lnHash="-13755801" rule.header="Do not hard code string literals" tool="c++test" lineHash="-13755801" unbViolId="20ace3bb-c3ef-3b1e-abb8-539894f1d555" locStartPos="27" analyzer="com.parasoft.xtest.cpp.analyzer.static.pattern" lang="cpp" violId="95591cd6-48fc-3694-89f3-5ee1aceef614" locEndPos="28" locType="sr" urgent="true" hash="2068971408" locEndLn="111" goals="1,"/>
+    <FlowViol msg="Data obtained from a file (&quot;buffer&quot;) is used in a loop condition" ln="115" locFile="/RockStarDisplay/src/data_logger.c" ruleSAFMsg="Tainted data use in a loop condition" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="116" rule="CWE-400-b" FirstElSrcRngStartPos="0" lnHash="-1572880608" ruleSCSCMsg="Tainting point" FirstElSrcRngFile="/RockStarDisplay/src/data_logger.c" rule.header="Validate potentially tainted data before it is used in the controlling expression of a loop" FirstElSrcRngStartln="115" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="1138973598" lang="cpp" violId="bfea4a39-a24c-3668-a5fa-ec7b857935fe" locEndPos="0" urgent="true" locEndLn="116" goals="1," locStartln="115" sev="1" locRef="7" tool="c++test" lineHash="-1572880608" unbViolId="13740f25-cf5e-33a4-a8eb-112af0031afa" locType="sr" hash="2068971408" causeLocRef="7">
+      <ElDescList>
+        <ElDesc lineHash="352936329" ln="105" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="105" srcRngEndLn="106" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* src;" ElType="." rngLn="105"/>
+        <ElDesc lineHash="352490952" ln="106" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="106" srcRngEndLn="107" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* dst;" ElType="." rngLn="106"/>
+        <ElDesc lineHash="-1529667485" ln="107" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="107" srcRngEndLn="108" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="char buffer[512];" ElType="." rngLn="107"/>
+        <ElDesc lineHash="167045687" ln="108" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="108" srcRngEndLn="109" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="size_t n;" ElType="." rngLn="108"/>
+        <ElDesc lineHash="1571858222" ln="110" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="110" srcRngEndLn="111" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="src = fopen(logger->log_path, &quot;rb&quot;);" ElType="." rngLn="110"/>
+        <ElDesc lineHash="-13755801" ln="111" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="111" srcRngEndLn="112" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="dst = fopen(dest_path, &quot;wb&quot;);" ElType="." rngLn="111"/>
+        <ElDesc lineHash="-1977518146" ln="112" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="112" srcRngEndLn="113" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="if (src == NULL) {" ElType="." rngLn="112">
+          <Anns>
+            <Ann msg="Condition evaluation: (src == 0) (assuming false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1572880608" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fread(...)" ElType=".C" rngLn="115">
+          <Anns>
+            <Ann msg="Tainting point" kind="cause"/>
+            <Ann msg="Tainted data: buffer[]" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1572880608" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="while ((n = fread(buffer, 1, sizeof(buffer), src)) > 0) {" ElType="." rngLn="115">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (n > 0) (assuming true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="143638103" ln="116" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="116" srcRngEndLn="117" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fwrite(buffer, 1, n, dst);" ElType="!" rngLn="116"/>
+        <ElDesc lineHash="-1572880608" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fread(...)" ElType=".P" rngLn="115">
+          <Anns>
+            <Ann msg="Tainted data: buffer" kind="var"/>
+            <Ann msg="Tainted data use in a loop condition" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;dst&quot; may possibly be null" ln="116" locFile="/RockStarDisplay/src/data_logger.c" ruleSAFMsg="Null pointer dereferencing point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="112" rule="CWE-476-a" FirstElSrcRngStartPos="0" lnHash="143638103" ruleSCSCMsg="Source of null value" FirstElSrcRngFile="/RockStarDisplay/src/data_logger.c" rule.header="Avoid null pointer dereferencing" FirstElSrcRngStartln="111" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="396548785" lang="cpp" violId="70338222-5687-37db-bf3f-1dd5f370b4e5" locEndPos="0" urgent="true" locEndLn="117" goals="1," locStartln="116" sev="1" locRef="7" tool="c++test" lineHash="143638103" unbViolId="6c94ae52-234f-3f6e-82f3-c30937e79231" locType="sr" hash="2068971408" causeLocRef="7">
+      <ElDescList>
+        <ElDesc lineHash="352936329" ln="105" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="105" srcRngEndLn="106" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* src;" ElType="." rngLn="105"/>
+        <ElDesc lineHash="352490952" ln="106" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="106" srcRngEndLn="107" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* dst;" ElType="." rngLn="106"/>
+        <ElDesc lineHash="-1529667485" ln="107" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="107" srcRngEndLn="108" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="char buffer[512];" ElType="." rngLn="107"/>
+        <ElDesc lineHash="167045687" ln="108" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="108" srcRngEndLn="109" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="size_t n;" ElType="." rngLn="108"/>
+        <ElDesc lineHash="1571858222" ln="110" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="110" srcRngEndLn="111" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="src = fopen(logger->log_path, &quot;rb&quot;);" ElType="." rngLn="110"/>
+        <ElDesc lineHash="-13755801" ln="111" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="111" srcRngEndLn="112" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="dst = fopen(dest_path, &quot;wb&quot;);" ElType=".C" rngLn="111">
+          <Anns>
+            <Ann msg="Source of null value" kind="cause"/>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1977518146" ln="112" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="112" srcRngEndLn="113" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="if (src == NULL) {" ElType="." rngLn="112">
+          <Anns>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+            <Ann msg="Condition evaluation: (src == 0) (assuming false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1572880608" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="while ((n = fread(buffer, 1, sizeof(buffer), src)) > 0) {" ElType="." rngLn="115">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (n > 0) (assuming true)" kind="condEval"/>
+            <Ann msg="Entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="143638103" ln="116" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="116" srcRngEndLn="117" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fwrite(buffer, 1, n, dst);" ElType=".P" rngLn="116">
+          <Anns>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+            <Ann msg="Null pointer dereferencing point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;dst&quot; may possibly be null" ln="119" locFile="/RockStarDisplay/src/data_logger.c" ruleSAFMsg="Null pointer dereferencing point" FirstElSrcRngEndPos="0" auth="syoung" FirstElSrcRngEndLn="112" rule="CWE-476-a" FirstElSrcRngStartPos="0" lnHash="1251571297" ruleSCSCMsg="Source of null value" FirstElSrcRngFile="/RockStarDisplay/src/data_logger.c" rule.header="Avoid null pointer dereferencing" FirstElSrcRngStartln="111" locStartPos="0" analyzer="com.parasoft.xtest.cpp.analyzer.static.flow" id="-856532368" lang="cpp" violId="017d2021-7ccb-3c43-bdb1-f3116f42ea1e" locEndPos="0" urgent="true" locEndLn="120" goals="1," locStartln="119" sev="1" locRef="7" tool="c++test" lineHash="1251571297" unbViolId="34ac526f-ed25-30c5-8d13-711c1bfad24e" locType="sr" hash="2068971408" causeLocRef="7">
+      <ElDescList>
+        <ElDesc lineHash="352936329" ln="105" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="105" srcRngEndLn="106" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* src;" ElType="." rngLn="105"/>
+        <ElDesc lineHash="352490952" ln="106" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="106" srcRngEndLn="107" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="FILE* dst;" ElType="." rngLn="106"/>
+        <ElDesc lineHash="-1529667485" ln="107" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="107" srcRngEndLn="108" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="char buffer[512];" ElType="." rngLn="107"/>
+        <ElDesc lineHash="167045687" ln="108" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="108" srcRngEndLn="109" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="size_t n;" ElType="." rngLn="108"/>
+        <ElDesc lineHash="1571858222" ln="110" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="110" srcRngEndLn="111" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="src = fopen(logger->log_path, &quot;rb&quot;);" ElType="." rngLn="110"/>
+        <ElDesc lineHash="-13755801" ln="111" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="111" srcRngEndLn="112" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="dst = fopen(dest_path, &quot;wb&quot;);" ElType=".C" rngLn="111">
+          <Anns>
+            <Ann msg="Source of null value" kind="cause"/>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1977518146" ln="112" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="112" srcRngEndLn="113" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="if (src == NULL) {" ElType="." rngLn="112">
+          <Anns>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+            <Ann msg="Condition evaluation: (src == 0) (assuming false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="-1572880608" ln="115" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="115" srcRngEndLn="116" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="while ((n = fread(buffer, 1, sizeof(buffer), src)) > 0) {" ElType="." rngLn="115">
+          <Anns>
+            <Ann msg="Loop condition evaluation: (n > 0) (assuming false)" kind="condEval"/>
+            <Ann msg="Not entering the loop" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc lineHash="1265377984" ln="118" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="118" srcRngEndLn="119" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fclose(src);" ElType="." rngLn="118"/>
+        <ElDesc lineHash="1251571297" ln="119" srcRngStartPos="0" srcRngEndPos="0" locRef="7" locType="sr" srcRnghash="2068971408" srcRngStartln="119" srcRngEndLn="120" srcRngFile="/RockStarDisplay/src/data_logger.c" desc="fclose(dst);" ElType=".P" rngLn="119">
+          <Anns>
+            <Ann msg="Null value carrier: dst" kind="comment"/>
+            <Ann msg="Null pointer dereferencing point" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+  </StdViols>
+
+      <TestedFilesDetails>
+         <Total name="Total (Suppressed)" supp="0" total="34">
+            <Project id="RockStarDisplay" name="RockStarDisplay" supp="0" total="34">
+               <Res name="src" supp="0" total="34">
+                  <Res loc="/RockStarDisplay/src/main.c" locRef="1" locType="sr" name="main.c" supp="0" total="13"/>
+                  <Res loc="/RockStarDisplay/src/ecg_processor.c" locRef="2" locType="sr" name="ecg_processor.c" supp="0" total="5"/>
+                  <Res loc="/RockStarDisplay/src/spo2_monitor.c" locRef="3" locType="sr" name="spo2_monitor.c" supp="0" total="1"/>
+                  <Res loc="/RockStarDisplay/src/nibp_monitor.c" locRef="4" locType="sr" name="nibp_monitor.c" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/src/alarm_manager.c" locRef="5" locType="sr" name="alarm_manager.c" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/src/patient_record.c" locRef="6" locType="sr" name="patient_record.c" supp="0" total="4"/>
+                  <Res loc="/RockStarDisplay/src/data_logger.c" locRef="7" locType="sr" name="data_logger.c" supp="0" total="11"/>
+                  <Res loc="/RockStarDisplay/src/comm_link.c" locRef="8" locType="sr" name="comm_link.c" supp="0" total="0"/>
+               </Res>
+               <Res name="include" supp="0" total="0">
+                  <Res loc="/RockStarDisplay/include/nibp_monitor.h" locRef="9" locType="sr" name="nibp_monitor.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/comm_link.h" locRef="10" locType="sr" name="comm_link.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/patient_record.h" locRef="11" locType="sr" name="patient_record.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/ecg_processor.h" locRef="12" locType="sr" name="ecg_processor.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/spo2_monitor.h" locRef="13" locType="sr" name="spo2_monitor.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/alarm_manager.h" locRef="14" locType="sr" name="alarm_manager.h" supp="0" total="0"/>
+                  <Res loc="/RockStarDisplay/include/data_logger.h" locRef="15" locType="sr" name="data_logger.h" supp="0" total="0"/>
+               </Res>
+            </Project>
+         </Total>
+      </TestedFilesDetails>
+   </CodingStandards>
+   <Statistics>
+      
+   </Statistics>
+</ResultsSession>

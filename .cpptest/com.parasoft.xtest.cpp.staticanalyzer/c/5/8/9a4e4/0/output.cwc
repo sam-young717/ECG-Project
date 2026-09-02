@@ -1,0 +1,330 @@
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-20_4
+<b>'free' function should not be used
+<l>120
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-124_a
+<b>Implicit conversion from 'void (*)(const CommFrame_t *)' type to 'void *' type in function's argument
+<l>120
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-157
+<b>The value of a composite expression (8 bit essential type) is passed to function 'comm_crc8' as parameter with wider essential type (16 bit)
+<l>101
+<k>35
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-165_a
+<b>Do not cast from the essential 'unsigned char' type to the essentially enum 'CommMsgType_t' type
+<l>96
+<k>18
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_uart_write' function with external linkage in an implementation file
+<l>16
+<k>12
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_uart_read' function with external linkage in an implementation file
+<l>17
+<k>12
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-247
+<b>Do not declare the 'bsp_endpoint_reachable' function with external linkage in an implementation file
+<l>18
+<k>12
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>32
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>33
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_connect' function
+<l>45
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_connect' function
+<l>49
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>69
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_send' function
+<l>58
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_send' function
+<l>79
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>61
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>62
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>63
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>64
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>65
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>66
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>67
+<k>21
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>99
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_receive' function
+<l>88
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_receive' function
+<l>103
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-14_7
+<b>Provide only one exit point in 'comm_link_receive' function
+<l>109
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>32
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memset" return value
+<l>33
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>69
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>CODSTA-122_a
+<b>Unused function's "memcpy" return value
+<l>99
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>16
+<k>8
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>17
+<k>8
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>55
+<k>5
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>79
+<k>24
+<s>false
+<N>
+<f>
+<L>0
