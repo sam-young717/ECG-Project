@@ -43,7 +43,7 @@ jobs:
       with:
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: build/compile_commands.json
-        testConfig: 'builtin://MISRA C 2025'
+        testConfig: 'builtin://Flow Analysis Standard'
         additionalParams: '-localsettings settings.properties'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
