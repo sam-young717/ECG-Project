@@ -821,9 +821,6 @@
          <rule header="The same type aliases shall be used in all declarations of the same entity" id="67_b" impl="CODSTA-67_b" quickfix="false" scope="line" severity="3">
             <file path="CODSTA/CODSTA-67_b.rule"/>
          </rule>
-         <rule header="'decltype' and 'auto' should be used consistently in all declarations of the same entity" id="67_c" impl="CODSTA-67_c" quickfix="false" scope="line" severity="3">
-            <file path="CODSTA/CODSTA-67_c.rule"/>
-         </rule>
          <rule header="A &quot;U&quot; suffix shall be applied to all octal or hexadecimal integer literals of unsigned type" id="68" impl="CODSTA-68" quickfix="false" scope="line" severity="3">
             <file path="CODSTA/CODSTA-68.rule"/>
          </rule>
@@ -847,9 +844,6 @@
          </rule>
          <rule header="The identifier main shall not be used for a function other than the global function main" id="76" impl="CODSTA-76" quickfix="false" scope="line" severity="3">
             <file path="CODSTA/CODSTA-76.rule"/>
-         </rule>
-         <rule header="The identifier 'main' followed by an opening parenthesis should not be used, except in the declaration of the global function 'main'" id="76_b" impl="CODSTA-76_b" quickfix="false" scope="line" severity="3">
-            <file path="CODSTA/CODSTA-76_b.rule"/>
          </rule>
          <rule header="The goto statement shall jump to a label declared later in the same function body" id="77" impl="CODSTA-77" quickfix="false" scope="line" severity="3">
             <file path="CODSTA/CODSTA-77.rule"/>
@@ -1554,6 +1548,9 @@
             </rule>
             <rule header="Avoid overloading constructors with std::initializer_list" id="47" impl="CODSTA-MCPP-47" quickfix="false" scope="line" severity="3">
                <file path="CODSTA-MCPP/CODSTA-MCPP-47.rule"/>
+            </rule>
+            <rule header="A class shall only define an initializer-list constructor when it is the only constructor" id="47_b" impl="CODSTA-MCPP-47_b" quickfix="false" scope="line" severity="3">
+               <file path="CODSTA-MCPP/CODSTA-MCPP-47_b.rule"/>
             </rule>
             <rule header="Multiple output values from a function should be returned as a struct or tuple" id="48" impl="CODSTA-MCPP-48" quickfix="false" scope="line" severity="3">
                <file path="CODSTA-MCPP/CODSTA-MCPP-48.rule"/>
@@ -3240,9 +3237,6 @@
          <rule header="The memory management functions 'std::get_temporary_buffer' and 'std::return_temporary_buffer' should not be used" id="63" impl="MRM-63" quickfix="false" scope="line" severity="3">
             <file path="MRM/MRM-63.rule"/>
          </rule>
-         <rule header="Handle memory allocation failures when using the 'new' operator" id="64" impl="MRM-64" quickfix="false" scope="line" severity="3">
-            <file path="MRM/MRM-64.rule"/>
-         </rule>
       </category>
       <category description="Naming Conventions" name="NAMING">
          <rule header="All &quot;#define&quot; constants shall be in uppercase" id="01" impl="NAMING-01" quickfix="false" scope="line" severity="3">
@@ -4682,9 +4676,6 @@
          <rule header="Be careful using functions that use file names for identification" id="55" impl="SECURITY-55" quickfix="false" scope="line" severity="2">
             <file path="SECURITY/SECURITY-55.rule"/>
          </rule>
-         <rule header="Do not use the 'SetFileTime()' function" id="56" impl="SECURITY-56" quickfix="false" scope="line" severity="3">
-            <file path="SECURITY/SECURITY-56.rule"/>
-         </rule>
       </category>
       <category description="STL Best Practices" name="STL">
          <rule header="Instead of trying to write the container-independent code use class encapsulation" id="01" impl="STL-01" quickfix="false" scope="line" severity="5">
@@ -4865,9 +4856,6 @@
          </rule>
          <rule header="Template specialization shall be declared in the same file as the primary template or a user-defined type, for which the specialization is declared" id="16" impl="TEMPL-16" quickfix="false" scope="line" severity="3">
             <file path="TEMPL/TEMPL-16.rule"/>
-         </rule>
-         <rule header="Template specialization should be declared in the same file (or in the file directly included) as the primary template or a user-defined type, for which the specialization is declared" id="16_b" impl="TEMPL-16_b" quickfix="false" scope="line" severity="3">
-            <file path="TEMPL/TEMPL-16_b.rule"/>
          </rule>
          <rule header="Use a trailing return type syntax if the return type is preceded by the 'typename' keyword" id="17" impl="TEMPL-17" quickfix="false" scope="line" severity="3">
             <file path="TEMPL/TEMPL-17.rule"/>
