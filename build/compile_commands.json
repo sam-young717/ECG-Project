@@ -46,5 +46,11 @@
   "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c",
   "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c",
   "output": "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o"
+},
+{
+  "directory": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build",
+  "command": "/usr/bin/cc -DCARDIO_MONITOR_FW_VERSION=\\\"1.4.2\\\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10 -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common -o CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/vital_telemetry.c",
+  "file": "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/vital_telemetry.c",
+  "output": "CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o"
 }
 ]

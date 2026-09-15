@@ -49,6 +49,7 @@ set(CARDIO_SOURCES
     src/patient_record.c
     src/data_logger.c
     src/comm_link.c
+    src/vital_telemetry.c
 )
 
 add_executable(cardio_monitor ${CARDIO_SOURCES})

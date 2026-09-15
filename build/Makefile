@@ -366,6 +366,30 @@ src/spo2_monitor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.s
 .PHONY : src/spo2_monitor.c.s
 
+src/vital_telemetry.o: src/vital_telemetry.c.o
+.PHONY : src/vital_telemetry.o
+
+# target to build an object file
+src/vital_telemetry.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o
+.PHONY : src/vital_telemetry.c.o
+
+src/vital_telemetry.i: src/vital_telemetry.c.i
+.PHONY : src/vital_telemetry.i
+
+# target to preprocess a source file
+src/vital_telemetry.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.i
+.PHONY : src/vital_telemetry.c.i
+
+src/vital_telemetry.s: src/vital_telemetry.c.s
+.PHONY : src/vital_telemetry.s
+
+# target to generate assembly for a file
+src/vital_telemetry.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.s
+.PHONY : src/vital_telemetry.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -403,6 +427,9 @@ help:
 	@echo "... src/spo2_monitor.o"
 	@echo "... src/spo2_monitor.i"
 	@echo "... src/spo2_monitor.s"
+	@echo "... src/vital_telemetry.o"
+	@echo "... src/vital_telemetry.i"
+	@echo "... src/vital_telemetry.s"
 .PHONY : help
 
 

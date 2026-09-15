@@ -182,3 +182,26 @@ arg=-o
 arg=CMakeFiles/cardio_monitor.dir/src/comm_link.c.o
 arg=-c
 arg=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+---------------- build info ----------------
+working_dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/build
+project_name=build
+arg=/usr/bin/cc
+arg=-DCARDIO_MONITOR_FW_VERSION="1.4.2"
+arg=-DECG_SAMPLE_RATE_HZ=250
+arg=-DSPO2_SAMPLE_RATE_HZ=100
+arg=-DSYSTEM_TICK_MS=10
+arg=-I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include
+arg=-g
+arg=-std=c99
+arg=-Wall
+arg=-Wextra
+arg=-Wshadow
+arg=-Wpointer-arith
+arg=-Wcast-align
+arg=-Wstrict-prototypes
+arg=-Wmissing-prototypes
+arg=-fno-common
+arg=-o
+arg=CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o
+arg=-c
+arg=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/vital_telemetry.c

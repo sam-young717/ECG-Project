@@ -6,5 +6,6 @@ build=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/example
 build=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c
 build=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c
 build=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c
+build=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/vital_telemetry.c
 #VER=2
 #CTX=-384017169
