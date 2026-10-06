@@ -1,4 +1,0 @@
-{
-    "cpptest.testConfiguration": "builtin://MISRA C 2025",
-    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -input build/compile_commands.json"
-}
