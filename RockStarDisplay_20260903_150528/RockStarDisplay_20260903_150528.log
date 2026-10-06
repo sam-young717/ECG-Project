@@ -1,0 +1,50 @@
+2026-09-03 15:05:28.744 start: 2026-09-03 15:05:28
+2026-09-03 15:05:28.744 command: /mnt/c/Users/syoung/Documents/CDScript/contributors/contributors.py
+2026-09-03 15:05:28.744 output directory: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/RockStarDisplay_20260903_150528
+2026-09-03 15:05:28.744 python: 3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]
+2026-09-03 15:05:28.747 git: git version 2.43.0
+2026-09-03 15:05:28.747 
+2026-09-03 15:05:28.747 /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay scanning...
+2026-09-03 15:05:28.748 
+2026-09-03 15:05:35.458 The following repositories have been found:
+2026-09-03 15:05:35.458 - .
+2026-09-03 15:05:35.458 
+2026-09-03 15:05:35.458 ***
+2026-09-03 15:05:35.486 /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay scanning since 2024-01-01...
+2026-09-03 15:05:35.524 URLs:
+2026-09-03 15:05:35.524 - git@github.com:sam-young717/ECG-Project.git
+2026-09-03 15:05:35.589 Branches:
+2026-09-03 15:05:35.589 - * main
+2026-09-03 15:05:35.710 Earliest commit date: 2026-09-02
+2026-09-03 15:05:35.710 Latest commit date: 2026-09-02
+2026-09-03 15:05:35.710 Statistics:
+2026-09-03 15:05:35.710 - syoung@syoung-pc. (sam-young717): 19
+2026-09-03 15:05:35.710 Number of contributing users: 1
+2026-09-03 15:05:35.710 /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay scanned
+2026-09-03 15:05:35.849 
+2026-09-03 15:05:35.849 ******
+2026-09-03 15:05:35.849 Total statistics since 2024-01-01:
+2026-09-03 15:05:35.849 - syoung@syoung-pc. (sam-young717): 19
+2026-09-03 15:05:35.849 
+2026-09-03 15:05:35.849 Total number of contributing users: 1
+2026-09-03 15:05:35.855 
+2026-09-03 15:05:35.855 report file (md5): ee16f97363ff77e13c940b2a75c2c28b
+2026-09-03 15:05:35.857 report obfuscated file (md5): a5774d97154d53220eaaf04d21cf58b3
+2026-09-03 15:05:35.859 
+2026-09-03 15:05:35.859 --------------------------------------------------------------------------------
+2026-09-03 15:05:35.859 Summary:
+2026-09-03 15:05:35.859 
+2026-09-03 15:05:35.859 Scanned repositories:
+2026-09-03 15:05:35.859 - /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay (git@github.com:sam-young717/ECG-Project.git)
+2026-09-03 15:05:35.859 
+2026-09-03 15:05:35.859 Emails of contributing users:
+2026-09-03 15:05:35.860 - syoung@syoung-pc.
+2026-09-03 15:05:35.860 
+2026-09-03 15:05:35.860 Total number of contributing users: 1
+2026-09-03 15:05:35.860 --------------------------------------------------------------------------------
+2026-09-03 15:05:35.860 
+2026-09-03 15:05:35.862 report: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/RockStarDisplay_20260903_150528/RockStarDisplay_20260903_150528.json
+2026-09-03 15:05:35.864 obfuscated report: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/RockStarDisplay_20260903_150528/RockStarDisplay_20260903_150528_obfuscated.json
+2026-09-03 15:05:35.868 final report: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/RockStarDisplay_20260903_150528/RockStarDisplay_20260903_150528_report.json
+2026-09-03 15:05:35.868 
+2026-09-03 15:05:35.868 end: 2026-09-03 15:05:35
