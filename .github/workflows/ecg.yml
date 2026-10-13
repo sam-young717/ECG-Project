@@ -48,7 +48,9 @@ jobs:
 
     - name: Prepare changed-source compilation database
       run: |
-        cmake -S . -B build -DCPPTEST_COVERAGE=OFF
+        export CPPTEST_ANALYSIS_BUILD_DIR="$(mktemp -d "$RUNNER_TEMP/ecg-cpptest-build.XXXXXX")"
+        cmake -S . -B "$CPPTEST_ANALYSIS_BUILD_DIR" -DCPPTEST_COVERAGE=OFF \
+          -DFETCHCONTENT_SOURCE_DIR_GOOGLETEST="$GITHUB_WORKSPACE/build/_deps/googletest-src"
         python3 - <<'PY'
         import json
         import os
@@ -64,7 +66,7 @@ jobs:
         if not changed:
             raise SystemExit("No changed C sources to analyze relative to origin/main")
 
-        database = workspace / "build/compile_commands.json"
+        database = Path(os.environ["CPPTEST_ANALYSIS_BUILD_DIR"]) / "compile_commands.json"
         commands = json.loads(database.read_text())
         selected = []
         selected_files = set()
