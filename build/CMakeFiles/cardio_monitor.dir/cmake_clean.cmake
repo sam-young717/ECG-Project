@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d"
   "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o"
   "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d"
+  "CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o"
+  "CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o.d"
   "cardio_monitor"
   "cardio_monitor.pdb"
 )

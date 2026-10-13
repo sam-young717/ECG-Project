@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o.d"
   "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d"
   "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/vital_telemetry.c" "CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
