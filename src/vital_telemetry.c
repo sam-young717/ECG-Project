@@ -25,7 +25,7 @@ void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
         return;
     }
 
-    memset(telemetry, 0, sizeof(*telemetry));
+    (void) memset(telemetry, 0, sizeof(*telemetry));
     telemetry->link = link;
     telemetry->interval_ms = interval_ms;
 }
