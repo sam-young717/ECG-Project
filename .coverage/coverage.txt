@@ -1,0 +1,97 @@
+
+=== Parasoft C/C++test - Code Coverage Report ===
+
+* LC - Line Coverage
+* SC - Statement Coverage
+* BC - Block Coverage
+* DC - Decision (Branch) Coverage
+* SCC - Simple Condition Coverage
+* MCDC - Modified Condition Decision Coverage
+* FC - Function Coverage
+* CC - Call Coverage
+
+> ECG-Project/src/alarm_manager.c  LC=88% 43/49   SC=85% 47/55   BC=80% 20/25   DC=79% 11/14   SCC=75% 12/16  MCDC=63% 5/8   FC=83% 5/6     CC=100% 9/9    
+
+  alarm_manager_acknowledge_all()  LC=0% 0/6      SC=0% 0/8      BC=0% 0/5      DC=0% 0/2      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=N/A         
+  alarm_manager_dispatch()         LC=100% 9/9    SC=100% 9/9    BC=100% 3/3    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=100% 6/6    
+  alarm_manager_init()             LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  alarm_manager_pending()          LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  alarm_manager_pop()              LC=100% 18/18  SC=100% 22/22  BC=100% 12/12  DC=88% 7/8     SCC=80% 8/10   MCDC=60% 3/5   FC=100% 1/1    CC=100% 1/1    
+  alarm_manager_raise()            LC=100% 14/14  SC=100% 14/14  BC=100% 3/3    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=100% 1/1    
+
+> ECG-Project/src/comm_link.c      LC=95% 53/56   SC=95% 55/58   BC=87% 20/23   DC=71% 10/14   SCC=64% 14/22  MCDC=27% 3/11  FC=100% 7/7    CC=100% 9/9    
+
+  comm_crc8()                      LC=100% 5/5    SC=100% 7/7    BC=100% 5/5    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=N/A         
+  comm_link_connect()              LC=100% 4/4    SC=100% 4/4    BC=100% 3/3    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=100% 1/1    
+  comm_link_disconnect()           LC=100% 4/4    SC=100% 4/4    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  comm_link_init()                 LC=100% 7/7    SC=100% 7/7    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
+  comm_link_receive()              LC=88% 14/16   SC=88% 14/16   BC=78% 7/9     DC=63% 5/8     SCC=57% 8/14   MCDC=14% 1/7   FC=100% 1/1    CC=100% 3/3    
+  comm_link_register_callback()    LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  comm_link_send()                 LC=95% 18/19   SC=95% 18/19   BC=67% 2/3     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=100% 3/3    
+
+> ECG-Project/src/data_logger.c    LC=70% 46/66   SC=70% 46/66   BC=60% 15/25   DC=45% 9/20    SCC=46% 11/24  MCDC=17% 2/12  FC=83% 5/6     CC=65% 15/23   
+
+  data_logger_append()             LC=77% 10/13   SC=77% 10/13   BC=50% 3/6     DC=33% 2/6     SCC=33% 2/6    MCDC=0% 0/3    FC=100% 1/1    CC=67% 2/3     
+  data_logger_close()              LC=100% 5/5    SC=100% 5/5    BC=100% 3/3    DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=100% 1/1    
+  data_logger_export()             LC=71% 12/17   SC=71% 12/17   BC=44% 4/9     DC=38% 3/8     SCC=40% 4/10   MCDC=20% 1/5   FC=100% 1/1    CC=75% 6/8     
+  data_logger_flush()              LC=75% 3/4     SC=75% 3/4     BC=67% 2/3     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=100% 1/1    
+  data_logger_open()               LC=100% 16/16  SC=100% 16/16  BC=100% 3/3    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=100% 5/5    
+  logger_rotate()                  LC=0% 0/11     SC=0% 0/11     BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=0% 0/5      
+
+> ECG-Project/src/ecg_processor.c  LC=78% 39/50   SC=75% 39/52   BC=60% 12/20   DC=50% 6/12    SCC=50% 4/8    MCDC=25% 1/4   FC=83% 5/6     CC=100% 2/2    
+
+  ecg_processor_apply_filter()     LC=0% 0/7      SC=0% 0/9      BC=0% 0/5      DC=0% 0/2      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=N/A         
+  ecg_processor_detect_qrs()       LC=86% 12/14   SC=86% 12/14   BC=71% 5/7     DC=67% 4/6     SCC=67% 4/6    MCDC=33% 1/3   FC=100% 1/1    CC=N/A         
+  ecg_processor_get_heart_rate()   LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  ecg_processor_init()             LC=100% 9/9    SC=100% 9/9    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  ecg_processor_push_sample()      LC=86% 12/14   SC=86% 12/14   BC=80% 4/5     DC=50% 2/4     SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  ecg_processor_reset()            LC=100% 5/5    SC=100% 5/5    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+
+> ECG-Project/src/main.c           LC=0% 0/72     SC=0% 0/77     BC=0% 0/28     DC=0% 0/16     SCC=0% 0/40    MCDC=0% 0/20   FC=0% 0/10     CC=0% 0/38     
+
+  acquisition_cycle()              LC=0% 0/22     SC=0% 0/22     BC=0% 0/1      DC=N/A         SCC=0% 0/4     MCDC=0% 0/2    FC=0% 0/1      CC=0% 0/15     
+  admit_new_patient()              LC=0% 0/9      SC=0% 0/9      BC=0% 0/1      DC=N/A         SCC=0% 0/4     MCDC=0% 0/2    FC=0% 0/1      CC=0% 0/4      
+  bsp_audio_beep()                 LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  bsp_console_write()              LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  bsp_endpoint_reachable()         LC=0% 0/1      SC=0% 0/2      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  bsp_led_flash()                  LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  bsp_uart_read()                  LC=0% 0/1      SC=0% 0/3      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  bsp_uart_write()                 LC=0% 0/1      SC=0% 0/2      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  check_vital_alarms()             LC=0% 0/6      SC=0% 0/6      BC=0% 0/6      DC=0% 0/6      SCC=0% 0/14    MCDC=0% 0/7    FC=0% 0/1      CC=0% 0/3      
+  main()                           LC=0% 0/29     SC=0% 0/30     BC=0% 0/14     DC=0% 0/10     SCC=0% 0/18    MCDC=0% 0/9    FC=0% 0/1      CC=0% 0/16     
+
+> ECG-Project/src/nibp_monitor.c   LC=96% 54/56   SC=97% 60/62   BC=94% 33/35   DC=76% 19/25   SCC=77% 17/22  MCDC=55% 6/11  FC=100% 9/9    CC=100% 3/3    
+
+  nibp_compute_result()            LC=100% 19/19  SC=100% 23/23  BC=100% 10/10  DC=75% 6/8     SCC=75% 6/8    MCDC=50% 2/4   FC=100% 1/1    CC=100% 1/1    
+  nibp_find_peak_index()           LC=100% 8/8    SC=100% 10/10  BC=100% 6/6    DC=100% 4/4    SCC=100% 4/4   MCDC=100% 2/2  FC=100% 1/1    CC=N/A         
+  nibp_monitor_get_diastolic()     LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  nibp_monitor_get_map()           LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  nibp_monitor_get_systolic()      LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  nibp_monitor_init()              LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  nibp_monitor_result_ready()      LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=N/A         
+  nibp_monitor_start()             LC=100% 4/4    SC=100% 4/4    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  nibp_monitor_step()              LC=89% 17/19   SC=89% 17/19   BC=85% 11/13   DC=69% 9/13    SCC=75% 6/8    MCDC=50% 2/4   FC=100% 1/1    CC=100% 1/1    
+
+> ECG-Project/src/patient_record.c LC=96% 25/26   SC=96% 27/28   BC=94% 16/17   DC=70% 7/10    SCC=70% 7/10   MCDC=40% 2/5   FC=100% 8/8    CC=100% 6/6    
+
+  patient_record_active_count()    LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  patient_record_assign_room()     LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  patient_record_create()          LC=100% 8/8    SC=100% 8/8    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 3/3    
+  patient_record_destroy()         LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  patient_record_get_age()         LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  patient_record_lookup()          LC=100% 6/6    SC=100% 8/8    BC=100% 7/7    DC=83% 5/6     SCC=83% 5/6    MCDC=67% 2/3   FC=100% 1/1    CC=100% 1/1    
+  patient_record_register()        LC=80% 4/5     SC=80% 4/5     BC=67% 2/3     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=N/A         
+  patient_record_update_status()   LC=100% 2/2    SC=100% 2/2    BC=100% 2/2    DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=N/A         
+
+> ECG-Project/src/spo2_monitor.c   LC=98% 40/41   SC=98% 46/47   BC=96% 26/27   DC=94% 15/16   SCC=94% 17/18  MCDC=89% 8/9   FC=100% 8/8    CC=100% 6/6    
+
+  compute_ac()                     LC=100% 7/7    SC=100% 11/11  BC=100% 8/8    DC=100% 6/6    SCC=100% 6/6   MCDC=100% 3/3  FC=100% 1/1    CC=N/A         
+  compute_dc()                     LC=100% 5/5    SC=100% 7/7    BC=100% 5/5    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=N/A         
+  spo2_monitor_get_pulse()         LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  spo2_monitor_get_saturation()    LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  spo2_monitor_has_motion()        LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=N/A         
+  spo2_monitor_init()              LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
+  spo2_monitor_push_sample()       LC=100% 5/5    SC=100% 5/5    BC=100% 2/2    DC=100% 2/2    SCC=100% 2/2   MCDC=100% 1/1  FC=100% 1/1    CC=N/A         
+  spo2_monitor_update()            LC=95% 18/19   SC=95% 18/19   BC=88% 7/8     DC=83% 5/6     SCC=83% 5/6    MCDC=67% 2/3   FC=100% 1/1    CC=100% 5/5    
+
+> TOTAL (8 files, 60 functions)    LC=72% 300/416 SC=72% 320/445 BC=71% 142/200 DC=61% 77/127  SCC=51% 82/160 MCDC=34% 27/80 FC=78% 47/60   CC=52% 50/96   

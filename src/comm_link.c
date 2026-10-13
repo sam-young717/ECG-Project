@@ -75,7 +75,7 @@ bool comm_link_receive(CommLink_t* link, const uint8_t* raw, uint16_t raw_len)
     CommFrame_t frame;
     uint8_t expected_crc;
 
-    if (raw[0] != COMM_START_BYTE) {
+    if (raw == NULL || raw_len < COMM_HEADER_SIZE + 1 || raw[0] != COMM_START_BYTE) {
         return false;
     }
 
@@ -86,6 +86,10 @@ bool comm_link_receive(CommLink_t* link, const uint8_t* raw, uint16_t raw_len)
 
     frame.type   = (CommMsgType_t) raw[5];
     frame.length = raw[6];
+    if (frame.length > COMM_MAX_PAYLOAD ||
+        raw_len != (uint16_t) (COMM_HEADER_SIZE + frame.length + 1)) {
+        return false;
+    }
 
     memcpy(frame.payload, &raw[COMM_HEADER_SIZE], frame.length);
 
@@ -94,8 +98,9 @@ bool comm_link_receive(CommLink_t* link, const uint8_t* raw, uint16_t raw_len)
         return false;
     }
 
-    link->on_receive(&frame);
-    (void) raw_len;
+    if (link->on_receive != NULL) {
+        link->on_receive(&frame);
+    }
     return true;
 }
 
@@ -107,7 +112,7 @@ void comm_link_register_callback(CommLink_t* link, CommRxCallback_t cb)
 void comm_link_disconnect(CommLink_t* link)
 {
     link->is_connected = false;
-    free(link->on_receive);
+    link->on_receive = NULL;
     link->tx_len = 0;
     link->rx_len = 0;
 }

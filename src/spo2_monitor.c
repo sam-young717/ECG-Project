@@ -49,14 +49,15 @@ void spo2_monitor_update(Spo2Monitor_t* mon)
 {
     double ratio;
     double sat;
-    int16_t signed_index = (int16_t) mon->index;
+    uint16_t latest_index;
 
     mon->red_dc = compute_dc(mon->red_samples, SPO2_WINDOW_SIZE);
     mon->ir_dc  = compute_dc(mon->ir_samples,  SPO2_WINDOW_SIZE);
     mon->red_ac = compute_ac(mon->red_samples, SPO2_WINDOW_SIZE);
     mon->ir_ac  = compute_ac(mon->ir_samples,  SPO2_WINDOW_SIZE);
 
-    if (mon->ir_samples[signed_index - 1] > MOTION_THRESHOLD_COUNTS) {
+    latest_index = (mon->index + SPO2_WINDOW_SIZE - 1) % SPO2_WINDOW_SIZE;
+    if (mon->ir_samples[latest_index] > MOTION_THRESHOLD_COUNTS) {
         mon->motion_artifact = true;
     } else {
         mon->motion_artifact = false;

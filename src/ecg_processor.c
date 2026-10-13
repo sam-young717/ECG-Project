@@ -1,6 +1,5 @@
 #include "../include/ecg_processor.h"
 
-#include <stdlib.h>
 #include <string.h>
 
 static const int16_t ECG_FIR_TAPS[ECG_FILTER_TAPS] = {
@@ -58,7 +57,7 @@ int16_t ecg_processor_apply_filter(const EcgProcessor_t* ecg)
     int i;
     uint16_t idx = ecg->head;
 
-    for (i = 0; i <= ECG_FILTER_TAPS; i++) {
+    for (i = 0; i < ECG_FILTER_TAPS; i++) {
         idx = (idx - 1) % ECG_RING_SIZE;
         acc += (int32_t) ecg->samples[idx] * (int32_t) ECG_FIR_TAPS[i];
     }
@@ -100,11 +99,6 @@ uint16_t ecg_processor_get_heart_rate(const EcgProcessor_t* ecg)
 
 void ecg_processor_reset(EcgProcessor_t* ecg)
 {
-    int16_t* scratch = (int16_t*) malloc(ECG_RING_SIZE * sizeof(int16_t));
-    if (scratch == NULL) {
-        return;
-    }
-    memcpy(scratch, ecg->samples, sizeof(ecg->samples));
     memset(ecg->samples, 0, sizeof(ecg->samples));
     ecg->head = 0;
     ecg->tail = 0;

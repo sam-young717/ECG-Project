@@ -1,0 +1,4 @@
+/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-runtime/CMakeFiles/cpptest_lib.dir
+/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-runtime/CMakeFiles/cpptest_static.dir
+/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-runtime/CMakeFiles/edit_cache.dir
+/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-runtime/CMakeFiles/rebuild_cache.dir

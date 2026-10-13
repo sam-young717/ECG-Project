@@ -73,7 +73,7 @@ CMakeFiles/cardio_monitor.dir/src/main.c.o: CMakeFiles/cardio_monitor.dir/flags.
 CMakeFiles/cardio_monitor.dir/src/main.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/main.c
 CMakeFiles/cardio_monitor.dir/src/main.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cardio_monitor.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/main.c.o -MF CMakeFiles/cardio_monitor.dir/src/main.c.o.d -o CMakeFiles/cardio_monitor.dir/src/main.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/main.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/main.c.o -MF CMakeFiles/cardio_monitor.dir/src/main.c.o.d -o CMakeFiles/cardio_monitor.dir/src/main.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/main.c
 
 CMakeFiles/cardio_monitor.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/main.c.i"
@@ -87,7 +87,7 @@ CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o: CMakeFiles/cardio_monitor.d
 CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/ecg_processor.c
 CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o -MF CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/ecg_processor.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o -MF CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/ecg_processor.c
 
 CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.i"
@@ -101,7 +101,7 @@ CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o: CMakeFiles/cardio_monitor.di
 CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c
 CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o -MF CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o -MF CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c
 
 CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.i"
@@ -115,7 +115,7 @@ CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o: CMakeFiles/cardio_monitor.di
 CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c
 CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o -MF CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o -MF CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o.d -o CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c
 
 CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.i"
@@ -129,7 +129,7 @@ CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o: CMakeFiles/cardio_monitor.d
 CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/alarm_manager.c
 CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o -MF CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o.d -o CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/alarm_manager.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o -MF CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o.d -o CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/alarm_manager.c
 
 CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.i"
@@ -143,7 +143,7 @@ CMakeFiles/cardio_monitor.dir/src/patient_record.c.o: CMakeFiles/cardio_monitor.
 CMakeFiles/cardio_monitor.dir/src/patient_record.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c
 CMakeFiles/cardio_monitor.dir/src/patient_record.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cardio_monitor.dir/src/patient_record.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/patient_record.c.o -MF CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d -o CMakeFiles/cardio_monitor.dir/src/patient_record.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/patient_record.c.o -MF CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d -o CMakeFiles/cardio_monitor.dir/src/patient_record.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c
 
 CMakeFiles/cardio_monitor.dir/src/patient_record.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/patient_record.c.i"
@@ -157,7 +157,7 @@ CMakeFiles/cardio_monitor.dir/src/data_logger.c.o: CMakeFiles/cardio_monitor.dir
 CMakeFiles/cardio_monitor.dir/src/data_logger.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/data_logger.c
 CMakeFiles/cardio_monitor.dir/src/data_logger.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cardio_monitor.dir/src/data_logger.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/data_logger.c.o -MF CMakeFiles/cardio_monitor.dir/src/data_logger.c.o.d -o CMakeFiles/cardio_monitor.dir/src/data_logger.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/data_logger.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/data_logger.c.o -MF CMakeFiles/cardio_monitor.dir/src/data_logger.c.o.d -o CMakeFiles/cardio_monitor.dir/src/data_logger.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/data_logger.c
 
 CMakeFiles/cardio_monitor.dir/src/data_logger.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/data_logger.c.i"
@@ -171,7 +171,7 @@ CMakeFiles/cardio_monitor.dir/src/comm_link.c.o: CMakeFiles/cardio_monitor.dir/f
 CMakeFiles/cardio_monitor.dir/src/comm_link.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c
 CMakeFiles/cardio_monitor.dir/src/comm_link.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cardio_monitor.dir/src/comm_link.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -MF CMakeFiles/cardio_monitor.dir/src/comm_link.c.o.d -o CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c
+	/mnt/c/Users/syoung/Documents/CT/cpptest-ct//bin/cpptestcc -workspace /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/cpptest-coverage/CardioMonitor -compiler gcc_10-64 -line-coverage -statement-coverage -block-coverage -decision-coverage -simple-condition-coverage -mcdc-coverage -function-coverage -call-coverage -exclude "regex:*" -include "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/*" -exclude "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -ignore "regex:*_test.cpp" -ignore "regex:/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/*" -- /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -MF CMakeFiles/cardio_monitor.dir/src/comm_link.c.o.d -o CMakeFiles/cardio_monitor.dir/src/comm_link.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c
 
 CMakeFiles/cardio_monitor.dir/src/comm_link.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/comm_link.c.i"
@@ -180,20 +180,6 @@ CMakeFiles/cardio_monitor.dir/src/comm_link.c.i: cmake_force
 CMakeFiles/cardio_monitor.dir/src/comm_link.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cardio_monitor.dir/src/comm_link.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c -o CMakeFiles/cardio_monitor.dir/src/comm_link.c.s
-
-CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o: CMakeFiles/cardio_monitor.dir/flags.make
-CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/vital_telemetry.c
-CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o: CMakeFiles/cardio_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o -MF CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o.d -o CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o -c /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/vital_telemetry.c
-
-CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/vital_telemetry.c > CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.i
-
-CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/vital_telemetry.c -o CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.s
 
 # Object files for target cardio_monitor
 cardio_monitor_OBJECTS = \
@@ -204,8 +190,7 @@ cardio_monitor_OBJECTS = \
 "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o" \
 "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o" \
 "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o" \
-"CMakeFiles/cardio_monitor.dir/src/comm_link.c.o" \
-"CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o"
+"CMakeFiles/cardio_monitor.dir/src/comm_link.c.o"
 
 # External object files for target cardio_monitor
 cardio_monitor_EXTERNAL_OBJECTS =
@@ -218,10 +203,9 @@ cardio_monitor: CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o
 cardio_monitor: CMakeFiles/cardio_monitor.dir/src/patient_record.c.o
 cardio_monitor: CMakeFiles/cardio_monitor.dir/src/data_logger.c.o
 cardio_monitor: CMakeFiles/cardio_monitor.dir/src/comm_link.c.o
-cardio_monitor: CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o
 cardio_monitor: CMakeFiles/cardio_monitor.dir/build.make
 cardio_monitor: CMakeFiles/cardio_monitor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable cardio_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable cardio_monitor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cardio_monitor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

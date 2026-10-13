@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -162,6 +162,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cpptestcov-compute
+
+# Build rule for target.
+cpptestcov-compute: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-compute
+.PHONY : cpptestcov-compute
+
+# fast build rule for target.
+cpptestcov-compute/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/build
+.PHONY : cpptestcov-compute/fast
+
+#=============================================================================
+# Target rules for targets named cpptestcov-report
+
+# Build rule for target.
+cpptestcov-report: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-report
+.PHONY : cpptestcov-report
+
+# fast build rule for target.
+cpptestcov-report/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/build
+.PHONY : cpptestcov-report/fast
+
+#=============================================================================
+# Target rules for targets named cpptestcov-suppress
+
+# Build rule for target.
+cpptestcov-suppress: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-suppress
+.PHONY : cpptestcov-suppress
+
+# fast build rule for target.
+cpptestcov-suppress/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/build
+.PHONY : cpptestcov-suppress/fast
+
+#=============================================================================
 # Target rules for targets named cardio_monitor
 
 # Build rule for target.
@@ -174,12 +213,78 @@ cardio_monitor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/build
 .PHONY : cardio_monitor/fast
 
+#=============================================================================
+# Target rules for targets named cardio_tests
+
+# Build rule for target.
+cardio_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cardio_tests
+.PHONY : cardio_tests
+
+# fast build rule for target.
+cardio_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/build
+.PHONY : cardio_tests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/alarm_manager.o: src/alarm_manager.c.o
 .PHONY : src/alarm_manager.o
 
 # target to build an object file
 src/alarm_manager.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/alarm_manager.c.o
 .PHONY : src/alarm_manager.c.o
 
 src/alarm_manager.i: src/alarm_manager.c.i
@@ -188,6 +293,7 @@ src/alarm_manager.i: src/alarm_manager.c.i
 # target to preprocess a source file
 src/alarm_manager.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/alarm_manager.c.i
 .PHONY : src/alarm_manager.c.i
 
 src/alarm_manager.s: src/alarm_manager.c.s
@@ -196,6 +302,7 @@ src/alarm_manager.s: src/alarm_manager.c.s
 # target to generate assembly for a file
 src/alarm_manager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/alarm_manager.c.s
 .PHONY : src/alarm_manager.c.s
 
 src/comm_link.o: src/comm_link.c.o
@@ -204,6 +311,7 @@ src/comm_link.o: src/comm_link.c.o
 # target to build an object file
 src/comm_link.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/comm_link.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/comm_link.c.o
 .PHONY : src/comm_link.c.o
 
 src/comm_link.i: src/comm_link.c.i
@@ -212,6 +320,7 @@ src/comm_link.i: src/comm_link.c.i
 # target to preprocess a source file
 src/comm_link.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/comm_link.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/comm_link.c.i
 .PHONY : src/comm_link.c.i
 
 src/comm_link.s: src/comm_link.c.s
@@ -220,6 +329,7 @@ src/comm_link.s: src/comm_link.c.s
 # target to generate assembly for a file
 src/comm_link.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/comm_link.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/comm_link.c.s
 .PHONY : src/comm_link.c.s
 
 src/data_logger.o: src/data_logger.c.o
@@ -228,6 +338,7 @@ src/data_logger.o: src/data_logger.c.o
 # target to build an object file
 src/data_logger.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/data_logger.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/data_logger.c.o
 .PHONY : src/data_logger.c.o
 
 src/data_logger.i: src/data_logger.c.i
@@ -236,6 +347,7 @@ src/data_logger.i: src/data_logger.c.i
 # target to preprocess a source file
 src/data_logger.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/data_logger.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/data_logger.c.i
 .PHONY : src/data_logger.c.i
 
 src/data_logger.s: src/data_logger.c.s
@@ -244,6 +356,7 @@ src/data_logger.s: src/data_logger.c.s
 # target to generate assembly for a file
 src/data_logger.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/data_logger.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/data_logger.c.s
 .PHONY : src/data_logger.c.s
 
 src/ecg_processor.o: src/ecg_processor.c.o
@@ -252,6 +365,7 @@ src/ecg_processor.o: src/ecg_processor.c.o
 # target to build an object file
 src/ecg_processor.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/ecg_processor.c.o
 .PHONY : src/ecg_processor.c.o
 
 src/ecg_processor.i: src/ecg_processor.c.i
@@ -260,6 +374,7 @@ src/ecg_processor.i: src/ecg_processor.c.i
 # target to preprocess a source file
 src/ecg_processor.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/ecg_processor.c.i
 .PHONY : src/ecg_processor.c.i
 
 src/ecg_processor.s: src/ecg_processor.c.s
@@ -268,6 +383,7 @@ src/ecg_processor.s: src/ecg_processor.c.s
 # target to generate assembly for a file
 src/ecg_processor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/ecg_processor.c.s
 .PHONY : src/ecg_processor.c.s
 
 src/main.o: src/main.c.o
@@ -300,6 +416,7 @@ src/nibp_monitor.o: src/nibp_monitor.c.o
 # target to build an object file
 src/nibp_monitor.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/nibp_monitor.c.o
 .PHONY : src/nibp_monitor.c.o
 
 src/nibp_monitor.i: src/nibp_monitor.c.i
@@ -308,6 +425,7 @@ src/nibp_monitor.i: src/nibp_monitor.c.i
 # target to preprocess a source file
 src/nibp_monitor.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/nibp_monitor.c.i
 .PHONY : src/nibp_monitor.c.i
 
 src/nibp_monitor.s: src/nibp_monitor.c.s
@@ -316,6 +434,7 @@ src/nibp_monitor.s: src/nibp_monitor.c.s
 # target to generate assembly for a file
 src/nibp_monitor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/nibp_monitor.c.s
 .PHONY : src/nibp_monitor.c.s
 
 src/patient_record.o: src/patient_record.c.o
@@ -324,6 +443,7 @@ src/patient_record.o: src/patient_record.c.o
 # target to build an object file
 src/patient_record.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/patient_record.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/patient_record.c.o
 .PHONY : src/patient_record.c.o
 
 src/patient_record.i: src/patient_record.c.i
@@ -332,6 +452,7 @@ src/patient_record.i: src/patient_record.c.i
 # target to preprocess a source file
 src/patient_record.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/patient_record.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/patient_record.c.i
 .PHONY : src/patient_record.c.i
 
 src/patient_record.s: src/patient_record.c.s
@@ -340,6 +461,7 @@ src/patient_record.s: src/patient_record.c.s
 # target to generate assembly for a file
 src/patient_record.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/patient_record.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/patient_record.c.s
 .PHONY : src/patient_record.c.s
 
 src/spo2_monitor.o: src/spo2_monitor.c.o
@@ -348,6 +470,7 @@ src/spo2_monitor.o: src/spo2_monitor.c.o
 # target to build an object file
 src/spo2_monitor.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/spo2_monitor.c.o
 .PHONY : src/spo2_monitor.c.o
 
 src/spo2_monitor.i: src/spo2_monitor.c.i
@@ -356,6 +479,7 @@ src/spo2_monitor.i: src/spo2_monitor.c.i
 # target to preprocess a source file
 src/spo2_monitor.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/spo2_monitor.c.i
 .PHONY : src/spo2_monitor.c.i
 
 src/spo2_monitor.s: src/spo2_monitor.c.s
@@ -364,31 +488,176 @@ src/spo2_monitor.s: src/spo2_monitor.c.s
 # target to generate assembly for a file
 src/spo2_monitor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/src/spo2_monitor.c.s
 .PHONY : src/spo2_monitor.c.s
 
-src/vital_telemetry.o: src/vital_telemetry.c.o
-.PHONY : src/vital_telemetry.o
+tests/alarm_manager_test.o: tests/alarm_manager_test.cpp.o
+.PHONY : tests/alarm_manager_test.o
 
 # target to build an object file
-src/vital_telemetry.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.o
-.PHONY : src/vital_telemetry.c.o
+tests/alarm_manager_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/alarm_manager_test.cpp.o
+.PHONY : tests/alarm_manager_test.cpp.o
 
-src/vital_telemetry.i: src/vital_telemetry.c.i
-.PHONY : src/vital_telemetry.i
+tests/alarm_manager_test.i: tests/alarm_manager_test.cpp.i
+.PHONY : tests/alarm_manager_test.i
 
 # target to preprocess a source file
-src/vital_telemetry.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.i
-.PHONY : src/vital_telemetry.c.i
+tests/alarm_manager_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/alarm_manager_test.cpp.i
+.PHONY : tests/alarm_manager_test.cpp.i
 
-src/vital_telemetry.s: src/vital_telemetry.c.s
-.PHONY : src/vital_telemetry.s
+tests/alarm_manager_test.s: tests/alarm_manager_test.cpp.s
+.PHONY : tests/alarm_manager_test.s
 
 # target to generate assembly for a file
-src/vital_telemetry.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_monitor.dir/build.make CMakeFiles/cardio_monitor.dir/src/vital_telemetry.c.s
-.PHONY : src/vital_telemetry.c.s
+tests/alarm_manager_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/alarm_manager_test.cpp.s
+.PHONY : tests/alarm_manager_test.cpp.s
+
+tests/comm_link_test.o: tests/comm_link_test.cpp.o
+.PHONY : tests/comm_link_test.o
+
+# target to build an object file
+tests/comm_link_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/comm_link_test.cpp.o
+.PHONY : tests/comm_link_test.cpp.o
+
+tests/comm_link_test.i: tests/comm_link_test.cpp.i
+.PHONY : tests/comm_link_test.i
+
+# target to preprocess a source file
+tests/comm_link_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/comm_link_test.cpp.i
+.PHONY : tests/comm_link_test.cpp.i
+
+tests/comm_link_test.s: tests/comm_link_test.cpp.s
+.PHONY : tests/comm_link_test.s
+
+# target to generate assembly for a file
+tests/comm_link_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/comm_link_test.cpp.s
+.PHONY : tests/comm_link_test.cpp.s
+
+tests/data_logger_test.o: tests/data_logger_test.cpp.o
+.PHONY : tests/data_logger_test.o
+
+# target to build an object file
+tests/data_logger_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/data_logger_test.cpp.o
+.PHONY : tests/data_logger_test.cpp.o
+
+tests/data_logger_test.i: tests/data_logger_test.cpp.i
+.PHONY : tests/data_logger_test.i
+
+# target to preprocess a source file
+tests/data_logger_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/data_logger_test.cpp.i
+.PHONY : tests/data_logger_test.cpp.i
+
+tests/data_logger_test.s: tests/data_logger_test.cpp.s
+.PHONY : tests/data_logger_test.s
+
+# target to generate assembly for a file
+tests/data_logger_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/data_logger_test.cpp.s
+.PHONY : tests/data_logger_test.cpp.s
+
+tests/ecg_processor_test.o: tests/ecg_processor_test.cpp.o
+.PHONY : tests/ecg_processor_test.o
+
+# target to build an object file
+tests/ecg_processor_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/ecg_processor_test.cpp.o
+.PHONY : tests/ecg_processor_test.cpp.o
+
+tests/ecg_processor_test.i: tests/ecg_processor_test.cpp.i
+.PHONY : tests/ecg_processor_test.i
+
+# target to preprocess a source file
+tests/ecg_processor_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/ecg_processor_test.cpp.i
+.PHONY : tests/ecg_processor_test.cpp.i
+
+tests/ecg_processor_test.s: tests/ecg_processor_test.cpp.s
+.PHONY : tests/ecg_processor_test.s
+
+# target to generate assembly for a file
+tests/ecg_processor_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/ecg_processor_test.cpp.s
+.PHONY : tests/ecg_processor_test.cpp.s
+
+tests/nibp_monitor_test.o: tests/nibp_monitor_test.cpp.o
+.PHONY : tests/nibp_monitor_test.o
+
+# target to build an object file
+tests/nibp_monitor_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/nibp_monitor_test.cpp.o
+.PHONY : tests/nibp_monitor_test.cpp.o
+
+tests/nibp_monitor_test.i: tests/nibp_monitor_test.cpp.i
+.PHONY : tests/nibp_monitor_test.i
+
+# target to preprocess a source file
+tests/nibp_monitor_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/nibp_monitor_test.cpp.i
+.PHONY : tests/nibp_monitor_test.cpp.i
+
+tests/nibp_monitor_test.s: tests/nibp_monitor_test.cpp.s
+.PHONY : tests/nibp_monitor_test.s
+
+# target to generate assembly for a file
+tests/nibp_monitor_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/nibp_monitor_test.cpp.s
+.PHONY : tests/nibp_monitor_test.cpp.s
+
+tests/patient_record_test.o: tests/patient_record_test.cpp.o
+.PHONY : tests/patient_record_test.o
+
+# target to build an object file
+tests/patient_record_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/patient_record_test.cpp.o
+.PHONY : tests/patient_record_test.cpp.o
+
+tests/patient_record_test.i: tests/patient_record_test.cpp.i
+.PHONY : tests/patient_record_test.i
+
+# target to preprocess a source file
+tests/patient_record_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/patient_record_test.cpp.i
+.PHONY : tests/patient_record_test.cpp.i
+
+tests/patient_record_test.s: tests/patient_record_test.cpp.s
+.PHONY : tests/patient_record_test.s
+
+# target to generate assembly for a file
+tests/patient_record_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/patient_record_test.cpp.s
+.PHONY : tests/patient_record_test.cpp.s
+
+tests/spo2_monitor_test.o: tests/spo2_monitor_test.cpp.o
+.PHONY : tests/spo2_monitor_test.o
+
+# target to build an object file
+tests/spo2_monitor_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/spo2_monitor_test.cpp.o
+.PHONY : tests/spo2_monitor_test.cpp.o
+
+tests/spo2_monitor_test.i: tests/spo2_monitor_test.cpp.i
+.PHONY : tests/spo2_monitor_test.i
+
+# target to preprocess a source file
+tests/spo2_monitor_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/spo2_monitor_test.cpp.i
+.PHONY : tests/spo2_monitor_test.cpp.i
+
+tests/spo2_monitor_test.s: tests/spo2_monitor_test.cpp.s
+.PHONY : tests/spo2_monitor_test.s
+
+# target to generate assembly for a file
+tests/spo2_monitor_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cardio_tests.dir/build.make CMakeFiles/cardio_tests.dir/tests/spo2_monitor_test.cpp.s
+.PHONY : tests/spo2_monitor_test.cpp.s
 
 # Help Target
 help:
@@ -402,7 +671,15 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... cpptestcov-compute"
+	@echo "... cpptestcov-report"
+	@echo "... cpptestcov-suppress"
 	@echo "... cardio_monitor"
+	@echo "... cardio_tests"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... src/alarm_manager.o"
 	@echo "... src/alarm_manager.i"
 	@echo "... src/alarm_manager.s"
@@ -427,9 +704,27 @@ help:
 	@echo "... src/spo2_monitor.o"
 	@echo "... src/spo2_monitor.i"
 	@echo "... src/spo2_monitor.s"
-	@echo "... src/vital_telemetry.o"
-	@echo "... src/vital_telemetry.i"
-	@echo "... src/vital_telemetry.s"
+	@echo "... tests/alarm_manager_test.o"
+	@echo "... tests/alarm_manager_test.i"
+	@echo "... tests/alarm_manager_test.s"
+	@echo "... tests/comm_link_test.o"
+	@echo "... tests/comm_link_test.i"
+	@echo "... tests/comm_link_test.s"
+	@echo "... tests/data_logger_test.o"
+	@echo "... tests/data_logger_test.i"
+	@echo "... tests/data_logger_test.s"
+	@echo "... tests/ecg_processor_test.o"
+	@echo "... tests/ecg_processor_test.i"
+	@echo "... tests/ecg_processor_test.s"
+	@echo "... tests/nibp_monitor_test.o"
+	@echo "... tests/nibp_monitor_test.i"
+	@echo "... tests/nibp_monitor_test.s"
+	@echo "... tests/patient_record_test.o"
+	@echo "... tests/patient_record_test.i"
+	@echo "... tests/patient_record_test.s"
+	@echo "... tests/spo2_monitor_test.o"
+	@echo "... tests/spo2_monitor_test.i"
+	@echo "... tests/spo2_monitor_test.s"
 .PHONY : help
 
 

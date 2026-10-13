@@ -1,0 +1,36 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/alarm_manager.c" "CMakeFiles/cardio_tests.dir/src/alarm_manager.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/alarm_manager.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c" "CMakeFiles/cardio_tests.dir/src/comm_link.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/comm_link.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/data_logger.c" "CMakeFiles/cardio_tests.dir/src/data_logger.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/data_logger.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/ecg_processor.c" "CMakeFiles/cardio_tests.dir/src/ecg_processor.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/ecg_processor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c" "CMakeFiles/cardio_tests.dir/src/nibp_monitor.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/nibp_monitor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c" "CMakeFiles/cardio_tests.dir/src/patient_record.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/patient_record.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c" "CMakeFiles/cardio_tests.dir/src/spo2_monitor.c.o" "gcc" "CMakeFiles/cardio_tests.dir/src/spo2_monitor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/alarm_manager_test.cpp" "CMakeFiles/cardio_tests.dir/tests/alarm_manager_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/alarm_manager_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/comm_link_test.cpp" "CMakeFiles/cardio_tests.dir/tests/comm_link_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/comm_link_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/data_logger_test.cpp" "CMakeFiles/cardio_tests.dir/tests/data_logger_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/data_logger_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/ecg_processor_test.cpp" "CMakeFiles/cardio_tests.dir/tests/ecg_processor_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/ecg_processor_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/nibp_monitor_test.cpp" "CMakeFiles/cardio_tests.dir/tests/nibp_monitor_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/nibp_monitor_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/patient_record_test.cpp" "CMakeFiles/cardio_tests.dir/tests/patient_record_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/patient_record_test.cpp.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/tests/spo2_monitor_test.cpp" "CMakeFiles/cardio_tests.dir/tests/spo2_monitor_test.cpp.o" "gcc" "CMakeFiles/cardio_tests.dir/tests/spo2_monitor_test.cpp.o.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
