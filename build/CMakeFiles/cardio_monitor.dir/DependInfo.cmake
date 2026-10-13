@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/alarm_manager.c" "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/comm_link.c" "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/data_logger.c" "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/ecg_processor.c" "CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/main.c" "CMakeFiles/cardio_monitor.dir/src/main.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/main.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/nibp_monitor.c" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/patient_record.c" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d"
-  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/src/spo2_monitor.c" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/alarm_manager.c" "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/alarm_manager.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/comm_link.c" "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/comm_link.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/data_logger.c" "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/data_logger.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/ecg_processor.c" "CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/ecg_processor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/main.c" "CMakeFiles/cardio_monitor.dir/src/main.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/main.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/nibp_monitor.c" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/nibp_monitor.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/patient_record.c" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/patient_record.c.o.d"
+  "/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/src/spo2_monitor.c" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o" "gcc" "CMakeFiles/cardio_monitor.dir/src/spo2_monitor.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

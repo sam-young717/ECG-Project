@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DCARDIO_MONITOR_FW_VERSION=\"1.4.2\" -DECG_SAMPLE_RATE_HZ=250 -DSPO2_SAMPLE_RATE_HZ=100 -DSYSTEM_TICK_MS=10
 
-C_INCLUDES = -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/examples/RockStarDisplay/include
+C_INCLUDES = -I/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/ECG-Project/include
 
 C_FLAGS = -g -std=c99 -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -fno-common
 

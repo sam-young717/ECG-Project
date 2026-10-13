@@ -99,6 +99,7 @@ int main(int argc, char** argv)
 {
     char admit_line[128];
     int  loop_count;
+    int  loop_limit = -1;
 
     ecg_processor_init(&g_ecg, ECG_LEAD_II);
     spo2_monitor_init(&g_spo2);
@@ -107,7 +108,13 @@ int main(int argc, char** argv)
     comm_link_init(&g_link);
     comm_link_connect(&g_link, "central-station.local");
 
-    if (argc > 1) {
+    if (argc > 2 && strcmp(argv[1], "--cycles") == 0) {
+        loop_limit = atoi(argv[2]);
+        if (loop_limit < 0) {
+            return 2;
+        }
+        strcpy(admit_line, "P0001,John Doe,67");
+    } else if (argc > 1) {
         strcpy(admit_line, argv[1]);
     } else {
         strcpy(admit_line, "P0001,John Doe,67");
@@ -117,6 +124,9 @@ int main(int argc, char** argv)
     data_logger_open(&g_logger, TREND_LOG_DIR, "P0001");
 
     for (loop_count = 0; ; loop_count++) {
+        if (loop_limit >= 0 && loop_count >= loop_limit) {
+            break;
+        }
         acquisition_cycle();
         g_tick_ms += ACQUISITION_PERIOD_MS;
         if (loop_count == 0x7FFFFFFF) {

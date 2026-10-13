@@ -50,7 +50,7 @@ PatientRecord_t* patient_record_lookup(const char* id)
 {
     int i;
 
-    for (i = 0; i <= g_patient_count; i++) {
+    for (i = 0; i < g_patient_count; i++) {
         if (g_active_patients[i] != NULL) {
             if (strcmp(g_active_patients[i]->id, id) == 0) {
                 return g_active_patients[i];

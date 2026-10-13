@@ -55,12 +55,14 @@ bool alarm_manager_pop(AlarmManager_t* mgr, AlarmEvent_t* out)
     }
 
     memcpy(out, &mgr->queue[best_i], sizeof(*out));
-    mgr->queue[best_i].acknowledged = true;
 
-    if (best_i == mgr->head) {
-        mgr->head = (mgr->head + 1) % ALARM_QUEUE_CAPACITY;
-        mgr->count--;
+    for (i = 0; i + 1 < mgr->count; i++) {
+        uint16_t from = (best_i + i + 1) % ALARM_QUEUE_CAPACITY;
+        uint16_t to = (best_i + i) % ALARM_QUEUE_CAPACITY;
+        mgr->queue[to] = mgr->queue[from];
     }
+    mgr->tail = (mgr->tail + ALARM_QUEUE_CAPACITY - 1) % ALARM_QUEUE_CAPACITY;
+    mgr->count--;
     return true;
 }
 

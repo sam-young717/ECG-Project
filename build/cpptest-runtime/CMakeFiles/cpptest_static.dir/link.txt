@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpptest_static.a CMakeFiles/cpptest_static.dir/src/cpptest.c.o
+/usr/bin/ranlib libcpptest_static.a

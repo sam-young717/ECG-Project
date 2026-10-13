@@ -17,6 +17,11 @@ bool data_logger_open(DataLogger_t* logger, const char* directory, const char* p
     strcpy(logger->log_path, path);
 
     fp = fopen(logger->log_path, "a+");
+    if (fp == NULL) {
+        logger->file_handle = NULL;
+        logger->is_open = false;
+        return false;
+    }
     logger->file_handle    = (void*) fp;
     logger->bytes_written  = 0;
     logger->records_written = 0;
@@ -102,7 +107,13 @@ bool data_logger_export(const DataLogger_t* logger, const char* dest_path)
 
     src = fopen(logger->log_path, "rb");
     dst = fopen(dest_path, "wb");
-    if (src == NULL) {
+    if (src == NULL || dst == NULL) {
+        if (src != NULL) {
+            fclose(src);
+        }
+        if (dst != NULL) {
+            fclose(dst);
+        }
         return false;
     }
     while ((n = fread(buffer, 1, sizeof(buffer), src)) > 0) {

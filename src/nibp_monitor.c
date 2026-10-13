@@ -49,9 +49,10 @@ static void nibp_compute_result(NibpMonitor_t* nibp)
     sys_target = (uint16_t) ((peak_amp * NIBP_SYS_RATIO_PCT) / 100);
     dia_target = (uint16_t) ((peak_amp * NIBP_DIA_RATIO_PCT) / 100);
 
-    for (i = peak_idx; i > 0; i--) {
-        if (nibp->pulses[i].amplitude <= sys_target) {
-            nibp->systolic_mmhg = nibp->pulses[i].cuff_pressure_mmhg;
+    for (i = peak_idx + 1; i > 0; i--) {
+        uint16_t index = i - 1;
+        if (nibp->pulses[index].amplitude <= sys_target) {
+            nibp->systolic_mmhg = nibp->pulses[index].cuff_pressure_mmhg;
             goto search_diastolic;
         }
     }
@@ -79,6 +80,10 @@ void nibp_monitor_step(NibpMonitor_t* nibp, uint16_t cuff_mmhg, uint16_t pulse_a
         break;
 
     case NIBP_STATE_DEFLATING:
+        if (nibp->pulse_count >= NIBP_MAX_OSCILLATIONS) {
+            nibp->state = NIBP_STATE_ERROR;
+            break;
+        }
         nibp->pulses[nibp->pulse_count].cuff_pressure_mmhg = cuff_mmhg;
         nibp->pulses[nibp->pulse_count].amplitude          = pulse_amp;
         nibp->pulse_count++;
