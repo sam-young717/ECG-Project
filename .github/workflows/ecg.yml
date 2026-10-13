@@ -22,7 +22,8 @@ jobs:
       security-events: write
       # only required for workflows in private repositories
       actions: read
-      contents: read
+      contents: write
+      pull-requests: write
 
     # Specifies the type of runner that the job will run on.
     runs-on: self-hosted
