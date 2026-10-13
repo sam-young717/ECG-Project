@@ -59,7 +59,6 @@ jobs:
         additionalParams: >-
           -fail
           -localsettings /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties
-          -property scontrol.rep1.git.workspace=${{ github.workspace }}
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
