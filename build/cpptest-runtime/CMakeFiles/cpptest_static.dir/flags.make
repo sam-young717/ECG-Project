@@ -6,5 +6,5 @@ C_DEFINES = -DCPPTEST_FILE_COMMUNICATION -DCPPTEST_FLUSH_DATA_IMMEDIATELY=0 -DCP
 
 C_INCLUDES = -I/mnt/c/Users/syoung/Documents/CT/cpptest-ct/runtime/include
 
-C_FLAGS = 
+C_FLAGS = -g
 

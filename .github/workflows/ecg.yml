@@ -34,6 +34,17 @@ jobs:
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Prepare main reference for C/C++test
+      run: |
+        git fetch --no-tags origin +refs/heads/main:refs/remotes/origin/main
+        if [ "$(git symbolic-ref --quiet --short HEAD || true)" != main ]; then
+          git branch -f main refs/remotes/origin/main
+        fi
+        git rev-parse --verify refs/heads/main
+        test -f /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties
 
     # Runs code analysis with C/C++test.
     - name: Run C/C++test
@@ -45,7 +56,10 @@ jobs:
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: build/compile_commands.json
         testConfig: 'builtin://MISRA C 2025'
-        additionalParams: '-fail -localsettings /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties'
+        additionalParams: >-
+          -fail
+          -localsettings /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties
+          -property scontrol.rep1.git.workspace=${{ github.workspace }}
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
