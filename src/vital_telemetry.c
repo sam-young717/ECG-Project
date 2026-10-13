@@ -23,73 +23,81 @@ static bool vital_telemetry_flush(VitalTelemetry_t* telemetry);
 void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
                           uint32_t interval_ms)
 {
-    if (telemetry == NULL) {
-        return;
+    if (telemetry != NULL) {
+        (void) memset(telemetry, 0, sizeof(*telemetry));
+        telemetry->link = link;
+        telemetry->interval_ms = interval_ms;
     }
-
-    (void) memset(telemetry, 0, sizeof(*telemetry));
-    telemetry->link = link;
-    telemetry->interval_ms = interval_ms;
 }
 
 bool vital_telemetry_update(VitalTelemetry_t* telemetry,
                             const VitalSample_t* sample)
 {
+    bool result;
+
     if ((telemetry == NULL) || (sample == NULL) || (telemetry->link == NULL)) {
-        return false;
+        result = false;
+    } else {
+        telemetry->pending_sample = *sample;
+        telemetry->has_pending_sample = true;
+
+        if (telemetry->has_sent &&
+            ((uint32_t) (sample->tick_ms - telemetry->last_sent_ms) <
+            telemetry->interval_ms)) {
+            result = true;
+        } else {
+            result = vital_telemetry_flush(telemetry);
+        }
     }
 
-    telemetry->pending_sample = *sample;
-    telemetry->has_pending_sample = true;
-
-    if (telemetry->has_sent &&
-        ((uint32_t) (sample->tick_ms - telemetry->last_sent_ms) <
-        telemetry->interval_ms)) {
-        return true;
-    }
-
-    return vital_telemetry_flush(telemetry);
+    return result;
 }
 
 static bool vital_telemetry_flush(VitalTelemetry_t* telemetry)
 {
+    bool result;
     CommFrame_t frame = {0};
     const VitalSample_t* sample;
 
     if ((telemetry == NULL) || (telemetry->link == NULL)) {
-        return false;
+        result = false;
+    } else if (!telemetry->has_pending_sample) {
+        result = true;
+    } else {
+        sample = &telemetry->pending_sample;
+        frame.type = COMM_MSG_VITALS;
+        frame.length = VITAL_TELEMETRY_PAYLOAD_SIZE;
+
+        encode_u32(&frame.payload[0], sample->tick_ms);
+        encode_u16(&frame.payload[4], sample->heart_rate);
+        frame.payload[6] = sample->spo2;
+        encode_u16(&frame.payload[7], sample->systolic);
+        encode_u16(&frame.payload[9], sample->diastolic);
+        encode_u16(&frame.payload[11], sample->respiration);
+
+        if (!comm_link_send(telemetry->link, &frame)) {
+            result = false;
+        } else {
+            telemetry->last_sent_ms = sample->tick_ms;
+            telemetry->frames_sent++;
+            telemetry->has_sent = true;
+            telemetry->has_pending_sample = false;
+            result = true;
+        }
     }
-    if (!telemetry->has_pending_sample) {
-        return true;
-    }
 
-    sample = &telemetry->pending_sample;
-    frame.type = COMM_MSG_VITALS;
-    frame.length = VITAL_TELEMETRY_PAYLOAD_SIZE;
-
-    encode_u32(&frame.payload[0], sample->tick_ms);
-    encode_u16(&frame.payload[4], sample->heart_rate);
-    frame.payload[6] = sample->spo2;
-    encode_u16(&frame.payload[7], sample->systolic);
-    encode_u16(&frame.payload[9], sample->diastolic);
-    encode_u16(&frame.payload[11], sample->respiration);
-
-    if (!comm_link_send(telemetry->link, &frame)) {
-        return false;
-    }
-
-    telemetry->last_sent_ms = sample->tick_ms;
-    telemetry->frames_sent++;
-    telemetry->has_sent = true;
-    telemetry->has_pending_sample = false;
-    return true;
+    return result;
 }
 
 uint32_t vital_telemetry_get_frames_sent(const VitalTelemetry_t* telemetry)
 {
+    uint32_t result;
+
     if (telemetry == NULL) {
-        return 0;
+        result = 0U;
+    } else {
+        result = telemetry->frames_sent;
     }
 
-    return telemetry->frames_sent;
+    return result;
 }
