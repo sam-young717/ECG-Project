@@ -33,7 +33,7 @@ void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
 bool vital_telemetry_update(VitalTelemetry_t* telemetry,
                             const VitalSample_t* sample)
 {
-    if (telemetry == NULL || sample == NULL || telemetry->link == NULL) {
+    if ((telemetry == NULL) || (sample == NULL) || (telemetry->link == NULL)) {
         return false;
     }
 
@@ -41,8 +41,8 @@ bool vital_telemetry_update(VitalTelemetry_t* telemetry,
     telemetry->has_pending_sample = true;
 
     if (telemetry->has_sent &&
-        (uint32_t) (sample->tick_ms - telemetry->last_sent_ms) <
-        telemetry->interval_ms) {
+        ((uint32_t) (sample->tick_ms - telemetry->last_sent_ms) <
+        telemetry->interval_ms)) {
         return true;
     }
 
@@ -54,7 +54,7 @@ bool vital_telemetry_flush(VitalTelemetry_t* telemetry)
     CommFrame_t frame = {0};
     const VitalSample_t* sample;
 
-    if (telemetry == NULL || telemetry->link == NULL) {
+    if ((telemetry == NULL) || (telemetry->link == NULL)) {
         return false;
     }
     if (!telemetry->has_pending_sample) {
