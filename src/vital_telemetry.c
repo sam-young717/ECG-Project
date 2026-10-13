@@ -18,6 +18,8 @@ static void encode_u32(uint8_t* payload, uint32_t value)
     payload[3] = (uint8_t) value;
 }
 
+static bool vital_telemetry_flush(VitalTelemetry_t* telemetry);
+
 void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
                           uint32_t interval_ms)
 {
@@ -49,7 +51,7 @@ bool vital_telemetry_update(VitalTelemetry_t* telemetry,
     return vital_telemetry_flush(telemetry);
 }
 
-bool vital_telemetry_flush(VitalTelemetry_t* telemetry)
+static bool vital_telemetry_flush(VitalTelemetry_t* telemetry)
 {
     CommFrame_t frame = {0};
     const VitalSample_t* sample;
