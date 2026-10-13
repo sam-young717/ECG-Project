@@ -21,13 +21,11 @@ static void encode_u32(uint8_t* payload, uint32_t value)
 void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
                           uint32_t interval_ms)
 {
-    if (telemetry == NULL) {
-        return;
+    if (telemetry != NULL) {
+        (void) memset(telemetry, 0, sizeof(*telemetry));
+        telemetry->link = link;
+        telemetry->interval_ms = interval_ms;
     }
-
-    memset(telemetry, 0, sizeof(*telemetry));
-    telemetry->link = link;
-    telemetry->interval_ms = interval_ms;
 }
 
 bool vital_telemetry_update(VitalTelemetry_t* telemetry,
