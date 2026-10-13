@@ -46,6 +46,30 @@ jobs:
         git rev-parse --verify refs/heads/main
         test -f /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties
 
+    - name: Prepare local C/C++test settings
+      run: |
+        python3 - <<'PY'
+        import os
+        from pathlib import Path
+
+        source = Path("/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties")
+        lines = source.read_text().splitlines()
+        key = "scontrol.rep1.git.workspace="
+        matches = [index for index, line in enumerate(lines) if line.startswith(key)]
+        if len(matches) != 1:
+            raise SystemExit("Expected one Git workspace setting in cpptestcli.properties")
+        for setting in ("scope.scontrol=true", "scope.scontrol.files.filter.mode=branch",
+                        "scope.scontrol.ref.branch=main"):
+            if setting not in lines:
+                raise SystemExit(f"Missing required C/C++test setting: {setting}")
+
+        lines[matches[0]] = key + os.environ["GITHUB_WORKSPACE"]
+        output = Path(os.environ["RUNNER_TEMP"]) / "cpptest-scope.properties"
+        output.touch(mode=0o600, exist_ok=True)
+        output.chmod(0o600)
+        output.write_text("\n".join(lines) + "\n")
+        PY
+
     - name: Prepare changed-source compilation database
       run: |
         export CPPTEST_ANALYSIS_BUILD_DIR="$(mktemp -d "$RUNNER_TEMP/ecg-cpptest-build.XXXXXX")"
@@ -95,9 +119,7 @@ jobs:
         testConfig: 'builtin://MISRA C 2025'
         additionalParams: >-
           -fail
-          -localsettings /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/Standard/cpptest/cpptestcli.properties
-          -property scontrol.rep1.git.workspace=${{ github.workspace }}
-          -property scope.scontrol.files.filter.mode=all
+          -localsettings ${{ runner.temp }}/cpptest-scope.properties
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
