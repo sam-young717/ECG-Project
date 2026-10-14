@@ -18,7 +18,6 @@ void vital_telemetry_init(VitalTelemetry_t* telemetry, CommLink_t* link,
                           uint32_t interval_ms);
 bool vital_telemetry_update(VitalTelemetry_t* telemetry,
                             const VitalSample_t* sample);
-bool vital_telemetry_flush(VitalTelemetry_t* telemetry);
 uint32_t vital_telemetry_get_frames_sent(const VitalTelemetry_t* telemetry);
 
 #endif
